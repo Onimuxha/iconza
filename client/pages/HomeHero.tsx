@@ -257,7 +257,7 @@ export function HomeHero() {
         <section className="py-24 bg-white/50 dark:bg-gray-950/50">
           <div className="max-w-7xl mx-auto px-4 text-center mb-16">
             <h2 className="text-3xl sm:text-6xl font-medium text-gray-900 dark:text-white">
-              Why Choose Jupiter Icons?
+              Why Choose Icoza?
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Built by developers, for developers. Every icon is crafted with
@@ -321,7 +321,7 @@ export function HomeHero() {
               Get Started in Minutes
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Install Jupiter Icons and start building beautiful interfaces
+              Install Icoza and start building beautiful interfaces
               right away.
             </p>
           </motion.div>

@@ -14,7 +14,7 @@ export function SiteFooter() {
               to="/"
               className="font-medium text-neutral-800 dark:text-neutral-200 hover:text-lime-500 transition-colors"
             >
-              Jupiter Icons
+              Icoza
             </Link>
             . All rights reserved.
           </p>

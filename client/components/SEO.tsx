@@ -13,17 +13,17 @@ interface SEOProps {
 }
 
 export function SEO({
-  title = 'Jupiter Iconz',
+  title = 'icoza',
   description = 'A modern, accessible icon set with original brand colors, full TypeScript support, and delightful animations.',
-  image = '/jupiterLight.png',
+  image = '/icozaLight.png',
   url = 'https://icoza.vercel.app',
   type = 'website',
   canonical,
-  keywords = 'icon library, react icons, developer icons, brand icons, jupiter iconz, svg icons, website icons, animated icons, accessible icons',
-  author = 'Jupiter Iconz',
+  keywords = 'icon library, react icons, developer icons, brand icons, icoza, svg icons, website icons, animated icons, accessible icons',
+  author = 'icoza',
   children,
 }: SEOProps) {
-  const siteTitle = title.includes('Jupiter Iconz') ? title : `${title} | Jupiter Iconz`;
+  const siteTitle = title.includes('icoza') ? title : `${title} | icoza`;
 
   return (
     <Helmet>
@@ -38,7 +38,7 @@ export function SEO({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
-      <meta property="og:site_name" content="Jupiter Iconz" />
+      <meta property="og:site_name" content="icoza" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -60,16 +60,16 @@ export function SEO({
 
       {/* Chrome, Firefox, Edge */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-      <link rel="icon" type="image/png" href="/jupiterLight.png" media="(prefers-color-scheme: dark)" />
+      <link rel="icon" type="image/png" href="/icozaLight.png" media="(prefers-color-scheme: dark)" />
       
       {/* Microsoft Edge */}
       <meta name="msapplication-TileColor" content="#94c748" />
-      <meta name="msapplication-TileImage" content="/jupiterLight.png" />
-      
+      <meta name="msapplication-TileImage" content="/icozaLight.png" />
+
       {/* Safari */}
-      <link rel="apple-touch-icon" href="/jupiterLight.png" />
-      <meta name="apple-mobile-web-app-title" content="Jupiter Icons" />
-      
+      <link rel="apple-touch-icon" href="/icozaLight.png" />
+      <meta name="apple-mobile-web-app-title" content="icoza" />
+
       {/* Chrome for Android */}
       <meta name="mobile-web-app-capable" content="yes" />
 

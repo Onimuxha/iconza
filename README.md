@@ -1,4 +1,4 @@
-# Jupiter Icons
+# Icoza
 
 A modern, developer‑friendly, colorful SVG icon library and website.
 
@@ -93,7 +93,7 @@ function YourPage() {
 ```
 
 3. Default SEO values are pre-configured for:
-- Base title suffix: "| Jupiter Icons"
+- Base title suffix: "| Icoza"
 - Default description
 - Open Graph metadata
 - Twitter Cards
