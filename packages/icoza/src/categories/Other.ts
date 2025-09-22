@@ -114,9 +114,9 @@ export const iconsData: IconData[] = [
     `.trim(),
   },
   {
-    name: "Iconza",
+    name: "Icoza",
     category: "Other",
-    keywords: ["iconza", "icon", "icons", "design", "tool", "library"],
+    keywords: ["icoza", "icon", "icons", "design", "tool", "library"],
     svgContent: `
 <svg width="1154" height="1154" viewBox="0 0 1154 1154" fill="none"
     xmlns="http://www.w3.org/2000/svg">
