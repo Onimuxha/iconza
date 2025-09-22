@@ -25,9 +25,9 @@ export function SiteHeader() {
       >
         <Link to="/" className="flex items-center gap-2">
           <img
-            src="/icozaDark.avif"
+            src="/icoza.avif"
             alt="icoza"
-            className="h-10 w-10 dark:invert hover:scale-105 transition-transform duration-200"
+            className="h-10 w-10 hover:scale-105 transition-transform duration-200"
           />
         </Link>
         {/* Nav links (desktop) */}

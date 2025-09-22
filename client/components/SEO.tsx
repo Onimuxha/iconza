@@ -15,7 +15,7 @@ interface SEOProps {
 export function SEO({
   title = 'icoza',
   description = 'A modern, accessible icon set with original brand colors, full TypeScript support, and delightful animations.',
-  image = '/icozaLight.png',
+  image = '/icoza.avif',
   url = 'https://icoza.vercel.app',
   type = 'website',
   canonical,
@@ -60,14 +60,14 @@ export function SEO({
 
       {/* Chrome, Firefox, Edge */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-      <link rel="icon" type="image/png" href="/icozaLight.png" media="(prefers-color-scheme: dark)" />
+      <link rel="icon" type="image/avif" href="/icoza.avif" media="(prefers-color-scheme: dark)" />
       
       {/* Microsoft Edge */}
       <meta name="msapplication-TileColor" content="#94c748" />
-      <meta name="msapplication-TileImage" content="/icozaLight.png" />
+      <meta name="msapplication-TileImage" content="/icoza.avif" />
 
       {/* Safari */}
-      <link rel="apple-touch-icon" href="/icozaLight.png" />
+      <link rel="apple-touch-icon" href="/icoza.avif" />
       <meta name="apple-mobile-web-app-title" content="icoza" />
 
       {/* Chrome for Android */}
