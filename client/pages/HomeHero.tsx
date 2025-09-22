@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { CodeBlock } from "@/components/ui/code-block";
 import { SEO } from "@/components/SEO";
-import { icons } from "../../packages/jupiter-icons/src/index.ts";
+import { icons } from "../../packages/icoza/src/index.ts";
+import pkg from "../../packages/icoza/package.json";
 import { FlipWords } from "../components/ui/flip-words.tsx";
 import { SiteHeader } from "../components/site/SiteHeader.tsx";
 import { SiteFooter } from "../components/site/SiteFooter.tsx";
@@ -24,7 +25,6 @@ import {
   AnimatedSpan,
 } from "../components/ui/terminal.tsx";
 import { NumberTicker } from "../components/ui/number-ticker.tsx";
-import pkg from "../../packages/jupiter-icons/package.json";
 import { useState, useEffect } from "react";
 
 const heroList = [
@@ -43,7 +43,7 @@ const heroList = [
 ] as const;
 export async function getStaticProps() {
   const res = await fetch(
-    "https://api.npmjs.org/downloads/point/last-week/jupiter-iconz",
+    "https://api.npmjs.org/downloads/point/last-week/icoza",
   );
   const data = await res.json();
 
@@ -112,12 +112,12 @@ interface NpmStats {
 const steps = [
   {
     title: "Install the package",
-    description: "Run 'npm install jupiter-iconz' in your project directory.",
+    description: "Run 'npm install icoza' in your project directory.",
   },
   {
     title: "Import icons",
     description:
-      "Import any icon from 'jupiter-iconz' and use it in your components.",
+      "Import any icon from 'icoza' and use it in your components.",
   },
   {
     title: "Customize",
@@ -135,7 +135,7 @@ export function HomeHero() {
         const endDate = new Date().toISOString().split("T")[0];
 
         const response = await fetch(
-          `https://api.npmjs.org/downloads/point/${startDate}:${endDate}/jupiter-iconz`,
+          `https://api.npmjs.org/downloads/point/${startDate}:${endDate}/icoza`,
         );
         const data: NpmStats = await response.json();
         setTotalDownloads(data.downloads);
@@ -158,6 +158,7 @@ export function HomeHero() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/40">
+      <SEO />
       <SEO />
       <SiteHeader />
       <main>
@@ -184,7 +185,7 @@ export function HomeHero() {
                 <CodeBlock
                   language="bash"
                   filename="terminal"
-                  code={`npm install jupiter-iconz`}
+                  code={`npm install icoza`}
                 />
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -386,7 +387,7 @@ export function HomeHero() {
             >
               <Terminal>
                 <TypingAnimation delay={0}>
-                  $ npm install jupiter-iconz
+                  $ npm install icoza
                 </TypingAnimation>
                 <AnimatedSpan className="text-lime-500">
                   ✔ Installed successfully!

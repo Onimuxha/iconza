@@ -16,7 +16,7 @@ export function SEO({
   title = 'Jupiter Iconz',
   description = 'A modern, accessible icon set with original brand colors, full TypeScript support, and delightful animations.',
   image = '/jupiterLight.png',
-  url = 'https://jupiter-iconz.vercel.app',
+  url = 'https://icoza.vercel.app',
   type = 'website',
   canonical,
   keywords = 'icon library, react icons, developer icons, brand icons, jupiter iconz, svg icons, website icons, animated icons, accessible icons',

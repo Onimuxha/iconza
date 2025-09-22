@@ -207,7 +207,7 @@ export function IconDetailDialog(props: IconDetailProps) {
                 language={mode === "jsx" ? "tsx" : "xml"}
                 filename={`${name}.${mode}`}
                 code={mode === "jsx" ?
-                  `import { Icon } from "jupiter-iconz";\n\n${jsxCode}` :
+                  `import { Icon } from "icoza";\n\n${jsxCode}` :
                   svgMin
                 }
                 highlightLines={mode === "jsx" ? [3] : undefined}

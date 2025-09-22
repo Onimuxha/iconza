@@ -30,8 +30,8 @@
     "paths": {
       "@/*": ["./client/*"],
       "@shared/*": ["./shared/*"],
-      "jupiter-iconz": ["./packages/jupiter-iconz/src/index.ts"],
-      "jupiter-iconz/*": ["./packages/jupiter-iconz/src/*"]
+      "icoza": ["./packages/icoza/src/index.ts"],
+      "icoza/*": ["./packages/icoza/src/*"]
     }
   },
   "include": [

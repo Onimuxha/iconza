@@ -23,20 +23,15 @@ export function SiteFooter() {
         {/* Right: Credit + Socials */}
         <div className="flex items-center gap-4">
           <p className="flex items-center gap-1.5">
-            <span>Crafted</span>
-            <span>by</span>
-            <a
-              href="https://github.com/socheatsok78"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-medium text-neutral-800 dark:text-neutral-200 hover:underline transition-colors"
-            >
+            <span>Crafted by</span>
+            <span
+              className="font-medium text-neutral-800 dark:text-neutral-200 hover:underline transition-colors">
               Socheat
-            </a>
+            </span>
           </p>
           <span className="text-neutral-300 dark:text-neutral-700">|</span>
           <a
-            href="https://github.com/socheatsok78/jupiter-iconz"
+            href="https://github.com/socheatsok78/icoza"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Repository"

@@ -13,7 +13,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Categories } from "../../packages/jupiter-icons/src";
+import { Categories } from "../../packages/icoza/src";
 import { IconGrid } from "../components/site/IconExplorer/IconGrid";
 import { categories, iconsMap } from "../components/site/IconExplorer/iconUtils";
 import { SiteHeader } from "../components/site/SiteHeader";
@@ -102,10 +102,10 @@ export function IconExplorer() {
                 language="jsx"
                 filename="App.tsx"
                 code={`// Install
-npm install jupiter-iconz
+npm install icoza
 
 // Import & Use
-import { Icon } from 'jupiter-iconz'
+import { Icon } from 'icoza'
 <Icon name="React" size={24} />`}
                 highlightLines={[2, 5]}
               />

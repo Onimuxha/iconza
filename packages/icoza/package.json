@@ -1,7 +1,9 @@
 {
-  "name": "jupiter-iconz",
-  "version": "1.0.26",
+  "name": "icoza",
+  "version": "1.0.28",
   "private": false,
+  "description": "A modern, accessible icon set with original brand colors, full TypeScript support, and delightful animations.",
+  "homepage": "https://icoza.vercel.app",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -23,7 +25,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "license": "Socheath",
+  "license": "MIT",
   "vite": {
     "resolve": {
       "dedupe": [
