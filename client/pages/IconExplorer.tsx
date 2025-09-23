@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState, useRef } from "react"; // Add useRef
+import { useEffect, useMemo, useState, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
-import { IconSearch, IconChevronDown, IconLayoutGrid, IconListDetails, IconFileTypeTsx, IconBolt, IconMoon, IconPalette, IconRestore, IconSquareRoundedCheckFilled, IconSlash } from "@tabler/icons-react";
+import { IconSearch, IconChevronDown, IconLayoutGrid, IconListDetails, IconRestore, IconSquareRoundedCheckFilled, IconSlash } from "@tabler/icons-react";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent } from "@/components/ui/tabs";
 import Box from "@mui/material/Box";
