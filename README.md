@@ -50,7 +50,7 @@ import { Icon } from "iconza";
 export default function Example() {
   return (
     <div>
-      <Icon name="Photoshop" size={24} aria-label="Adobe Photoshop" />
+      <Icon name="AdobePhotoshop" size={24} aria-label="Adobe Photoshop" />
       <Icon name="VSCode" size={48} className="align-middle" />
     </div>
   );

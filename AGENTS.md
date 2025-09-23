@@ -7,17 +7,17 @@ While the starter comes with a express server, only create endpoint when strictl
 ## Update .svg icons that convert from [SVG viewer](https://www.svgviewer.dev/) in File [DesignTools](packages/iconza/src/categories/DesignTools.ts)
 - ## Example
 
-### 1. PhotoShop
-- ### Photoshop Icon - Before:
+### 1. AdobePhotoshop
+- ### AdobePhotoshop Icon - Before:
 
 ```
 .st0{fill:#001E36;}  /* Generic class name */
 .st1{fill:#31A8FF;}  /* Generic class name */
 ```
-- ### Photoshop Icon - After:
+- ### AdobePhotoshop Icon - After:
 ```
-#photoshop-icon .ps-bg{fill:#001E36;}    /* Scoped to specific icon */
-#photoshop-icon .ps-text{fill:#31A8FF;}  /* Scoped to specific icon */
+#AdobePhotoshop-icon .ps-bg{fill:#001E36;}    /* Scoped to specific icon */
+#AdobePhotoshop-icon .ps-text{fill:#31A8FF;}  /* Scoped to specific icon */
 ```
 ### 2. Figma
 - ### Figma Icon - Before: (Used `CSS classes` like your original)

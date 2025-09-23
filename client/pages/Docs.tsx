@@ -68,7 +68,7 @@ export default function Docs() {
 export default function App() {
   return (
     <div>
-      <Icon name="Photoshop" size={24} />
+      <Icon name="AdobePhotoshop" size={24} />
       <Icon name="VSCode" size={48} className="ml-2" />
     </div>
 );`}
@@ -94,7 +94,7 @@ export default function App() {
                   <CodeBlock
                     language="jsx"
                     filename="Example.tsx"
-                    code={`<Icon name="Photoshop" size={32} aria-label="Adobe Photoshop" />`}
+                    code={`<Icon name="AdobePhotoshop" size={32} aria-label="Adobe Photoshop" />`}
                   />
                 </Card>
 

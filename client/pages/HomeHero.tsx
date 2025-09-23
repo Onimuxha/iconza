@@ -116,8 +116,7 @@ const steps = [
   },
   {
     title: "Import icons",
-    description:
-      "Import any icon from 'iconza' and use it in your components.",
+    description: "Import any icon from 'iconza' and use it in your components.",
   },
   {
     title: "Customize",
@@ -129,23 +128,23 @@ export function HomeHero() {
   const [totalDownloads, setTotalDownloads] = useState<number>(0);
 
   useEffect(() => {
-    const fetchTotalDownloads = async () => {
+    async function fetchTotal() {
       try {
         const startDate = "2024-01-01";
         const endDate = new Date().toISOString().split("T")[0];
-
         const response = await fetch(
           `https://api.npmjs.org/downloads/point/${startDate}:${endDate}/iconza`,
         );
-        const data: NpmStats = await response.json();
-        setTotalDownloads(data.downloads);
-      } catch (error) {
-        console.error("Error fetching npm stats:", error);
+        const data: { downloads?: number } = await response.json();
+        setTotalDownloads(data.downloads ?? 0);
+      } catch (err) {
+        console.error("Error fetching total downloads:", err);
+        setTotalDownloads(0); // or leave as null to indicate loading or failure
       }
-    };
+    }
+    fetchTotal();
 
-    fetchTotalDownloads();
-    const interval = setInterval(fetchTotalDownloads, 3600000);
+    const interval = setInterval(fetchTotal, 3600000); // optionally refresh every hour
     return () => clearInterval(interval);
   }, []);
 
@@ -321,8 +320,7 @@ export function HomeHero() {
               Get Started in Minutes
             </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Install iconza and start building beautiful interfaces
-              right away.
+              Install iconza and start building beautiful interfaces right away.
             </p>
           </motion.div>
 
