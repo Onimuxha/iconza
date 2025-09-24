@@ -11,12 +11,12 @@ import { HeroBackground } from "../components/ui/shap-loading-hero.tsx";
 import {
   IconArrowRight,
   IconBook,
-  IconBolt,
-  IconPalette,
+  IconRocket,
+  IconColorFilter,
   IconTextResize,
-  IconTargetArrow,
+  IconBackground,
   IconLayersIntersect,
-  IconCarambola,
+  IconSourceCode,
 } from "@tabler/icons-react";
 import { categories } from "../components/site/IconExplorer/iconUtils.tsx";
 import {
@@ -59,7 +59,7 @@ const words = ["Beautiful.", "Better.", "Modern.", "Scalable.", "Accessible."];
 
 const features = [
   {
-    icon: IconBolt,
+    icon: IconRocket,
     title: "Lightning Fast",
     description:
       "Optimized SVG icons that load instantly. Tree-shakable imports mean you only bundle what you use.",
@@ -71,13 +71,13 @@ const features = [
       "Easily adjust size, color, and stroke width. Perfect for any design system or theme.",
   },
   {
-    icon: IconPalette,
+    icon: IconColorFilter,
     title: "Brand Perfect",
     description:
       "Authentic brand colors and consistent visual identity. Dark mode support built right in.",
   },
   {
-    icon: IconTargetArrow,
+    icon: IconBackground,
     title: "Consistent Icons",
     description:
       "Uniform design language across all icons. Perfectly balanced for any UI or UX project.",
@@ -89,7 +89,7 @@ const features = [
       "Simple installation and usage. Works seamlessly with React, Vue, Angular, and plain HTML.",
   },
   {
-    icon: IconCarambola,
+    icon: IconSourceCode,
     title: "Open Source",
     description:
       "Community-driven and open for contributions. Regular updates with new icons and features.",
@@ -100,13 +100,6 @@ interface Stat {
   value: number;
   suffix?: string;
   label: string;
-}
-
-interface NpmStats {
-  downloads: number;
-  start: string;
-  end: string;
-  package: string;
 }
 
 const steps = [
@@ -139,12 +132,12 @@ export function HomeHero() {
         setTotalDownloads(data.downloads ?? 0);
       } catch (err) {
         console.error("Error fetching total downloads:", err);
-        setTotalDownloads(0); // or leave as null to indicate loading or failure
+        setTotalDownloads(0);
       }
     }
     fetchTotal();
 
-    const interval = setInterval(fetchTotal, 3600000); // optionally refresh every hour
+    const interval = setInterval(fetchTotal, 3600000);
     return () => clearInterval(interval);
   }, []);
 
@@ -157,7 +150,6 @@ export function HomeHero() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/40">
-      <SEO />
       <SEO />
       <SiteHeader />
       <main>

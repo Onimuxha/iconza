@@ -1,56 +1,98 @@
-import { IconBrandGithub, IconBrandX, IconMail } from "@tabler/icons-react";
+import React, { useState, useEffect } from "react";
+import {
+  IconBrandGithub,
+  IconBrandX,
+  IconMail,
+  IconStar,
+  IconDownload,
+  IconLicense,
+  IconSourceCode,
+  IconSmartHome,
+  IconIcons,
+  IconFileDescription,
+  IconMessage,
+} from "@tabler/icons-react";
 import { Link } from "react-router-dom";
-
-const navigation = {
-  main: [
-    { name: "Home", href: "/" },
-    { name: "Icons", href: "/icons" },
-    { name: "Documentation", href: "/docs" },
-    { name: "Contact", href: "/contact" },
-  ],
-  social: [
-    {
-      name: "GitHub",
-      href: "https://github.com/tabler/tabler-icons",
-      icon: IconBrandGithub,
-    },
-    {
-      name: "Twitter",
-      href: "https://twitter.com/tabler_icons",
-      icon: IconBrandX,
-    },
-    {
-      name: "Email",
-      href: "mailto:hello@iconflow.com",
-      icon: IconMail,
-    },
-  ],
-};
+import { icons } from "iconza";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
+  const [totalDownloads, setTotalDownloads] = useState<number>(0);
+
+  useEffect(() => {
+    async function fetchTotal() {
+      try {
+        const startDate = "2024-01-01";
+        const endDate = new Date().toISOString().split("T")[0];
+        const response = await fetch(
+          `https://api.npmjs.org/downloads/point/${startDate}:${endDate}/iconza`
+        );
+        const data: { downloads?: number } = await response.json();
+        setTotalDownloads(data.downloads ?? 0);
+      } catch (err) {
+        console.error("Error fetching total downloads:", err);
+        setTotalDownloads(0);
+      }
+    }
+    fetchTotal();
+
+    const interval = setInterval(fetchTotal, 3600000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const navigation = {
+    main: [
+      { name: "Home", href: "/", icon: IconSmartHome },
+      { name: "Icons", href: "/icons", icon: IconIcons },
+      { name: "Documentation", href: "/docs", icon: IconFileDescription },
+      { name: "Contact", href: "/contact", icon: IconMessage },
+    ],
+    social: [
+      {
+        name: "GitHub",
+        href: "https://github.com/tabler/tabler-icons",
+        icon: IconBrandGithub,
+      },
+      {
+        name: "Twitter",
+        href: "https://twitter.com/tabler_icons",
+        icon: IconBrandX,
+      },
+      {
+        name: "Email",
+        href: "mailto:hello@iconflow.com",
+        icon: IconMail,
+      },
+    ],
+    stats: [
+      { value: Object.keys(icons).length, label: "Icons", icon: IconStar },
+      { value: totalDownloads, label: "Downloads", icon: IconDownload }, // Use state here
+      { label: "MIT Licensed", icon: IconLicense },
+      { label: "Open Source", icon: IconSourceCode },
+    ],
+  };
 
   return (
-    <footer className="bg-muted/50 border-t">
-      <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-        <div className="grid gap-12 xl:grid-cols-3">
+    <footer className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 shadow-inner">
+      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <div className="grid gap-12 xl:grid-cols-3 place-items-center justify-between justify-items-stretch">
           {/* Left Column */}
-          <div className="space-y-6">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <img
-                  src="/iconza.avif"
-                  alt="iconza"
-                />
+          <div className="space-y-6 max-w-sm flex-shrink-0">
+            <Link to="/" className="flex items-center space-x-3 group">
+              <div className="flex h-10 w-10 items-center">
+                <img src="/iconza.avif" alt="iconza" />
               </div>
-              <span className="text-xl font-bold">IconZa</span>
+              <span className="text-2xl font-semibold tracking-wide text-gray-900 dark:text-white">
+                IconZa
+              </span>
             </Link>
 
-            <p className="text-sm text-muted-foreground max-w-sm">
-              A modern icon library built for developers. Beautiful, consistent, and easy to use icons for your next project.
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+              A modern icon library built for developers. Beautiful, consistent,
+              and easy to use icons for your next project.
             </p>
 
-            <div className="flex space-x-4">
+            <div className="flex space-x-5">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
@@ -58,83 +100,61 @@ export function SiteFooter() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.name}
-                  className="flex items-center justify-center h-9 w-9 rounded-full hover:bg-muted transition-colors"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition duration-300 shadow-md hover:shadow-lg"
                 >
-                  <item.icon className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+                  <item.icon className="h-6 w-6" />
                 </a>
               ))}
             </div>
           </div>
 
           {/* Right Columns */}
-          <div className="xl:col-span-2 grid gap-8 md:grid-cols-3">
-            {/* Product */}
+          <div className="xl:col-span-2 grid gap-12 md:grid-cols-3">
             <div>
-              <h3 className="text-sm font-semibold leading-6 text-foreground">Product</h3>
-              <ul className="mt-6 space-y-4">
-                {navigation.main.map((item) => (
-                  <li key={item.name}>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6 tracking-wide">
+                Product
+              </h3>
+              <ul className="space-y-5">
+                {navigation.main.map(({ name, href, icon: Icon }) => (
+                  <li key={name}>
                     <Link
-                      to={item.href}
-                      className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors"
+                      to={href}
+                      className="flex items-center space-x-3 text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-lime-400 transition-colors text-sm font-medium"
                     >
-                      {item.name}
+                      <Icon className="h-6 w-6 flex-shrink-0" />
+                      <span>{name}</span>
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Legal */}
             <div>
-              <h3 className="text-sm font-semibold leading-6 text-foreground">Legal</h3>
-              <ul className="mt-6 space-y-4">
-                <li>
-                  <a href="#" className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors">
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/tabler/tabler-icons/blob/master/LICENSE"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors"
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-6 tracking-wide">
+                Stats
+              </h3>
+              <ul className="space-y-5 text-gray-600 dark:text-gray-400 text-sm">
+                {navigation.stats.map(({ value, label, icon: Icon }) => (
+                  <li
+                    key={label}
+                    className="flex items-center space-x-3 font-medium"
                   >
-                    MIT License
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Stats */}
-            <div>
-              <h3 className="text-sm font-semibold leading-6 text-foreground">Stats</h3>
-              <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
-                <li>5,000+ Icons</li>
-                <li>50K+ Downloads</li>
-                <li>MIT Licensed</li>
-                <li>Open Source</li>
+                    <Icon className="h-6 w-6 text-primary" />
+                    <span>{value ? `${value.toLocaleString()} ` : ""}{label}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Footer Bottom Bar */}
-        <div className="mt-16 border-t pt-8 sm:mt-20 lg:mt-24">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-xs text-muted-foreground">
-              &copy; {year} IconFlow. Built with Tabler Icons. All rights reserved.
-            </p>
-            <p className="mt-4 text-xs text-muted-foreground sm:mt-0">
-              Made with ❤️ for the developer community
-            </p>
-          </div>
+        <div className="mt-16 border-t border-gray-200 dark:border-gray-700 pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0">
+          <p className="text-xs text-gray-500 dark:text-gray-400">
+            &copy; {year} IconZa. All rights reserved.
+          </p>
+          <p className="text-xs text-gray-500 dark:text-gray-400">
+            Made with <span aria-label="love" role="img">❤️</span> for the developer community
+          </p>
         </div>
       </div>
     </footer>

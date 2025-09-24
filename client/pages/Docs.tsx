@@ -9,7 +9,8 @@ import { IconArrowRight } from "@tabler/icons-react";
 
 export default function Docs() {
   return (
-    <div className="min-h-screen bg-white dark:bg-black">
+    <div className="min-h-screen bg-transparent">
+
       <SiteHeader />
 
       <main className="mx-auto max-w-4xl px-6 pt-32 pb-20">

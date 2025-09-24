@@ -62,7 +62,6 @@ export function IconExplorer() {
       return inCat && (q.length === 0 || text.includes(q));
     });
   }, [allData, query, tab]);
-
   // Add keyboard shortcut handler
   useEffect(() => {
     function handleKeyPress(e: KeyboardEvent) {
