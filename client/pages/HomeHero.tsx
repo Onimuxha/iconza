@@ -193,8 +193,8 @@ export function HomeHero() {
                   className="flex flex-col sm:flex-row gap-4"
                 >
                   <Link to="/icons">
-                    <button className="group relative inline-flex h-12 overflow-hidden rounded-full p-0.5">
-                      <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#94c748_0%,#393BB2_50%,#94c748_100%)]" />
+                    <button className="group relative inline-flex h-12 overflow-hidden rounded-full p-px">
+                      <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#84cc16_0%,#000000_50%,#84cc16_100%)]" />
                       <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-100 dark:bg-slate-950 px-3 py-1 text-sm font-medium text-black dark:text-white backdrop-blur-3xl">
                         <IconArrowRight
                           size={20}
@@ -210,7 +210,7 @@ export function HomeHero() {
                   <Link to="/docs">
                     <button className="group relative inline-flex h-12 overflow-hidden rounded-full px-4 border border-zinc-500 bg-white/5 hover:bg-white/10 transition-colors">
                       <span className="absolute inset-0 overflow-hidden rounded-full">
-                        <span className="absolute inset-0 rounded-full bg-[radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                        <span className="absolute inset-0 rounded-full bg-[radial-gradient(75%_100%_at_50%_0%,rgba(132,204,22,0.4)_0%,rgba(132,204,22,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                       </span>
                       <div className="relative z-10 text-black dark:text-white flex items-center gap-2 transition-all duration-300">
                         <IconBook
@@ -360,8 +360,8 @@ export function HomeHero() {
                 className="pt-6"
               >
                 <Link to="/icons">
-                  <button className="group relative inline-flex h-12 overflow-hidden rounded-full p-0.5">
-                    <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#94c748_0%,#393BB2_50%,#94c748_100%)]" />
+                  <button className="group relative inline-flex h-12 overflow-hidden rounded-full p-px">
+                    <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#84cc16_0%,#000000_50%,#84cc16_100%)]" />
                     <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-100 dark:bg-slate-950 px-3 py-1 text-sm font-medium text-black dark:text-white backdrop-blur-3xl">
                       <IconArrowRight
                         size={20}

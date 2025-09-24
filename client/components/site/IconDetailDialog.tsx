@@ -74,7 +74,7 @@ export function IconDetailDialog(props: IconDetailProps) {
         >
           {/* Header */}
           <DialogHeader className="pb-4 border-b">
-            <DialogTitle className="flex items-center justify-between">
+            <DialogTitle className="flex items-center justify-between font-body">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
                   <Component size={30} />
@@ -96,7 +96,6 @@ export function IconDetailDialog(props: IconDetailProps) {
 
           {/* Content */}
           <div className="grid lg:grid-cols-5 gap-6 py-6">
-            {/* Preview */}
             <div className="lg:col-span-2 space-y-4">
               <div>
                 <div className="flex justify-between items-center mb-2">

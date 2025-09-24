@@ -137,10 +137,10 @@ const ContactPage = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.1 }}
-                    className="p-6 bg-neutral-100 dark:bg-neutral-100/10 rounded-xl border border-lime-200/50 dark:border-lime-500/30 hover:border-neutral-300/50 dark:hover:border-neutral-700/50 transition-colors"
+                    className="p-6 bg-neutral-100 dark:bg-neutral-100/10 rounded-xl border border-gray-200/50 dark:border-gray-500/30 hover:border-neutral-300/50 dark:hover:border-neutral-700/50 transition-colors"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-neutral-100 dark:bg-neutral-800 rounded-lg flex items-center justify-center text-neutral-700 dark:text-neutral-300">
+                      <div className="w-12 h-12 bg-lime-300 dark:bg-lime-300 rounded-lg flex items-center justify-center text-neutral-700 dark:text-neutral-700">
                         <item.icon size={24} />
                       </div>
                       <div>

@@ -41,7 +41,7 @@ export default function Docs() {
                 <TabsTrigger
                   key={tab}
                   value={tab}
-                  className="rounded-none border-b-2 border-transparent capitalize font-medium px-6 py-3 data-[state=active]:border-black dark:data-[state=active]:border-white data-[state=active]:bg-transparent"
+                  className="rounded-none border-b-2 border-transparent capitalize font-medium px-6 py-3 data-[state=active]:border-black dark:data-[state=active]:border-lime-500/80 data-[state=active]:bg-transparent"
                 >
                   {tab}
                 </TabsTrigger>
@@ -140,9 +140,9 @@ export default function App() {
         >
           <Link
             to="/">
-            <button className="group relative inline-flex h-12 overflow-hidden rounded-full p-0.5">
-              <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#94c748_0%,#393BB2_50%,#94c748_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+            <button className="group relative inline-flex h-12 overflow-hidden rounded-full p-px">
+              <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#94c748_0%,#000000_50%,#94c748_100%)]" />
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 text-sm font-medium text-white backdrop-blur-3xl">
                 <span className="transform transition-transform duration-300 group-hover:translate-x-6">
                   Back to Home Page
                 </span>
