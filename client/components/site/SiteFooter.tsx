@@ -1,45 +1,140 @@
-import { IconBrandGithub } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandX, IconMail } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
+
+const navigation = {
+  main: [
+    { name: "Home", href: "/" },
+    { name: "Icons", href: "/icons" },
+    { name: "Documentation", href: "/docs" },
+    { name: "Contact", href: "/contact" },
+  ],
+  social: [
+    {
+      name: "GitHub",
+      href: "https://github.com/tabler/tabler-icons",
+      icon: IconBrandGithub,
+    },
+    {
+      name: "Twitter",
+      href: "https://twitter.com/tabler_icons",
+      icon: IconBrandX,
+    },
+    {
+      name: "Email",
+      href: "mailto:hello@iconflow.com",
+      icon: IconMail,
+    },
+  ],
+};
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-32 border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black">
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-y-4 gap-x-6 px-6 py-8 text-sm text-neutral-500 dark:text-neutral-400">
-        <div className="flex items-center gap-2 text-center sm:text-left">
-          <p>
-            © {year}{" "}
-            <Link
-              to="/"
-              className="font-medium text-neutral-800 dark:text-neutral-200 hover:text-lime-500 transition-colors"
-            >
-              iconza
+    <footer className="bg-muted/50 border-t">
+      <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+        <div className="grid gap-12 xl:grid-cols-3">
+          {/* Left Column */}
+          <div className="space-y-6">
+            <Link to="/" className="flex items-center space-x-2">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
+                <img
+                  src="/iconza.avif"
+                  alt="iconza"
+                />
+              </div>
+              <span className="text-xl font-bold">IconZa</span>
             </Link>
-            . All rights reserved.
-          </p>
+
+            <p className="text-sm text-muted-foreground max-w-sm">
+              A modern icon library built for developers. Beautiful, consistent, and easy to use icons for your next project.
+            </p>
+
+            <div className="flex space-x-4">
+              {navigation.social.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.name}
+                  className="flex items-center justify-center h-9 w-9 rounded-full hover:bg-muted transition-colors"
+                >
+                  <item.icon className="h-5 w-5 text-muted-foreground hover:text-foreground" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Columns */}
+          <div className="xl:col-span-2 grid gap-8 md:grid-cols-3">
+            {/* Product */}
+            <div>
+              <h3 className="text-sm font-semibold leading-6 text-foreground">Product</h3>
+              <ul className="mt-6 space-y-4">
+                {navigation.main.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      to={item.href}
+                      className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h3 className="text-sm font-semibold leading-6 text-foreground">Legal</h3>
+              <ul className="mt-6 space-y-4">
+                <li>
+                  <a href="#" className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors">
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/tabler/tabler-icons/blob/master/LICENSE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm leading-6 text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    MIT License
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Stats */}
+            <div>
+              <h3 className="text-sm font-semibold leading-6 text-foreground">Stats</h3>
+              <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
+                <li>5,000+ Icons</li>
+                <li>50K+ Downloads</li>
+                <li>MIT Licensed</li>
+                <li>Open Source</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        {/* Right: Credit + Socials */}
-        <div className="flex items-center gap-4">
-          <p className="flex items-center gap-1.5">
-            <span>Crafted by</span>
-            <span
-              className="font-medium text-neutral-800 dark:text-neutral-200 hover:underline transition-colors">
-              Socheat
-            </span>
-          </p>
-          <span className="text-neutral-300 dark:text-neutral-700">|</span>
-          <a
-            href="https://github.com/socheatsok78/iconza"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub Repository"
-            title="GitHub Repository"
-            className="text-neutral-700 dark:text-neutral-300 hover:text-lime-500 dark:hover:text-lime-500 transition-colors"
-          >
-            <IconBrandGithub size={20} />
-          </a>
+        {/* Footer Bottom Bar */}
+        <div className="mt-16 border-t pt-8 sm:mt-20 lg:mt-24">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-xs text-muted-foreground">
+              &copy; {year} IconFlow. Built with Tabler Icons. All rights reserved.
+            </p>
+            <p className="mt-4 text-xs text-muted-foreground sm:mt-0">
+              Made with ❤️ for the developer community
+            </p>
+          </div>
         </div>
       </div>
     </footer>

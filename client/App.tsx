@@ -8,7 +8,6 @@ import { lazy, Suspense, useEffect, useMemo, useState, StrictMode } from "react"
 import { Loading } from "@/components/ui/loading";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
-// Lazy imports
 const LazyBackground = lazy(() => import("./components/ui/LazyBackground"));
 const Toaster = lazy(() => import("@/components/ui/toaster").then(mod => ({ default: mod.Toaster })));
 const Sonner = lazy(() => import("@/components/ui/sonner").then(mod => ({ default: mod.Toaster })));
@@ -20,14 +19,13 @@ const Docs = lazy(() => import("@/pages/Docs"));
 const ContactPage = lazy(() => import("@/pages/Contact"));
 const NotFound = lazy(() => import("@/pages/NotFound"));
 
-// Query client setup
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 60 * 1000, // 1 minute
+      staleTime: 60 * 1000,
       retry: 1,
       refetchOnWindowFocus: false,
-      gcTime: 5 * 60 * 1000, // 5 minutes
+      gcTime: 5 * 60 * 1000,
     },
   },
 });
@@ -37,7 +35,7 @@ function AppLayout() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [location.pathname]);
+  }, [location.key]);
 
   const showBackground = useMemo(() => {
     return location.pathname !== "/" && location.pathname !== "/contact";
@@ -104,7 +102,6 @@ const App = () => {
   );
 };
 
-// Mount the app
 createRoot(document.getElementById("root")!).render(
   process.env.NODE_ENV === "development" ? (
     <StrictMode>
