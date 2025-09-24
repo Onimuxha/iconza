@@ -19,7 +19,7 @@ const StyledWrapper = styled.div<{ $clr: string }>`
     align-items: center;
     gap: 0.75rem;
     background-color: ${(props) => props.$clr};
-    color: #fff;
+    color: #000;
     border-radius: 10rem;
     padding: 0.75rem 1.5rem;
     padding-left: 20px;
@@ -44,6 +44,7 @@ const StyledWrapper = styled.div<{ $clr: string }>`
 
   .button:hover {
     background-color: #000;
+    color: #fff;
   }
 
   .button:hover .button__icon-wrapper {
