@@ -208,6 +208,57 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
+    name: "Scala",
+    category: "Programming",
+    keywords: ["scala", "language", "functional programming", "backend"],
+    svgContent: `
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M153.846 492.308V553.846C153.846 564.219 377.648 581.593 523.46 615.385C593.901 599.057 646.154 578.906 646.154 553.846V492.308C646.154 467.262 593.901 447.098 523.46 430.769C377.648 464.568 153.846 481.942 153.846 492.308Z"
+        fill="url(#scala1)" />
+    <path
+        d="M153.846 246.154V307.692C153.846 318.065 377.648 335.439 523.46 369.23C593.901 352.902 646.154 332.752 646.154 307.692V246.154C646.154 221.107 593.901 200.943 523.46 184.615C377.648 218.413 153.846 235.788 153.846 246.154Z"
+        fill="url(#scala2)" />
+    <path
+        d="M153.846 369.23V553.846C153.846 538.461 646.154 507.692 646.154 430.769V246.153C646.154 323.076 153.846 353.846 153.846 369.23Z"
+        fill="url(#scala3)" />
+    <path
+        d="M153.846 123.077V307.692C153.846 292.308 646.154 261.539 646.154 184.615V8.39233e-05C646.154 76.9232 153.846 107.692 153.846 123.077Z"
+        fill="url(#scala4)" />
+    <path
+        d="M153.846 615.385V800C153.846 784.615 646.154 753.846 646.154 676.923V492.308C646.154 569.231 153.846 600 153.846 615.385Z"
+        fill="url(#scala5)" />
+    <defs>
+        <linearGradient id="scala1" x1="153.846" y1="-8615.38" x2="49384.6"
+            y2="-8615.38" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4F4F4F" />
+            <stop offset="1" />
+        </linearGradient>
+        <linearGradient id="scala2" x1="153.846" y1="-8861.54" x2="49384.6"
+            y2="-8861.54" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4F4F4F" />
+            <stop offset="1" />
+        </linearGradient>
+        <linearGradient id="scala3" x1="153.846" y1="-14830.8" x2="49384.6"
+            y2="-14830.8" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#C40000" />
+            <stop offset="1" stop-color="#FF0000" />
+        </linearGradient>
+        <linearGradient id="scala4" x1="153.846" y1="-15076.9" x2="49384.6"
+            y2="-15076.9" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#C40000" />
+            <stop offset="1" stop-color="#FF0000" />
+        </linearGradient>
+        <linearGradient id="scala5" x1="153.846" y1="-14584.6" x2="49384.6"
+            y2="-14584.6" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#C40000" />
+            <stop offset="1" stop-color="#FF0000" />
+        </linearGradient>
+    </defs>
+</svg>
+  `.trim(),
+  },
+  {
     name: "Dlang",
     category: "Programming",
     keywords: ["dlang", "d programming language", "language", "backend"],
