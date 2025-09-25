@@ -190,7 +190,7 @@ import { Icon } from 'iconza'
           </div>
 
           {/* Results */}
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+          <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 truncate max-w-lg">
             {filtered.length} icon{filtered.length !== 1 ? "s" : ""}
             {query && ` matching "${query}"`}
             {tab !== "All" && ` in ${tab}`}

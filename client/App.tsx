@@ -35,7 +35,7 @@ function AppLayout() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [location.key]);
+  }, [location.pathname]);
 
   const showBackground = useMemo(() => {
     return location.pathname !== "/" && location.pathname !== "/contact";

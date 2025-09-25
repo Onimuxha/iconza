@@ -1,11 +1,6 @@
-import {
-  IconCup,
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconBrandTelegram,
-} from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import { Icon } from "iconza";
 
 export const FloatingSocialButtons = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,25 +8,25 @@ export const FloatingSocialButtons = () => {
   const links = [
     {
       href: "https://github.com/yourusername",
-      icon: <IconBrandGithub size={20} stroke={1.5} />,
+      iconName: "GitHubLight" as const,
       label: "GitHub",
       color: "hover:text-gray-100",
     },
     {
       href: "https://linkedin.com/in/yourusername",
-      icon: <IconBrandLinkedin size={20} stroke={1.5} />,
+      iconName: "LinkedIn" as const,
       label: "LinkedIn",
       color: "hover:text-blue-600",
     },
     {
       href: "https://t.me/yourusername",
-      icon: <IconBrandTelegram size={20} stroke={1.5} />,
+      iconName: "Telegram" as const,
       label: "Telegram",
       color: "hover:text-[#0088cc]",
     },
     {
       href: "https://buymeacoffee.com/onimuxha",
-      icon: <IconCup size={20} stroke={1.5} />,
+      iconName: "BuyMeACoffee" as const,
       label: "Buy Me a Coffee",
       color: "hover:text-amber-500",
     },
@@ -59,7 +54,7 @@ export const FloatingSocialButtons = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={cn(
-            "w-14 h-14 rounded-full bg-lime-500 text-black",
+            "w-12 h-12 rounded-full bg-lime-500 text-black",
             "flex items-center justify-center shadow-2xl",
             "border-2 border-lime-400 transition-all duration-300",
             "hover:scale-110 active:scale-95 relative z-50",
@@ -113,7 +108,7 @@ export const FloatingSocialButtons = () => {
               className={cn(
                 "group relative flex items-center justify-center",
                 "w-12 h-12 rounded-full transition-all duration-300",
-                "bg-black border border-lime-500/30 text-lime-500",
+                "bg-neutral-700 border border-lime-500/30 text-lime-500",
                 "hover:scale-110 hover:text-white shadow-lg",
                 link.color,
                 "transform transition-all duration-300",
@@ -128,14 +123,20 @@ export const FloatingSocialButtons = () => {
               }}
               onClick={() => setIsOpen(false)}
             >
-              <div className="relative z-10">{link.icon}</div>
+              <div className="relative z-10 flex items-center justify-center w-full h-full">
+                <Icon
+                  name={link.iconName}
+                  size={20}
+                  className="transition-colors duration-300"
+                />
+              </div>
             </a>
           ))}
         </div>
 
         {isOpen && (
           <div
-            className="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 lg:hidden"
+            className="fixed inset-0 bg-black/10 backdrop-blur-sm z-30 lg:hidden"
             onClick={() => setIsOpen(false)}
           />
         )}
@@ -153,7 +154,7 @@ const DesktopButton = ({ link }) => (
     className={cn(
       "group relative flex items-center justify-center",
       "w-12 h-12 rounded-xl transition-all duration-300",
-      "bg-neutral-900 border border-neutral-800",
+      "bg-neutral-700 border border-neutral-800",
       "hover:scale-110 hover:-translate-y-1",
       "text-lime-500 hover:text-white",
       link.color,
@@ -161,15 +162,19 @@ const DesktopButton = ({ link }) => (
       "before:bg-lime-500 before:opacity-0 before:transition-opacity",
       "hover:before:opacity-10",
       "after:absolute after:inset-0 after:rounded-xl",
-      "after:border-2 after:border-lime-500 after:opacity-0",
+      "after:border after:border-lime-500 after:opacity-0",
       "after:transition-all after:duration-300",
       "hover:after:opacity-100 hover:after:scale-90",
     )}
     aria-label={link.label}
     title={link.label}
   >
-    <div className="relative z-10 transition-transform duration-300 group-hover:scale-110">
-      {link.icon}
+    <div className="relative z-10 transition-transform duration-300 group-hover:scale-110 flex items-center justify-center w-full h-full">
+      <Icon
+        name={link.iconName}
+        size={25}
+        className="transition-colors duration-300"
+      />
     </div>
 
     <div

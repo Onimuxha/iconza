@@ -335,9 +335,9 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "KlingWordmarkDark",
+    name: "KlingLogoDark",
     category: "AI",
-    keywords: ["ai", "kling", "wordmark"],
+    keywords: ["ai", "kling", "logo"],
     svgContent: `
 <svg viewBox="0 0 3541 952" xmlns="http://www.w3.org/2000/svg" width="3541" height="952">
     <g>
@@ -349,9 +349,9 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "KlingWordmarkLight",
+    name: "KlingLogoLight",
     category: "AI",
-    keywords: ["ai", "kling", "wordmark"],
+    keywords: ["ai", "kling", "logo"],
     svgContent: `
 <svg viewBox="0 0 3541 952" xmlns="http://www.w3.org/2000/svg" width="3541" height="952">
     <g>

@@ -28,21 +28,16 @@ export function SiteHeader() {
           initial={{ y: -30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-xl border border-gray-800/50 rounded-2xl shadow-2xl"
+          className="bg-gradient-to-br from-gray-900/10 to-black/10 backdrop-blur-xl border border-gray-800/50 rounded-2xl shadow-2xl"
         >
           <div className="flex items-center justify-between h-16 px-6">
             {/* Logo */}
-            <Link 
-              to="/" 
-              className="flex items-center gap-3 group"
-            >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-lime-500/10 border border-lime-500/20 group-hover:border-lime-500/40 transition-all duration-300">
-                <img
-                  src="/iconza.avif"
-                  alt="iconza"
-                  className="h-6 w-6 group-hover:scale-110 transition-transform duration-300"
-                />
-              </div>
+            <Link to="/" className="flex items-center gap-3 group">
+              <img
+                src="/iconza.avif"
+                alt="iconza"
+                className="h-9 w-9 group-hover:scale-110 transition-transform duration-300"
+              />
               <span className="text-xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 IconZa
               </span>
@@ -62,9 +57,9 @@ export function SiteHeader() {
                         : "text-gray-400 hover:text-white hover:bg-white/5"
                     }`}
                   >
-                    <Icon className="h-4 w-4 transition-transform group-hover:scale-110" />
+                    <Icon className="h-5 w-5 transition-transform group-hover:scale-110" />
                     <span className="font-medium text-sm">{label}</span>
-                    
+
                     {/* Active indicator */}
                     {isActive && (
                       <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-lime-400 rounded-full"></div>
@@ -81,7 +76,7 @@ export function SiteHeader() {
                 to="/contact"
                 className="hidden md:flex items-center gap-2 px-5 py-2 rounded-full bg-lime-500 text-black font-semibold transition-all duration-300 hover:bg-lime-400 hover:scale-105 group"
               >
-                <IconMessage className="h-4 w-4 transition-transform group-hover:-translate-x-0.5" />
+                <IconMessage className="h-5 w-5 transition-transform group-hover:-translate-x-0.5" />
                 <span className="text-sm transition-transform group-hover:translate-x-0.5">
                   Contact
                 </span>
@@ -98,7 +93,11 @@ export function SiteHeader() {
                 onClick={() => setMobileOpen(!mobileOpen)}
                 aria-label={mobileOpen ? "Close menu" : "Open menu"}
               >
-                {mobileOpen ? <IconX className="h-5 w-5" /> : <IconMenu4 className="h-5 w-5" />}
+                {mobileOpen ? (
+                  <IconX className="h-5 w-5" />
+                ) : (
+                  <IconMenu4 className="h-5 w-5" />
+                )}
               </button>
             </div>
           </div>
@@ -132,7 +131,7 @@ export function SiteHeader() {
                       </Link>
                     );
                   })}
-                  
+
                   {/* Mobile Contact Button */}
                   <Link
                     to="/contact"

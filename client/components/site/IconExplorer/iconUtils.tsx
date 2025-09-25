@@ -1,4 +1,4 @@
-import { IconLayoutGrid, IconCode, IconApps, IconVectorBezier, IconRobot, IconColorFilter, IconVector, IconGrid4x4} from "@tabler/icons-react";
+import { IconLayoutGrid, IconCode, IconApps, IconVectorBezier, IconRobot, IconColorFilter, IconVector, IconGridDots} from "@tabler/icons-react";
 import type { ReactNode } from "react";
 
 export const categories = ["All", "Programming", "Apps", "DesignTools", "AI", "Tools", "Frameworks", "Other"] as const;
@@ -11,5 +11,5 @@ export const iconsMap: Record<string, ReactNode> = {
   AI: <IconRobot className="w-4 h-4 mr-2" />,
   Tools: <IconColorFilter className="w-4 h-4 mr-2" />,
   Frameworks: <IconVector className="w-4 h-4 mr-2" />,
-  Other: <IconGrid4x4 className="w-4 h-4 mr-2" />,
+  Other: <IconGridDots className="w-4 h-4 mr-2" />,
 };
