@@ -88,7 +88,7 @@ export function IconItem({ name, Comp, size, viewMode, category, keywords }) {
         </div>
         <div className="text-center space-y-1">
           <span className="text-sm font-light block">{name}</span>
-          <div className="text-xs inline-block bg-lime-600/10 dark:bg-lime-500/10 text-lime-600 dark:text-lime-400  px-2 py-1 rounded">
+          <div className="text-xs inline-block bg-slate-500/20 dark:bg-slate-500/20 text-black dark:text-white  px-2 py-1 rounded">
             {category}
           </div>
         </div>

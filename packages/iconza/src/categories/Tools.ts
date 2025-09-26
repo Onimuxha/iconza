@@ -36,6 +36,31 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
+    name: "NPM",
+    category: "Tools",
+    keywords: ["NPM", "npm", "Tools", "javascript", "typescript"],
+    svgContent: `
+<svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <rect width="24" height="24" fill="#D40001" />
+  <path fill="#FFF"
+    d="M16.7179487,7.92840493 L12.2051282,7.92840493 L12.2051282,20.2494172 L4,20.2494172 L4,3 L12.2051282,3 L20,3 L20,7.92840493 L20,20.2494172 L16.7179487,20.2494172 L16.7179487,7.92840493 Z" />
+</svg>
+`.trim(),
+  },
+  {
+    name: "NPMLogo",
+    category: "Tools",
+    keywords: ["NPM", "npm", "Tools", "javascript", "typescript"],
+    svgContent: `
+<svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 10V20H9V22H16V20H32V10H0Z" fill="#CB3837" />
+    <path
+        d="M5.46205 12H2V18H5.46205V13.6111H7.22344V18H8.98482V12H5.46205ZM10.7462 12V20H14.269V18H17.731V12H10.7462ZM15.9696 16.3889H14.269V13.6111H15.9696V16.3889ZM22.9545 12H19.4924V18H22.9545V13.6111H24.7158V18H26.4772V13.6111H28.2386V18H30V12H22.9545Z"
+        fill="white" />
+</svg>
+`.trim(),
+  },
+  {
     name: "ElectronJs",
     category: "Tools",
     keywords: ["Tools", "nodejs", "javascript", "typescript"],
@@ -90,6 +115,23 @@ export const iconsData: IconData[] = [
     <path
         d="M721.854 538.951C634.702 603.322 508.079 637.494 399.205 637.494C246.623 637.494 109.139 581.07 5.29805 487.295C-2.91387 479.878 4.50335 469.812 14.3047 475.64C126.623 540.805 265.166 580.275 408.477 580.275C505.166 580.275 611.391 560.143 709.139 518.819C723.709 512.196 736.159 528.355 721.854 538.951ZM758.146 497.626C747.02 483.322 684.503 490.739 656.159 494.183C647.682 495.242 646.358 487.825 654.04 482.262C703.841 447.295 785.695 457.362 795.232 469.017C804.768 480.938 792.583 562.792 745.96 601.997C738.808 608.09 731.921 604.911 735.099 596.964C745.695 570.739 769.272 511.666 758.146 497.626Z"
         fill="#FF9900" />
+</svg>
+`.trim(),
+  },
+  {
+    name: "PNPM",
+    category: "Tools",
+    keywords: ["pnpm", "package manager", "Tools", "development"],
+    svgContent: `
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30,10.75H21.251V2H30Z" style="fill:#f9ad00" />
+    <path d="M20.374,10.75h-8.75V2h8.75Z" style="fill:#f9ad00" />
+    <path d="M10.749,10.75H2V2h8.749Z" style="fill:#f9ad00" />
+    <path d="M30,20.375H21.251v-8.75H30Z" style="fill:#f9ad00" />
+    <path d="M20.374,20.375h-8.75v-8.75h8.75Z" style="fill:#4e4e4e" />
+    <path d="M20.374,30h-8.75V21.25h8.75Z" style="fill:#4e4e4e" />
+    <path d="M30,30H21.251V21.25H30Z" style="fill:#4e4e4e" />
+    <path d="M10.749,30H2V21.25h8.749Z" style="fill:#4e4e4e" />
 </svg>
 `.trim(),
   },

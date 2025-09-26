@@ -7,28 +7,24 @@ export const FloatingSocialButtons = () => {
 
   const links = [
     {
-      href: "https://github.com/yourusername",
+      href: "https://github.com/Onimuxha",
       iconName: "GitHubLight" as const,
       label: "GitHub",
-      color: "hover:text-gray-100",
     },
     {
-      href: "https://linkedin.com/in/yourusername",
-      iconName: "LinkedIn" as const,
-      label: "LinkedIn",
-      color: "hover:text-blue-600",
+      href: "mailto:cheathekm@gmail.com",
+      iconName: "Gmail" as const,
+      label: "Gmail",
     },
     {
-      href: "https://t.me/yourusername",
-      iconName: "Telegram" as const,
-      label: "Telegram",
-      color: "hover:text-[#0088cc]",
+      href: "https://reddit.com/user/5ukuna_ryomen/",
+      iconName: "Reddit" as const,
+      label: "Reddit",
     },
     {
-      href: "https://buymeacoffee.com/onimuxha",
-      iconName: "BuyMeACoffee" as const,
-      label: "Buy Me a Coffee",
-      color: "hover:text-amber-500",
+      href: "https://x.com/onimuxha",
+      iconName: "XLight" as const,
+      label: "X",
     },
   ];
 
@@ -108,10 +104,8 @@ export const FloatingSocialButtons = () => {
               className={cn(
                 "group relative flex items-center justify-center",
                 "w-12 h-12 rounded-full transition-all duration-300",
-                "bg-neutral-700 border border-lime-500/30 text-lime-500",
+                "bg-neutral-800 border border-lime-500/30 text-lime-500",
                 "hover:scale-110 hover:text-white shadow-lg",
-                link.color,
-                "transform transition-all duration-300",
                 isOpen
                   ? `translate-y-0 opacity-100`
                   : "translate-y-4 opacity-0",
@@ -154,7 +148,7 @@ const DesktopButton = ({ link }) => (
     className={cn(
       "group relative flex items-center justify-center",
       "w-12 h-12 rounded-xl transition-all duration-300",
-      "bg-neutral-700 border border-neutral-800",
+      "bg-neutral-800 border border-neutral-800",
       "hover:scale-110 hover:-translate-y-1",
       "text-lime-500 hover:text-white",
       link.color,

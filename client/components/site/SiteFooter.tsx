@@ -58,27 +58,27 @@ export function SiteFooter() {
     social: [
       {
         name: "GitHub",
-        href: "https://github.com",
+        href: "https://github.com/Onimuxha",
         icon: IconBrandGithub,
-        color: "hover:text-gray-400",
+        color: "hover:text-lime-400",
       },
       {
-        name: "Twitter",
-        href: "https://twitter.com",
+        name: "X",
+        href: "https://x.com/onimuxha",
         icon: IconBrandX,
-        color: "hover:text-gray-400",
+        color: "hover:text-lime-400",
       },
       {
         name: "Email",
-        href: "mailto:hello@example.com",
+        href: "mailto:cheathekm@gmail.com",
         icon: IconMail,
         color: "hover:text-lime-400",
       },
       {
         name: "NPM",
-        href: "https://npmjs.com/package/iconza",
+        href: "https://www.npmjs.com/~onimuxha",
         icon: IconBrandNpm,
-        color: "hover:text-red-400",
+        color: "hover:text-lime-400",
       },
     ],
   };
