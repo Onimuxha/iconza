@@ -12,9 +12,9 @@ export const FloatingSocialButtons = () => {
       label: "GitHub",
     },
     {
-      href: "mailto:cheathekm@gmail.com",
-      iconName: "Gmail" as const,
-      label: "Gmail",
+      href: "https://discord.gg/onimuxha_01",
+      iconName: "Discord" as const,
+      label: "Discord",
     },
     {
       href: "https://reddit.com/user/5ukuna_ryomen/",
