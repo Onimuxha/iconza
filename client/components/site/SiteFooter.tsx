@@ -121,7 +121,10 @@ export function SiteFooter() {
           {/* Navigation Section */}
           <div>
             <span className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
-              <div className="w-2 h-2 bg-lime-500 rounded-full"></div>
+              <span className="relative flex size-3">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-400 opacity-75"></span>
+                <span className="relative inline-flex size-3 rounded-full bg-lime-500"></span>
+              </span>
               Navigation
             </span>
             <ul className="space-y-4">
@@ -144,7 +147,10 @@ export function SiteFooter() {
           {/* Stats Section */}
           <div>
             <span className="text-lg font-semibold text-white mb-6 flex items-center gap-2">
-              <div className="w-2 h-2 bg-lime-500 rounded-full"></div>
+              <span className="relative flex size-3">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-400 opacity-75"></span>
+                <span className="relative inline-flex size-3 rounded-full bg-lime-500"></span>
+              </span>
               Statistics
             </span>
             <div className="grid gap-4">
