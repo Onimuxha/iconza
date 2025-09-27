@@ -18,7 +18,7 @@ function ElegantShape({
   width = 400,
   height = 100,
   rotate = 0,
-  gradient = "from-white/[0.08] dark:from-white/[0.04]",
+  gradient = "from-white/[0.04]",
 }: ElegantShapeProps) {
   return (
     <motion.div
@@ -56,11 +56,11 @@ function ElegantShape({
             "bg-gradient-to-r to-transparent",
             gradient,
             "backdrop-blur-[2px]",
-            "border border-black/[0.06] dark:border-white/[0.1]",
-            "shadow-[0_8px_32px_0_rgba(0,0,0,0.06)] dark:shadow-[0_8px_32px_0_rgba(255,255,255,0.05)]",
+            "border border-white/[0.1]",
+            "shadow-[0_8px_32px_0_rgba(255,255,255,0.05)]",
             "after:absolute after:inset-0 after:rounded-full",
             "after:bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.05),transparent_70%)]",
-            "dark:after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.05),transparent_70%)]"
+            "after:bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.05),transparent_70%)]"
           )}
         />
       </motion.div>
@@ -77,7 +77,7 @@ export function HeroBackground({ className }: HeroBackgroundProps) {
     <div
       className={cn(
         "absolute inset-0 overflow-hidden z-[-1]",
-        "bg-background dark:bg-[#030303]",
+        "bg-background bg-[#030303]",
         className
       )}
     >
@@ -88,7 +88,7 @@ export function HeroBackground({ className }: HeroBackgroundProps) {
         width={600}
         height={140}
         rotate={12}
-        gradient="from-indigo-500/[0.15] dark:from-indigo-400/[0.08]"
+        gradient="from-indigo-400/[0.08]"
         className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
       />
       <ElegantShape
@@ -96,23 +96,23 @@ export function HeroBackground({ className }: HeroBackgroundProps) {
         width={500}
         height={120}
         rotate={-15}
-        gradient="from-rose-500/[0.15] dark:from-rose-400/[0.08]"
+        gradient="from-rose-400/[0.08]"
         className="right-[-5%] md:right-[0%] top-[70%] md:top-[75%]"
       />
-        <ElegantShape
-          delay={0.4}
-          width={300}
-          height={80}
-          rotate={-8}
-          gradient="from-violet-500/[0.15] dark:from-violet-400/[0.08]"
-          className="left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
-        />
+      <ElegantShape
+        delay={0.4}
+        width={300}
+        height={80}
+        rotate={-8}
+        gradient="from-violet-400/[0.08]"
+        className="left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
+      />
       <ElegantShape
         delay={0.6}
         width={200}
         height={60}
         rotate={20}
-        gradient="from-amber-500/[0.15] dark:from-amber-400/[0.08]"
+        gradient="from-amber-400/[0.08]"
         className="right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
       />
       <ElegantShape
@@ -120,7 +120,7 @@ export function HeroBackground({ className }: HeroBackgroundProps) {
         width={150}
         height={40}
         rotate={-25}
-        gradient="from-cyan-500/[0.15] dark:from-cyan-400/[0.08]"
+        gradient="from-cyan-400/[0.08]"
         className="left-[20%] md:left-[25%] top-[5%] md:top-[10%]"
       />
     </div>

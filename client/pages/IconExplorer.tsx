@@ -85,10 +85,10 @@ export function IconExplorer() {
       <SiteHeader />
       <main className="pt-24">
         <div className="mx-auto max-w-7xl px-4 py-12">
-          <div className="mt-12 bg-gray-50 dark:bg-gray-900/50 rounded-2xl p-8 border border-gray-200 dark:border-gray-700 backdrop-blur-sm shadow-lg">
-            <h2 className="text-3xl sm:text-6xl font-medium text-center text-gray-900 dark:text-white mb-10">Quick Start</h2>
+          <div className="mt-12 bg-gray-900/50 rounded-2xl p-8 border border-gray-700 backdrop-blur-sm shadow-lg">
+            <h2 className="text-3xl sm:text-6xl font-medium text-center text-white mb-10">Quick Start</h2>
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+              <ul className="space-y-2 text-smtext-gray-400">
                 {featureList.map((feature) => (
                   <li key={feature} className="flex items-center">
                     <IconSquareRoundedCheckFilled className="inline w-5 h-5 mr-2 text-lime-500" />
@@ -115,10 +115,10 @@ import { Icon } from 'iconza'
         {/* Icon Explorer */}
         <section className="mx-auto max-w-7xl px-4 py-12">
           <div className="text-center mb-28">
-            <h2 className="text-3xl sm:text-6xl font-medium text-gray-900 dark:text-white">
+            <h2 className="text-3xl sm:text-6xl font-medium text-white">
               Browse Icons
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Use filters to find exactly what you need.</p>
+            <p className="text-lg text-gray-300">Use filters to find exactly what you need.</p>
           </div>
 
           {/* Filters */}
@@ -128,12 +128,12 @@ import { Icon } from 'iconza'
               <Input
                 ref={searchInputRef}
                 placeholder="Search icons..."
-                className="pl-12 pr-16 bg-white/50 dark:bg-gray-900/50 capitalize"
+                className="pl-12 pr-16bg-gray-900/50 capitalize"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
               />
               <kbd
-                className="absolute right-2 top-1/2 -translate-y-1/2 hidden sm:flex h-7 w-7 items-center justify-center rounded-full bg-lime-500/20 text-lime-700 dark:bg-lime-400/20 dark:text-lime-100 text-base pointer-events-none select-none shadow-sm"
+                className="absolute right-2 top-1/2 -translate-y-1/2 hidden sm:flex h-7 w-7 items-center justify-center rounded-full bg-lime-400/20 text-lime-100 text-base pointer-events-none select-none shadow-sm"
               >
                 <IconSlash size={18} />
               </kbd>
@@ -147,7 +147,7 @@ import { Icon } from 'iconza'
                 <button
                   key={mode}
                   onClick={() => setViewMode(mode as "grid" | "list")}
-                  className={cn("p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700", viewMode === mode ? "bg-gray-300 dark:bg-gray-700" : "bg-transparent")}
+                  className={cn("p-2 rounded-lg hover:bg-gray-700", viewMode === mode ? "bg-gray-700" : "bg-transparent")}
                   title={`Switch to ${mode} view`}
                 >
                   <Icon className="w-5 h-5" />
@@ -159,7 +159,7 @@ import { Icon } from 'iconza'
                 <button
                   className={cn(
                     "group inline-flex items-center rounded-full px-4 py-3 text-sm font-medium transition-all duration-300",
-                    "bg-zinc-900/10 dark:bg-zinc-800/40 backdrop-blur border border-white/30 dark:border-zinc-700",
+                    "bg-zinc-800/40 backdrop-blur borderborder-zinc-700",
                   )}
                 >
                   {tab === "DesignTools" ? "Design" : tab}
@@ -171,7 +171,7 @@ import { Icon } from 'iconza'
                   />
                 </button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-48 p-1 mt-2 rounded-2xl border border-white/10 dark:border-zinc-800 bg-zinc-500/10 dark:bg-zinc-900/50 backdrop-blur shadow-xl">
+              <DropdownMenuContent className="w-48 p-1 mt-2 rounded-2xl border border-zinc-800 bg-zinc-900/50 backdrop-blur shadow-xl">
                 {categories.map((category) => (
                   <DropdownMenuItem
                     key={category}
@@ -179,7 +179,7 @@ import { Icon } from 'iconza'
                       setTab(category);
                       setDropdownOpen(false);
                     }}
-                    className="flex items-center gap-2 rounded-xl px-5 py-2 cursor-pointer text-sm text-zinc-800 dark:text-zinc-200 hover:text-white hover:bg-zinc-900/50 dark:hover:bg-zinc-50/10 transition-colors"
+                    className="flex items-center gap-2 rounded-xl px-5 py-2 cursor-pointer text-sm text-zinc-200 hover:text-white hover:bg-zinc-50/10 transition-colors"
                   >
                     {iconsMap[category]}
                     <span>{category === "DesignTools" ? "Design" : category}</span>
@@ -190,7 +190,7 @@ import { Icon } from 'iconza'
           </div>
 
           {/* Results */}
-          <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 truncate max-w-lg">
+          <p className="text-sm text-gray-400 mb-4 truncate max-w-lg">
             {filtered.length} icon{filtered.length !== 1 ? "s" : ""}
             {query && ` matching "${query}"`}
             {tab !== "All" && ` in ${tab}`}

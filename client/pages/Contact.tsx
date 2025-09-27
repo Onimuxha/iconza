@@ -98,7 +98,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black relative overflow-hidden">
+    <div className="min-h-screen bg-black relative overflow-hidden">
       <SEO title="Contact" description="Browse and search through our extensive collection of modern, accessible icons with brand colors and animations." />
       <HeroBackground className="pointer-events-none z-0" />
       <div className="relative z-10">
@@ -110,10 +110,10 @@ const ContactPage = () => {
             className="mb-16 text-center"
           >
             <div className="max-w-7xl mx-auto px-4 text-center py-8">
-              <h2 className="text-3xl sm:text-6xl font-medium text-gray-900 dark:text-white">
+              <h2 className="text-3xl sm:text-6xl font-medium text-white">
                 Contact
               </h2>
-              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+              <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
                 Can't find the icon you're looking for?
               </p>
             </div>
@@ -127,8 +127,8 @@ const ContactPage = () => {
               className="space-y-6"
             >
               <div>
-                <h2 className="text-2xl font-medium text-neutral-900 dark:text-neutral-100 mb-2">How can I help?</h2>
-                <p className="text-neutral-600 dark:text-neutral-400 mb-8">Choose from the options below or send me a custom message.</p>
+                <h2 className="text-2xl font-medium text-neutral-100 mb-2">How can I help?</h2>
+                <p className="text-neutral-400 mb-8">Choose from the options below or send me a custom message.</p>
               </div>
 
               <div className="space-y-4">
@@ -138,15 +138,15 @@ const ContactPage = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.1 }}
-                    className="p-6 bg-neutral-100 dark:bg-neutral-100/10 rounded-xl border border-gray-200/50 dark:border-gray-500/30 hover:border-neutral-300/50 dark:hover:border-neutral-700/50 transition-colors"
+                    className="p-6 bg-neutral-100/10 rounded-xl border border-gray-500/30 hover:border-neutral-700/50 transition-colors"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-lime-300 dark:bg-lime-500/50 rounded-2xl flex items-center justify-center text-neutral-700 dark:text-white">
+                      <div className="w-12 h-12 bg-lime-500/50 rounded-2xl flex items-center justify-center text-white">
                         <item.icon size={24} />
                       </div>
                       <div>
-                        <h3 className="font-medium text-neutral-900 dark:text-neutral-100 mb-1">{item.title}</h3>
-                        <p className="text-sm text-neutral-600 dark:text-neutral-400">{item.desc}</p>
+                        <h3 className="font-medium text-neutral-100 mb-1">{item.title}</h3>
+                        <p className="text-sm text-neutral-400">{item.desc}</p>
                       </div>
                     </div>
                   </motion.div>
@@ -158,45 +158,45 @@ const ContactPage = () => {
             <motion.section
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="bg-neutral-50/50 dark:bg-neutral-900/20 rounded-2xl border border-neutral-200/50 dark:border-neutral-800/50 p-8"
+              className="bg-neutral-900/20 rounded-2xl border border-neutral-800/50 p-8"
             >
-              <h2 className="text-2xl font-medium text-neutral-900 dark:text-neutral-100 mb-8">Send Message</h2>
+              <h2 className="text-2xl font-medium text-neutral-100 mb-8">Send Message</h2>
 
               <div className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">Name *</label>
+                  <label className="block text-sm font-medium text-neutral-300 mb-2">Name *</label>
                   <input
                     type="text"
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-700 text-neutral-900 dark:text-neutral-100"
+                    className="w-full px-4 py-3 bg-neutral-950 border border-neutral-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-neutral-700 text-neutral-100"
                     placeholder="Your name"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">Message *</label>
+                  <label className="block text-sm font-medium text-neutral-300 mb-2">Message *</label>
                   <textarea
                     name="message"
                     value={form.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-700 text-neutral-900 dark:text-neutral-100 resize-none"
+                    className="w-full px-4 py-3 bg-neutral-950 border border-neutral-800 rounded-xl focus:outline-none focus:ring-2 focus:ring-neutral-700 text-neutral-100 resize-none"
                     placeholder="Your message..."
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-2">Attachment</label>
+                  <label className="block text-sm font-medium text-neutral-300 mb-2">Attachment</label>
                   <div className="space-y-4">
                     <div className="flex items-center gap-4">
                       <input type="file" ref={fileRef} onChange={handleFile} className="hidden" />
                       <button
                         onClick={() => fileRef.current?.click()}
-                        className="flex items-center gap-2 px-4 py-2 bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-lg text-sm text-neutral-700 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
+                        className="flex items-center gap-2 px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg text-sm text-neutral-300 hover:bg-neutral-700 transition-colors"
                       >
-                        <IconPaperclip size={17} className="text-neutral-700 dark:text-neutral-300" />
+                        <IconPaperclip size={17} className="text-neutral-300" />
                         <span>Choose File</span>
                       </button>
                       <span className="text-xs text-neutral-500">Max 20MB</span>
@@ -206,17 +206,17 @@ const ContactPage = () => {
                       <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        className="p-4 bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-xl flex items-center gap-4"
+                        className="p-4 bg-neutral-950 border border-neutral-800 rounded-xl flex items-center gap-4"
                       >
                         {preview.type === 'image' ? (
                           <img src={preview.url} className="w-12 h-12 object-cover rounded" />
                         ) : (
-                          <div className="w-12 h-12 bg-neutral-100 dark:bg-neutral-800 rounded flex items-center justify-center text-xs font-mono">
+                          <div className="w-12 h-12 bg-neutral-800 rounded flex items-center justify-center text-xs font-mono">
                             {preview.ext}
                           </div>
                         )}
                         <div className="flex-1">
-                          <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">{preview.name}</p>
+                          <p className="text-sm font-medium text-neutral-100">{preview.name}</p>
                           <p className="text-xs text-neutral-500">{formatSize(preview.size)}</p>
                         </div>
                         <button onClick={removeFile} className="text-neutral-400 hover:text-neutral-600">✕</button>
@@ -229,7 +229,7 @@ const ContactPage = () => {
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className={`p-4 rounded-xl ${status.type === 'success' ? 'bg-green-50 dark:bg-green-900/20 text-green-800 dark:text-green-200' : 'bg-red-50 dark:bg-red-900/20 text-red-800 dark:text-red-200'}`}
+                    className={`p-4 rounded-xl ${status.type === 'success' ? 'bg-green-900/20 text-green-200' : 'bg-red-900/20 text-red-200'}`}
                   >
                     {status.msg}
                   </motion.div>
@@ -238,7 +238,7 @@ const ContactPage = () => {
                 <button
                   onClick={handleSubmit}
                   disabled={loading}
-                  className="relative w-full py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-xl font-medium hover:scale-[1.02] transition-transform disabled:opacity-50 overflow-hidden group"
+                  className="relative w-full py-3 bg-neutral-100 text-neutral-900 rounded-xl font-medium hover:scale-[1.02] transition-transform disabled:opacity-50 overflow-hidden group"
                 >
                   {loading ? (
                     <div className="flex items-center justify-center gap-2">
@@ -250,7 +250,7 @@ const ContactPage = () => {
                       <span className="absolute inset-0 flex items-center justify-center">
                         <IconSend
                           size={18}
-                          className="text-white dark:text-neutral-900 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out"
+                          className="text-neutral-900 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out"
                         />
                       </span>
                       <span className="block text-center transition-all duration-300 ease-in-out group-hover:-translate-y-full group-hover:opacity-0">
@@ -278,17 +278,17 @@ const ContactPage = () => {
                     animate={{ scale: 1 }}
                     exit={{ scale: 0.9 }}
                     onClick={(e) => e.stopPropagation()}
-                    className="bg-white dark:bg-neutral-900 rounded-2xl p-6 w-full max-w-md"
+                    className="bg-neutral-900 rounded-2xl p-6 w-full max-w-md"
                   >
                     <h3 className="text-lg font-medium mb-4">Confirm Send</h3>
 
-                    <div className="space-y-2 mb-6 text-sm text-neutral-700 dark:text-neutral-300">
+                    <div className="space-y-2 mb-6 text-sm text-neutral-300">
                       <p><strong>Name:</strong> {form.name}</p>
                       <p><strong>Message:</strong> {form.message}</p>
                       {file && <p><strong>File:</strong> {file.name}</p>}
                     </div>
 
-                    <div className="mb-4 text-sm text-yellow-600 dark:text-yellow-400 font-medium bg-yellow-50 dark:bg-yellow-900/20 rounded-lg px-3 py-2">
+                    <div className="mb-4 text-sm text-yellow-400 font-medium bg-yellow-900/20 rounded-lg px-3 py-2">
                       <IconAlertTriangle className="inline w-4 h-4 mr-1" />
                       This action cannot be undone.
                     </div>
@@ -296,7 +296,7 @@ const ContactPage = () => {
                     <div className="flex gap-3">
                       <button
                         onClick={() => setShowModal(false)}
-                        className="relative flex-1 py-2 bg-neutral-900 dark:bg-red-600/10 text-white dark:text-red-400 inset-ring-red-400/20 rounded-xl overflow-hidden group text-sm">
+                        className="relative flex-1 py-2 bg-red-600/10 text-red-400 inset-ring-red-400/20 rounded-xl overflow-hidden group text-sm">
                         <div className="absolute inset-0 flex items-center justify-center transition-all duration-300 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100">
                           <IconX size={16} />
                         </div>
@@ -307,7 +307,7 @@ const ContactPage = () => {
 
                       <button
                         onClick={sendMessage}
-                        className="relative flex-1 py-2 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-xl overflow-hidden group text-sm">
+                        className="relative flex-1 py-2 bg-neutral-100 text-neutral-900 rounded-xl overflow-hidden group text-sm">
                         <div className="absolute inset-0 flex items-center justify-center transition-all duration-300 opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100">
                           <IconSend size={16} />
                         </div>

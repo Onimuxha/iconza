@@ -51,7 +51,7 @@ export function IconCard({ name, component: Icon, size, onClick }: IconCardProps
         <IconCopy className="h-3.5 w-3.5 opacity-60 group-hover:opacity-100" />
       </div>
       {copied && (
-        <span className="absolute bottom-2 rounded bg-black/70 px-2 py-0.5 text-[10px] text-white dark:bg-white/20">
+        <span className="absolute bottom-2 rounded px-2 py-0.5 text-[10px] text-white bg-white/20">
           Copied
         </span>
       )}

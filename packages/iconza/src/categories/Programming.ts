@@ -622,7 +622,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "EtaLanguage",
+    name: "EtaLang",
     category: "Programming",
     keywords: ["eta", "language", "systems programming", "backend"],
     svgContent: `

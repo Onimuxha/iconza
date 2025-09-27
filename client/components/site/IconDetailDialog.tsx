@@ -80,7 +80,7 @@ export function IconDetailDialog(props: IconDetailProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="rounded-2xl max-w-4xl w-[95vw] px-5 py-10 max-h-[90vh] overflow-hidden bg-white/40 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 shadow-xl">
+      <DialogContent className="rounded-2xl max-w-4xl w-[95vw] px-5 py-10 max-h-[90vh] overflow-hidden bg-zinc-900/40 border border-zinc-800 shadow-xl">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -90,7 +90,7 @@ export function IconDetailDialog(props: IconDetailProps) {
           <DialogHeader className="pb-4 border-b">
             <DialogTitle className="flex items-center justify-between font-body">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-lgbg-gray-800 flex items-center justify-center">
                   <Component size={30} />
                 </div>
                 <div className="flex text-left flex-col relative">
@@ -120,13 +120,13 @@ export function IconDetailDialog(props: IconDetailProps) {
                     )}
                   </button>
 
-                  <p className="text-base font-medium text-gray-500 dark:text-gray-400">
+                  <p className="text-base font-medium text-gray-400">
                     {keywords.slice(0, 3).join(", ")}
                   </p>
                 </div>
               </div>
               <DialogDescription className="flex gap-2 text-sm font-medium">
-                <span className="px-2 py-1 bg-gray-100/60 dark:bg-gray-800 rounded-lg">
+                <span className="px-2 py-1 bg-gray-800 rounded-lg">
                   {category}
                 </span>
               </DialogDescription>
@@ -175,7 +175,7 @@ export function IconDetailDialog(props: IconDetailProps) {
                     type="button"
                     onClick={() => setSize(48)}
                     title="Reset size"
-                    className="group p-2 rounded-lg bg-lime-500/10 dark:bg-lime-500/10 backdrop-blur-md shadow-md text-white border border-lime-500/30 hover:shadow-lg transition-colors duration-300"
+                    className="group p-2 rounded-lg bg-lime-500/10 backdrop-blur-md shadow-md text-white border border-lime-500/30 hover:shadow-lg transition-colors duration-300"
                   >
                     <IconRestore
                       size={20}
@@ -185,16 +185,15 @@ export function IconDetailDialog(props: IconDetailProps) {
                 </div>
               </div>
 
-              <div className="flex items-center justify-center h-40 bg-gray-50 dark:bg-gray-900 rounded-2xl border relative overflow-hidden">
+              <div className="flex items-center justify-center h-40 bg-gray-900 rounded-2xl border relative overflow-hidden">
                 <div
                   className={cn(
                     "absolute inset-0",
                     "[background-size:20px_20px]",
-                    "[background-image:radial-gradient(#d4d4d4_1px,transparent_1px)]",
-                    "dark:[background-image:radial-gradient(#404040_1px,transparent_1px)]",
+                    "[background-image:radial-gradient(#404040_1px,transparent_1px)]",
                   )}
                 />
-                <div className="inline-flex items-center justify-center rounded-xl p-4 backdrop-blur-lg bg-black/5 dark:bg-white/5 border border-white/30 dark:border-white/10 shadow-[inset_0_2px_6px_rgba(0,0,0,0.15)] dark:shadow-[inset_0_2px_6px_rgba(255,255,255,0.08)] relative z-10">
+                <div className="inline-flex items-center justify-center rounded-xl p-4 backdrop-blur-lgbg-white/5 border border-white/10 shadow-[inset_0_2px_6px_rgba(255,255,255,0.08)] relative z-10">
                   <Component size={size} />
                 </div>
               </div>
@@ -202,14 +201,14 @@ export function IconDetailDialog(props: IconDetailProps) {
               <div className="flex gap-4">
                 <button
                   onClick={handleCopy}
-                  className="flex-1 flex items-center justify-center gap-2 rounded-full border bg-white/20 dark:bg-gray-900/30 border-white/30 dark:border-gray-700/50 text-zinc-800 dark:text-zinc-200 backdrop-blur-md shadow-sm transition hover:bg-white/30 dark:hover:bg-gray-900/60 hover:shadow-md focus-visible:outline-none px-4 py-3 font-semibold text-sm"
+                  className="flex-1 flex items-center justify-center gap-2 rounded-full border bg-gray-900/30 border-gray-700/50 text-zinc-200 backdrop-blur-md shadow-sm transitionhover:bg-gray-900/60 hover:shadow-md focus-visible:outline-none px-4 py-3 font-semibold text-sm"
                 >
                   {copied ? <IconChecks size={15} /> : <IconCopy size={15} />}
                   Copy
                 </button>
                 <button
                   onClick={downloadSvg}
-                  className="flex-1 flex items-center justify-center gap-2 rounded-full border bg-white/20 dark:bg-gray-900/30 border-white/30 dark:border-gray-700/50 text-zinc-800 dark:text-zinc-200 backdrop-blur-md shadow-sm transition hover:bg-white/30 dark:hover:bg-gray-900/60 hover:shadow-md focus-visible:outline-none px-4 py-3 font-semibold text-sm"
+                  className="flex-1 flex items-center justify-center gap-2 rounded-full border bg-gray-900/30 border-gray-700/50 text-zinc-200 backdrop-blur-md shadow-sm transitionhover:bg-gray-900/60 hover:shadow-md focus-visible:outline-none px-4 py-3 font-semibold text-sm"
                 >
                   <IconDownload size={16} />
                   Download
@@ -230,14 +229,14 @@ export function IconDetailDialog(props: IconDetailProps) {
                   <ToggleGroupItem
                     value="jsx"
                     size="sm"
-                    className="rounded-lg border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 data-[state=on]:bg-zinc-100 dark:data-[state=on]:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                    className="rounded-lg border border-zinc-700 bg-zinc-900 text-zinc-200 data-[state=on]:bg-zinc-800 hover:bg-zinc-800 transition-colors"
                   >
                     JSX
                   </ToggleGroupItem>
                   <ToggleGroupItem
                     value="svg"
                     size="sm"
-                    className="rounded-lg border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 data-[state=on]:bg-zinc-100 dark:data-[state=on]:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+                    className="rounded-lg border border-zinc-700 bg-zinc-900 text-zinc-200 data-[state=on]:bg-zinc-800 hover:bg-zinc-800 transition-colors"
                   >
                     SVG
                   </ToggleGroupItem>

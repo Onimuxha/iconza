@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 import {
   IconSmartHome,
   IconFileDescription,
@@ -9,16 +8,20 @@ import {
   IconMenu4,
   IconX,
   IconMessage,
+  IconHistory,
 } from "@tabler/icons-react";
+import { VersionHistory } from "../VersionHistory";
 
 export function SiteHeader() {
   const { pathname } = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [showHistory, setShowHistory] = useState(false);
 
   const links = [
     { href: "/", label: "Home", Icon: IconSmartHome },
     { href: "/icons", label: "Icons", Icon: IconIcons },
     { href: "/docs", label: "Documentation", Icon: IconFileDescription },
+    { href: "/contact", label: "Contact", Icon: IconMessage },
   ];
 
   return (
@@ -51,13 +54,12 @@ export function SiteHeader() {
                   <Link
                     key={href}
                     to={href}
-                    className={`flex items-center gap-2 px-5 py-2.5 rounded-lg transition-all duration-300 group relative ${
-                      isActive
-                        ? "text-lime-400 bg-lime-500/10 border border-lime-500/20"
-                        : "text-gray-400 hover:text-white hover:bg-white/5"
-                    }`}
+                    className={`flex items-center gap-2 px-5 py-2.5 rounded-full transition-all duration-300 group relative ${isActive
+                      ? "text-lime-400 bg-lime-500/10 border border-lime-500/20"
+                      : "text-gray-400 hover:text-white hover:bg-white/5"
+                      }`}
                   >
-                    <Icon className="h-5 w-5 transition-transform group-hover:scale-110" />
+                    <Icon size={20} className="transition-transform group-hover:scale-110" />
                     <span className="font-medium text-sm">{label}</span>
 
                     {/* Active indicator */}
@@ -71,21 +73,18 @@ export function SiteHeader() {
 
             {/* Right Side Actions */}
             <div className="flex items-center gap-3">
-              {/* Contact Button */}
-              <Link
-                to="/contact"
-                className="hidden md:flex items-center gap-2 px-5 py-2 rounded-full bg-lime-500 text-black font-semibold transition-all duration-300 hover:bg-lime-400 hover:scale-105 group"
+              <button
+                onClick={() => setShowHistory(true)}
+                className="hidden group relative sm:inline-flex h-10 sm:h-12 overflow-hidden rounded-full p-px"
               >
-                <IconMessage className="h-5 w-5 transition-transform group-hover:-translate-x-0.5" />
-                <span className="text-sm transition-transform group-hover:translate-x-0.5">
-                  Contact
+                <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#94c748_0%,#000000_50%,#94c748_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 sm:px-8 text-xs sm:text-sm font-medium text-white backdrop-blur-3xl gap-2">
+                  <IconHistory size={20} className="sm:h-4 sm:w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
+                  <span className="transform transition-transform duration-300 group-hover:translate-x-1">
+                    Changelog
+                  </span>
                 </span>
-              </Link>
-
-              {/* Theme Toggler */}
-              <div className="relative">
-                <AnimatedThemeToggler />
-              </div>
+              </button>
 
               {/* Mobile Menu Button */}
               <button
@@ -120,33 +119,39 @@ export function SiteHeader() {
                         key={href}
                         to={href}
                         onClick={() => setMobileOpen(false)}
-                        className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 ${
-                          isActive
-                            ? "bg-lime-500/10 text-lime-400 border border-lime-500/20"
-                            : "text-gray-400 hover:text-white hover:bg-white/5"
-                        }`}
+                        className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 ${isActive
+                          ? "bg-lime-500/10 text-lime-400 border border-lime-500/20"
+                          : "text-gray-400 hover:text-white hover:bg-white/5"
+                          }`}
                       >
-                        <Icon className="h-5 w-5" />
+                        <Icon size={20} />
                         <span className="font-medium">{label}</span>
                       </Link>
                     );
                   })}
 
-                  {/* Mobile Contact Button */}
-                  <Link
-                    to="/contact"
-                    onClick={() => setMobileOpen(false)}
-                    className="flex items-center gap-3 px-4 py-3 rounded-xl bg-lime-500 text-black font-semibold transition-all duration-300 hover:bg-lime-400 mt-2 justify-center"
+                  {/* Mobile History Button */}
+                  <button
+                    onClick={() => setShowHistory(true)}
+                    className="group relative inline-flex h-10 sm:h-12 overflow-hidden rounded-full p-px"
                   >
-                    <IconMessage className="h-5 w-5" />
-                    <span>Contact Us</span>
-                  </Link>
+                    <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#94c748_0%,#000000_50%,#94c748_100%)]" />
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 sm:px-8 text-xs sm:text-sm font-medium text-white backdrop-blur-3xl gap-2">
+                      <IconHistory size={20} className="sm:h-4 sm:w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
+                      <span className="transform transition-transform font-medium duration-300 group-hover:translate-x-1 ">
+                        Changelog
+                      </span>
+                    </span>
+                  </button>
                 </div>
               </motion.div>
             )}
           </AnimatePresence>
         </motion.div>
       </div>
+
+      {/* Version History Modal */}
+      <VersionHistory isOpen={showHistory} onClose={() => setShowHistory(false)} />
     </header>
   );
 }

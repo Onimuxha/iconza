@@ -157,14 +157,14 @@ export function HomeHero() {
           <HeroBackground className="absolute inset-0 w-full h-full z-0 pointer-events-none" />
           <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 md:py-20 grid items-center gap-10 md:grid-cols-2">
             <div>
-              <p className="mt-2 inline-block rounded-full bg-lime-500/10 px-3 py-1 text-sm font-medium border border-lime-500/50 text-lime-600 dark:text-lime-400">
+              <p className="mt-2 inline-block rounded-full bg-lime-500/10 px-3 py-1 text-sm font-medium border border-lime-500/50 text-lime-400">
                 v{pkg.version}
               </p>
               <h1 className="text-5xl md:text-7xl font-semibold text-balance">
                 Every icon you need.
                 <FlipWords
                   words={words}
-                  className="font-normal text-lime-500 dark:text-lime-500"
+                  className="font-normal text-lime-500"
                 />
               </h1>
 
@@ -187,7 +187,7 @@ export function HomeHero() {
                   <Link to="/icons">
                     <button className="group relative inline-flex h-12 overflow-hidden rounded-full p-px">
                       <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#84cc16_0%,#000000_50%,#84cc16_100%)]" />
-                      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-100 dark:bg-slate-950 px-3 py-1 text-sm font-medium text-black dark:text-white backdrop-blur-3xl">
+                      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                         <IconArrowRight
                           size={20}
                           className="mr-2 transform transition-transform duration-300 group-hover:translate-x-28"
@@ -213,7 +213,7 @@ export function HomeHero() {
                     animate={{ opacity: 1, y: 0 }}
                     viewport={{ once: false, amount: 0.3 }}
                     transition={{ duration: 0.4, delay: index * 0.05 }}
-                    className="flex items-center justify-center rounded-3xl border border-black/10 dark:border-white/20 bg-white/10 p-6 backdrop-blur-sm dark:bg-white/5 hover:bg-white/20 dark:hover:bg-white/10 transition-colors"
+                    className="flex items-center justify-center rounded-3xl border border-white/20 p-6 backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-colors"
                   >
                     <Comp size={48} aria-label={name} />
                   </motion.div>
@@ -224,12 +224,12 @@ export function HomeHero() {
         </section>
 
         {/* Features Section */}
-        <section className="py-24 bg-white/50 dark:bg-gray-950/50">
+        <section className="py-24 bg-gray-950/50">
           <div className="max-w-7xl mx-auto px-4 text-center mb-16">
-            <h2 className="text-3xl sm:text-6xl font-medium text-gray-900 dark:text-white">
+            <h2 className="text-3xl sm:text-6xl font-medium text-white">
               Why Choose iconza?
             </h2>
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
               Built by developers, for developers. Every icon is crafted with
               attention to detail and optimized for modern web applications.
             </p>
@@ -243,17 +243,17 @@ export function HomeHero() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="text-center p-8 rounded-2xl bg-white dark:bg-gray-900/50 shadow-lg border border-gray-200 dark:border-gray-700"
+                className="text-center p-8 rounded-2xl bg-gray-900/50 shadow-lg border border-gray-700"
               >
                 <div
-                  className={`w-12 h-12 mx-auto mb-6 rounded-2xl bg-black/5 dark:bg-lime-500/10 flex items-center justify-center`}
+                  className={`w-12 h-12 mx-auto mb-6 rounded-2xl bg-lime-500/10 flex items-center justify-center`}
                 >
                   <Icon className={`w-6 h-6 text-lime-500`} />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-white mb-4">
                   {title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-400">
                   {description}
                 </p>
               </motion.div>
@@ -267,9 +267,9 @@ export function HomeHero() {
                 <NumberTicker
                   value={value}
                   suffix={suffix}
-                  className="whitespace-pre-wrap text-7xl font-medium tracking-tighter text-lime-500 dark:text-lime-500"
+                  className="text-7xl font-medium tracking-tighter text-lime-500"
                 />
-                <div className="text-sm text-gray-600 dark:text-gray-400">
+                <div className="text-sm text-gray-400">
                   {label}
                 </div>
               </div>
@@ -287,10 +287,10 @@ export function HomeHero() {
             transition={{ duration: 0.5 }}
             className="max-w-7xl mx-auto px-4 text-center mb-16"
           >
-            <h2 className="text-3xl sm:text-6xl font-medium text-gray-900 dark:text-white">
+            <h2 className="text-3xl sm:text-6xl font-medium text-white">
               Get Started in Minutes
             </h2>
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
               Install iconza and start building beautiful interfaces right away.
             </p>
           </motion.div>
@@ -312,10 +312,10 @@ export function HomeHero() {
                     </span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="font-semibold text-white mb-2">
                       {step.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <p className="text-gray-400">
                       {step.description}
                     </p>
                   </div>
@@ -333,7 +333,7 @@ export function HomeHero() {
                 <Link to="/icons">
                   <button className="group relative inline-flex h-12 overflow-hidden rounded-full p-px">
                     <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#84cc16_0%,#000000_50%,#84cc16_100%)]" />
-                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-100 dark:bg-slate-950 px-3 py-1 text-sm font-medium text-black dark:text-white backdrop-blur-3xl">
+                    <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                       <IconArrowRight
                         size={20}
                         className="mr-2 transform transition-transform duration-300 group-hover:translate-x-28"

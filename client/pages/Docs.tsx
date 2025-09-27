@@ -10,10 +10,15 @@ import {
   IconRocket,
   IconCode,
   IconApi,
+  IconHistory,
 } from "@tabler/icons-react";
 import { SEO } from "@/components/SEO";
+import { VersionHistory } from "@/components/VersionHistory";
+import { versionHistory } from "../../packages/iconza/src/versionHistory.ts";
+import { useState } from "react";
 
 export default function Docs() {
+  const [showHistory, setShowHistory] = useState(false);
   return (
     <div className="min-h-screen bg-transparent">
       <SEO
@@ -36,10 +41,10 @@ export default function Docs() {
               Developer Documentation
             </div>
             <div className="text-center mb-28">
-              <h2 className="text-3xl sm:text-6xl font-medium text-gray-900 dark:text-white">
+              <h2 className="text-3xl sm:text-6xl font-mediumtext-white">
                 Documentation
               </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed px-2">
+              <p className="text-lgtext-gray-300 max-w-2xl mx-auto leading-relaxed px-2">
                 Master the clean SVG icon system for React + TypeScript with
                 comprehensive guides and examples
               </p>
@@ -288,36 +293,7 @@ export default function App() {
             </TabsContent>
           </Tabs>
         </motion.div>
-
-        {/* CTA Section */}
-        <motion.div
-          className="mt-16 sm:mt-20 text-center"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-        >
-          <div className="bg-gradient-to-r from-gray-900 to-black rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-800">
-            <h3 className="text-xl sm:text-2xl font-medium text-white mb-3 sm:mb-4">
-              Ready to Get Started?
-            </h3>
-            <p className="text-gray-400 text-sm sm:text-base mb-4 sm:mb-6 max-w-md mx-auto">
-              Join thousands of developers using Iconza in their projects
-            </p>
-            <Link to="/">
-              <button className="group relative inline-flex h-10 sm:h-12 overflow-hidden rounded-full p-px">
-                <div className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#94c748_0%,#000000_50%,#94c748_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 sm:px-8 text-xs sm:text-sm font-medium text-white backdrop-blur-3xl gap-2">
-                  <span className="transform transition-transform duration-300 group-hover:translate-x-1">
-                    Back to Home
-                  </span>
-                  <IconArrowRight className="h-3 w-3 sm:h-4 sm:w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
-                </span>
-              </button>
-            </Link>
-          </div>
-        </motion.div>
       </main>
-
       <SiteFooter />
     </div>
   );

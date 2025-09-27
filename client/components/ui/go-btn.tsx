@@ -43,12 +43,13 @@ const StyledWrapper = styled.div<{ $clr: string }>`
   }
 
   .button:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #ffff;
+    color: #000;
   }
 
   .button:hover .button__icon-wrapper {
     color: #84cc16;
+    background-color: #000;
   }
 
   .button__icon-svg--copy {

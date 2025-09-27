@@ -2,7 +2,6 @@ import type { Config } from "tailwindcss";
 
 export default {
   content: ["./client/**/*.{ts,tsx}"],
-  darkMode: "class",
   future: {
     hoverOnlyWhenSupported: true,
   },
@@ -16,18 +15,17 @@ export default {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        border: "hsl(217.2 32.6% 17.5%)",
+        input: "hsl(217.2 32.6% 17.5%)",
+        background: "hsl(222.2 84% 4.9%)",
+        foreground: "hsl(210 40% 98%)",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "hsl(210 40% 98%)",
+          foreground: "hsl(222.2 47.4% 11.2%)",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "hsl(217.2 32.6% 17.5%)",
+          foreground: "hsl(210 40% 98%)",
         },
       },
       fontFamily: {
