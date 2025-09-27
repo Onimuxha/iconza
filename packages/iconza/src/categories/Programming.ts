@@ -532,7 +532,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "Visual Studio",
+    name: "VisualStudio",
     category: "Programming",
     keywords: ["visual studio", "ide", "development", "microsoft"],
     svgContent: `

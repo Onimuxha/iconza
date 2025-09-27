@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { versionHistory, VersionEntry } from '../../packages/iconza/src/versionHistory';
 import { IconCalendar, IconTag, IconCodePlus, IconRefresh, IconBug, IconX } from "@tabler/icons-react";
 import { Timeline } from './Timeline';
+import { Icon } from "iconza"; // Add this import
 
 interface VersionHistoryProps {
   isOpen: boolean;
@@ -98,7 +99,7 @@ export const VersionHistory = ({ isOpen, onClose }: VersionHistoryProps) => {
                   className="p-1 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-400 hover:text-white transition-colors"
                   aria-label="Close version history"
                 >
-                  <IconX size={20} className="transition-transform duration-300 group-hover:rotate-90"/>
+                  <IconX size={20} className="transition-transform duration-300 group-hover:rotate-90" />
                 </button>
               </div>
             </div>
@@ -210,13 +211,16 @@ const transformToTimelineEntries = (versions: VersionEntry[]) => {
 
               {change.icons && change.icons.length > 0 && (
                 <div className="flex flex-wrap gap-2 mt-3">
-                  {change.icons.map((icon) => (
-                    <span
-                      key={icon}
-                      className="px-2 py-1 bg-lime-500/10 text-lime-400 text-xs rounded-full border border-lime-500/20"
+                  {change.icons.map((iconName) => (
+                    <div
+                      key={iconName}
+                      title={iconName}
                     >
-                      {icon}
-                    </span>
+                      <Icon
+                        name={iconName}
+                        className="w-6 h-6 text-neutral-200 group-hover:text-white transition-colors"
+                      />
+                    </div>
                   ))}
                 </div>
               )}

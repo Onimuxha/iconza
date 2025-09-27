@@ -11,18 +11,20 @@ export interface Change {
   icons?: string[];
 }
 
-// check duplicate file 
+// check duplicate file
 const checkForDuplicateIcons = (history: VersionEntry[]) => {
-  if (typeof window === 'undefined') return;
+  if (typeof window === "undefined") return;
   const allIcons: string[] = [];
   const duplicates: string[] = [];
-  
-  history.forEach(entry => {
-    entry.changes.forEach(change => {
-      change.icons?.forEach(icon => {
+
+  history.forEach((entry) => {
+    entry.changes.forEach((change) => {
+      change.icons?.forEach((icon) => {
         if (allIcons.includes(icon)) {
           duplicates.push(icon);
-          console.error(`❌ DUPLICATE ICON: "${icon}" in version ${entry.version}`);
+          console.error(
+            `❌ DUPLICATE ICON: "${icon}" in version ${entry.version}`,
+          );
         }
         allIcons.push(icon);
       });
@@ -30,12 +32,11 @@ const checkForDuplicateIcons = (history: VersionEntry[]) => {
   });
   if (duplicates.length > 0) {
     console.error(`\n🚨 FOUND ${duplicates.length} DUPLICATE ICONS!`);
-    console.error('Please remove duplicates from your version history.\n');
+    console.error("Please remove duplicates from your version history.\n");
   } else {
-    console.log('✅ No duplicate icons found!');
+    console.log("✅ No duplicate icons found!");
   }
 };
-
 
 export const versionHistory: VersionEntry[] = [
   {
@@ -46,19 +47,26 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Programming",
         description: "Added new programming language icons",
-        icons: ["VisualStudio", "Terminal", "Markdown", "Numpy"],
+        icons: ["VisualStudio", "Terminal", "MarkdownLight", "NumPy"],
       },
       {
         type: "added",
         category: "Tools",
         description: "Added new tool icons",
-        icons: ["500px", "XAMPP", "Swagger", "Peer5", "RabbitMQ", "RaspberryPi"],
+        icons: [
+          "500pxLight",
+          "Xampp",
+          "Swagger",
+          "Peer5",
+          "RabbitMQ",
+          "RaspberryPi",
+        ],
       },
       {
         type: "added",
         category: "Frameworks",
         description: "Added new framework icons",
-        icons: ["Unity", "Spring", "Rails", "ReactRouter", "Svelte", "Rax"],
+        icons: ["UnityLight", "SpringBoot", "Rails", "ReactRouter", "Svelte", "Rax"],
       },
       {
         type: "added",
@@ -88,7 +96,7 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Programming",
         description: "Added new programming language icons",
-        icons: ["Git", "Scala", "GraphQL", "EtaLang", "Arduino"],
+        icons: ["Scala", "GraphQL", "EtaLang", "Arduino"],
       },
       {
         type: "added",
@@ -102,20 +110,20 @@ export const versionHistory: VersionEntry[] = [
           "Dropbox",
           "Steam",
           "Notion",
+          "NotionLogo",
           "Shopify",
           "Xbox",
           "WeChat",
-          "BuyMeACoffee",
+          "BuyMeACoffeeFill",
           "Discord",
           "Twitch",
-          "ApplePay",
         ],
       },
       {
         type: "added",
         category: "DesignTools",
         description: "New AI service icons",
-        icons: ["Dribble", "Blender", "Sketch"],
+        icons: ["Dribbble", "Blender", "Sketch"],
       },
       {
         type: "added",
@@ -123,9 +131,10 @@ export const versionHistory: VersionEntry[] = [
         description: "New AI service icons",
         icons: [
           "NPM",
+          "NPMLogo",
+          "PNPM",
           "Gitlab",
           "AWS",
-          "PNPM",
           "Homebrew",
           "Akamai",
           "CampaignMonitor",
@@ -137,7 +146,9 @@ export const versionHistory: VersionEntry[] = [
         category: "Other",
         description: "New AI service icons",
         icons: [
-          "Windows",
+          "Windows10",
+          "Windows11",
+          "Windows11Logo",
           "InternetExplorer",
           "ArchLinux",
           "Ubuntu",
@@ -146,10 +157,10 @@ export const versionHistory: VersionEntry[] = [
           "Xing",
           "Android",
           "Yahoo",
+          "YahooLogo",
           "IBM",
           "Ethereum",
           "Debian",
-          "App",
         ],
       },
     ],
@@ -162,13 +173,13 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Design",
         description: "New design tools and utilities",
-        icons: ["FigmaDark", "AdobeXD"],
+        icons: ["Figma", "Canva", "InVision", "Miro"],
       },
       {
         type: "added",
         category: "Social",
         description: "Social media platform updates",
-        icons: ["Threads", "Reddit"],
+        icons: ["ThreadLight", "Reddit"],
       },
       {
         type: "updated",
@@ -185,13 +196,49 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Programming",
         description: "New programming language icons",
-        icons: ["Rust", "Go", "Kotlin"],
+        icons: ["SASS", "Go", "Kotlin"],
       },
       {
         type: "added",
         category: "Apps",
         description: "Popular application icons",
-        icons: ["Slack", "Telegram", "Behance", "Facebook", "Messenger"],
+        icons: [
+          "Slack",
+          "Telegram",
+          "BehanceFill",
+          "FacebookSquare",
+          "FacebookRound",
+          "MessengerBlue",
+          "MessengerColor",
+        ],
+      },
+      {
+        type: "added",
+        category: "DesignTools",
+        description: "Popular design tool icons",
+        icons: [
+          "AdobePhotoshop",
+          "AdobeFresco",
+          "AdobeLightroom",
+          "AdobeAfterEffects",
+          "AdobeAnimate",
+          "AdobeAudition",
+          "CharacterAnimator",
+          "AdobePremierePro",
+          "AdobeRush",
+          "AdobeAero",
+          "AdobeDimension",
+          "SubstanceDesigner",
+          "SubstanceSampler",
+          "SubstanceStager",
+          "AdobeDreamweaver",
+          "AdobeXd",
+          "AdobeInDesign",
+          "AdobeIllustrator",
+          "AdobeStock",
+          "AdobeFireflyAI",
+          "Adobe",
+        ],
       },
       {
         type: "fixed",
@@ -218,12 +265,9 @@ export const versionHistory: VersionEntry[] = [
           "C++",
           "C#",
           "Figma",
-          "GitHub",
-          "Photoshop",
-          "Illustrator",
-          "Adobe",
+          "GitHubLight",
           "Twitter",
-          "X",
+          "XLight",
           "Canva",
           "Instagram",
           "LinkedIn",
@@ -242,7 +286,7 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Beta",
         description: "Beta release with foundational icons",
-        icons: ["React", "Vue", "VSCode"],
+        icons: ["React", "VueJs", "VSCode", "TypeScript", "JavaScript", "HTML5", "CSS3"],
       },
       {
         type: "updated",
