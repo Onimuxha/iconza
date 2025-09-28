@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from 'react-helmet-async';
 
 interface SEOProps {
   title?: string;
@@ -13,17 +13,18 @@ interface SEOProps {
 }
 
 export function SEO({
-  title = "Iconza",
-  description = "A modern, accessible icon set with original brand colors, full TypeScript support, and delightful animations.",
-  image = "/iconza.avif",
-  url = "https://iconza.vercel.app",
-  type = "website",
+  title = 'Iconza',
+  description = 'A modern, accessible icon set with original brand colors, full TypeScript support, and delightful animations.',
+  image = '/iconza.avif',
+  url = 'https://iconza.vercel.app',
+  type = 'website',
   canonical,
-  keywords = "icon library, react icons, developer icons, brand icons, iconza, svg icons, website icons, animated icons, accessible icons",
-  author = "Iconza",
+  keywords = 'icon library, react icons, developer icons, brand icons, iconza, svg icons, website icons, animated icons, accessible icons',
+  author = 'Iconza',
   children,
 }: SEOProps) {
-  const siteTitle = title.includes("iconza") ? title : `${title} | iconza`;
+  const siteTitle = title.toLowerCase().includes('iconza') ? title : `${title} | iconza`;
+  const logoUrl = `https://iconza.vercel.app/iconza.avif`;
 
   return (
     <Helmet>
@@ -49,10 +50,7 @@ export function SEO({
       {/* Browser-specific metadata */}
       <meta name="theme-color" content="#94c748" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta
-        name="apple-mobile-web-app-status-bar-style"
-        content="black-translucent"
-      />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
       {/* Search Engine Optimization */}
       <meta name="keywords" content={keywords} />
@@ -62,16 +60,8 @@ export function SEO({
       <meta name="bingbot" content="index, follow" />
 
       {/* Chrome, Firefox, Edge */}
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
-      />
-      <link
-        rel="icon"
-        type="image/avif"
-        href="/iconza.avif"
-        media="(prefers-color-scheme: dark)"
-      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+      <link rel="icon" type="image/avif" href="/iconza.avif" media="(prefers-color-scheme: dark)" />
 
       {/* Microsoft Edge */}
       <meta name="msapplication-TileColor" content="#94c748" />
@@ -84,16 +74,15 @@ export function SEO({
       {/* Chrome for Android */}
       <meta name="mobile-web-app-capable" content="yes" />
 
+      {/* ✅ Organization Structured Data for Google Rich Results */}
       <script type="application/ld+json">
-        {`
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Iconza",
-  "url": "https://iconza.vercel.app",
-  "logo": "https://iconza.vercel.app/iconza.avif"
-}
-`}
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Iconza",
+          url: "https://iconza.vercel.app",
+          logo: logoUrl,
+        })}
       </script>
 
       {children}
