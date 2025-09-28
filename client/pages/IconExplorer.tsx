@@ -3,9 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { IconSearch, IconChevronDown, IconLayoutGrid, IconListDetails, IconSquareRoundedCheckFilled, IconSlash } from "@tabler/icons-react";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent } from "@/components/ui/tabs";
-import Box from "@mui/material/Box";
 import { cn } from "@/lib/utils";
-import Slider from "@mui/material/Slider";
 import { CodeBlock } from "@/components/ui/code-block";
 import {
   DropdownMenu,
