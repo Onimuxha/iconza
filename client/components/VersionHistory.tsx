@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { versionHistory, VersionEntry } from '../../packages/iconza/src/versionHistory';
 import { IconCalendar, IconTag, IconCodePlus, IconRefresh, IconBug, IconX } from "@tabler/icons-react";
 import { Timeline } from './Timeline';
-import { Icon } from "iconza"; // Add this import
+import { Icon } from "iconza";
 
 interface VersionHistoryProps {
   isOpen: boolean;
@@ -115,62 +115,62 @@ export const VersionHistory = ({ isOpen, onClose }: VersionHistoryProps) => {
   );
 };
 
-const VersionCard = ({ version, isLatest }: { version: VersionEntry; isLatest: boolean }) => (
-  <div className={`border-l-2 ${isLatest ? 'border-lime-500' : 'border-gray-700'} pl-6 relative`}>
-    {isLatest && (
-      <div className="absolute -left-1 top-0 w-2 h-2 bg-lime-500 rounded-full"></div>
-    )}
+// const VersionCard = ({ version, isLatest }: { version: VersionEntry; isLatest: boolean }) => (
+//   <div className={`border-l-2 ${isLatest ? 'border-lime-500' : 'border-gray-700'} pl-6 relative`}>
+//     {isLatest && (
+//       <div className="absolute -left-1 top-0 w-2 h-2 bg-lime-500 rounded-full"></div>
+//     )}
 
-    <div className="flex items-center gap-3 mb-3">
-      <span className={`px-3 py-1 rounded-full text-sm font-semibold ${isLatest ? 'bg-lime-500/20 text-lime-400' : 'bg-gray-800 text-gray-400'
-        }`}>
-        v{version.version}
-      </span>
-      <span className="text-gray-500 text-sm flex items-center gap-1">
-        <IconCalendar className="h-4 w-4" />
-        {new Date(version.date).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        })}
-      </span>
-      {isLatest && (
-        <span className="px-2 py-1 bg-lime-500/10 text-lime-400 text-xs rounded border border-lime-500/20">
-          Latest
-        </span>
-      )}
-    </div>
+//     <div className="flex items-center gap-3 mb-3">
+//       <span className={`px-3 py-1 rounded-full text-sm font-semibold ${isLatest ? 'bg-lime-500/20 text-lime-400' : 'bg-gray-800 text-gray-400'
+//         }`}>
+//         v{version.version}
+//       </span>
+//       <span className="text-gray-500 text-sm flex items-center gap-1">
+//         <IconCalendar className="h-4 w-4" />
+//         {new Date(version.date).toLocaleDateString('en-US', {
+//           year: 'numeric',
+//           month: 'long',
+//           day: 'numeric'
+//         })}
+//       </span>
+//       {isLatest && (
+//         <span className="px-2 py-1 bg-lime-500/10 text-lime-400 text-xs rounded border border-lime-500/20">
+//           Latest
+//         </span>
+//       )}
+//     </div>
 
-    <div className="space-y-3">
-      {version.changes.map((change, changeIndex) => (
-        <div key={changeIndex} className="p-3 rounded-lg bg-gray-800/30 border border-gray-700/50">
-          <div className="flex items-center gap-2 mb-2">
-            {getTypeIcon(change.type)}
-            <span className={`px-2 py-1 rounded-full text-xs font-medium border ${getTypeColor(change.type)}`}>
-              {change.type.charAt(0).toUpperCase() + change.type.slice(1)}
-            </span>
-            <span className="text-sm text-gray-400">{change.category}</span>
-          </div>
+//     <div className="space-y-3">
+//       {version.changes.map((change, changeIndex) => (
+//         <div key={changeIndex} className="p-3 rounded-lg bg-gray-800/30 border border-gray-700/50">
+//           <div className="flex items-center gap-2 mb-2">
+//             {getTypeIcon(change.type)}
+//             <span className={`px-2 py-1 rounded-full text-xs font-medium border ${getTypeColor(change.type)}`}>
+//               {change.type.charAt(0).toUpperCase() + change.type.slice(1)}
+//             </span>
+//             <span className="text-sm text-gray-400">{change.category}</span>
+//           </div>
 
-          <p className="text-white text-sm">{change.description}</p>
+//           <p className="text-white text-sm">{change.description}</p>
 
-          {change.icons && change.icons.length > 0 && (
-            <div className="flex flex-wrap gap-1 mt-2">
-              {change.icons.map((icon) => (
-                <span
-                  key={icon}
-                  className="px-2 py-1 bg-lime-500/10 text-lime-400 text-xs rounded border border-lime-500/20"
-                >
-                  {icon}
-                </span>
-              ))}
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
-  </div>
-);
+//           {change.icons && change.icons.length > 0 && (
+//             <div className="flex flex-wrap gap-1 mt-2">
+//               {change.icons.map((icon) => (
+//                 <span
+//                   key={icon}
+//                   className="px-2 py-1 bg-lime-500/10 text-lime-400 text-xs rounded border border-lime-500/20"
+//                 >
+//                   {icon}
+//                 </span>
+//               ))}
+//             </div>
+//           )}
+//         </div>
+//       ))}
+//     </div>
+//   </div>
+// );
 
 const transformToTimelineEntries = (versions: VersionEntry[]) => {
   return versions.map(version => ({
@@ -187,6 +187,7 @@ const transformToTimelineEntries = (versions: VersionEntry[]) => {
       <div className="space-y-6">
         <div className="flex items-center gap-2">
           <div className="text-neutral-400 text-sm">
+            <IconCalendar className="h-4 w-4 inline-block mr-1" />
             Version {version.version}
           </div>
           {version.date === versionHistory[0].date && (

@@ -164,6 +164,7 @@ import { Icon } from 'iconza'
                     "bg-zinc-800/40 backdrop-blur borderborder-zinc-700",
                   )}
                 >
+                  {iconsMap[tab]}
                   {tab === "DesignTools" ? "Design" : tab}
                   <IconChevronDown
                     className={cn(
@@ -181,9 +182,19 @@ import { Icon } from 'iconza'
                       setTab(category);
                       setDropdownOpen(false);
                     }}
-                    className="flex items-center gap-2 rounded-xl px-5 py-2 cursor-pointer text-sm text-zinc-200 hover:text-white hover:bg-zinc-50/10 transition-colors"
+                    className={cn(
+                      "flex items-center gap-2 rounded-xl px-5 py-2 cursor-pointer text-sm transition-colors",
+                      tab === category
+                        ? "bg-lime-500/10 text-lime-400 border border-lime-500/20"
+                        : "text-zinc-200 my-1 hover:text-white hover:bg-zinc-50/10"
+                    )}
                   >
-                    {iconsMap[category]}
+                    <div className={cn(
+                      "transition-colors",
+                      tab === category ? "text-lime-400" : "text-zinc-400"
+                    )}>
+                      {iconsMap[category]}
+                    </div>
                     <span>{category === "DesignTools" ? "Design" : category}</span>
                   </DropdownMenuItem>
                 ))}
@@ -193,7 +204,7 @@ import { Icon } from 'iconza'
 
           {/* Results */}
           <p className="text-sm text-gray-400 mb-4 truncate max-w-lg">
-            {filtered.length} icon{filtered.length !== 1 ? "s" : ""}
+            <span className="text-2xl font-medium tracking-tighter text-lime-500 mr-3">{filtered.length}</span>icon{filtered.length !== 1 ? "s" : ""}
             {query && ` matching "${query}"`}
             {tab !== "All" && ` in ${tab}`}
           </p>

@@ -185,7 +185,7 @@ export const versionHistory: VersionEntry[] = [
   },
   {
     date: "2025-09-20",
-    version: "1.0.28",
+    version: "1.0.30",
     changes: [
       {
         type: "added",
@@ -237,7 +237,7 @@ export const versionHistory: VersionEntry[] = [
   },
   {
     date: "2025-09-15",
-    version: "1.0.27",
+    version: "1.0.29",
     changes: [
       {
         type: "added",
@@ -283,7 +283,7 @@ export const versionHistory: VersionEntry[] = [
   },
   {
     date: "2025-09-10",
-    version: "1.0.26",
+    version: "1.0.28",
     changes: [
       {
         type: "added",
@@ -342,7 +342,7 @@ export const versionHistory: VersionEntry[] = [
   },
   {
     date: "2025-09-08",
-    version: "1.0.24",
+    version: "1.0.27",
     changes: [
       {
         type: "added",
@@ -360,7 +360,7 @@ export const versionHistory: VersionEntry[] = [
   },
   {
     date: "2025-09-06",
-    version: "1.0.23",
+    version: "1.0.26",
     changes: [
       {
         type: "added",
@@ -372,7 +372,7 @@ export const versionHistory: VersionEntry[] = [
   },
   {
     date: "2025-09-05",
-    version: "1.0.22",
+    version: "1.0.25",
     changes: [
       {
         type: "added",
@@ -403,7 +403,7 @@ export const versionHistory: VersionEntry[] = [
   },
   {
     date: "2025-09-03",
-    version: "1.0.20",
+    version: "1.0.24",
     changes: [
       {
         type: "added",
