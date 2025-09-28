@@ -4,6 +4,7 @@ export const iconsData: IconData[] = [
   {
     name: "i18Next",
     category: "Tools",
+    sourceUrl: "https://www.i18next.com/",
     keywords: ["i18next", "internationalization", "localization", "translate"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -25,6 +26,7 @@ export const iconsData: IconData[] = [
   {
     name: "Atom",
     category: "Tools",
+    sourceUrl: "https://atom-editor.cc/",
     keywords: ["atom", "code editor", "IDE"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 256 256">
@@ -41,6 +43,7 @@ export const iconsData: IconData[] = [
   {
     name: "Swagger",
     category: "Tools",
+    sourceUrl: "https://swagger.io/",
     keywords: ["swagger", "API", "documentation"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 256 256">
@@ -62,9 +65,26 @@ export const iconsData: IconData[] = [
 </svg>
     `.trim(),
   },
+    {
+    name: "AtlassianBitbucket",
+    category: "Tools",
+    sourceUrl: "https://bitbucket.org/",
+    keywords: ["atlassian", "git", "repository", "version control"],
+    svgContent: `
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M0 128C0 57.312 57.312 0 128 0h255.999c70.688 0 128 57.312 128 128v255.999c0 70.688-57.312 128-128 128h-256C57.313 511.999 0 454.687 0 383.999v-256z"
+        fill="#94c748" fill-rule="nonzero" />
+    <path
+        d="M380.639 250.954l-21.035 128.512c-1.376 7.776-6.858 12.341-14.634 12.341H166.613c-7.776 0-13.27-4.565-14.635-12.341l-37.045-229.13c-1.376-7.776 2.741-12.8 10.059-12.8H386.59c7.317 0 11.435 5.024 10.059 12.8l-10.059 60.373c-1.376 8.682-6.41 12.341-14.635 12.341H214.634c-2.293 0-3.659 1.376-3.21 4.117l12.351 75.926c.46 1.824 1.835 3.2 3.66 3.2h56.714c1.824 0 3.2-1.376 3.658-3.2l8.683-54.891c.917-6.859 5.493-9.6 11.893-9.6h61.739c9.152 0 11.893 4.576 10.517 12.352z"
+        fill="#101214" fill-rule="nonzero" />
+</svg>
+  `.trim(),
+  },
   {
     name: "JestJs",
     category: "Tools",
+    sourceUrl: "https://jestjs.io/",
     keywords: ["JestJs", "testing", "Tools", "javascript", "typescript"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -78,6 +98,7 @@ export const iconsData: IconData[] = [
   {
     name: "RaspberryPi",
     category: "Tools",
+    sourceUrl: "https://www.raspberrypi.com/",
     keywords: ["RaspberryPi", "hardware", "Tools", "electronics"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-35.5 0 327 327">
@@ -143,6 +164,7 @@ export const iconsData: IconData[] = [
   {
     name: "NPM",
     category: "Tools",
+    sourceUrl: "https://www.npmjs.com/",
     keywords: ["NPM", "npm", "Tools", "javascript", "typescript"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -155,6 +177,7 @@ export const iconsData: IconData[] = [
   {
     name: "NPMLogo",
     category: "Tools",
+    sourceUrl: "https://www.npmjs.com/",
     keywords: ["NPM", "npm", "Tools", "javascript", "typescript"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,6 +191,7 @@ export const iconsData: IconData[] = [
   {
     name: "ElectronJs",
     category: "Tools",
+    sourceUrl: "https://www.electronjs.org/",
     keywords: ["Tools", "nodejs", "javascript", "typescript"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -185,6 +209,7 @@ export const iconsData: IconData[] = [
   {
     name: "AlibabaCloud",
     category: "Tools",
+    sourceUrl: "https://www.alibabacloud.com/",
     keywords: ["server", "hosting", "storage", "networking", "security"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -199,6 +224,7 @@ export const iconsData: IconData[] = [
   {
     name: "Replit",
     category: "Tools",
+    sourceUrl: "https://replit.com/",
     keywords: ["replit", "code", "Tools", "development"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -211,6 +237,7 @@ export const iconsData: IconData[] = [
   {
     name: "Xampp",
     category: "Tools",
+    sourceUrl: "https://www.apachefriends.org/index.html",
     keywords: ["xampp", "server", "hosting", "storage", "security"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-1 0 258 258" xmlns="http://www.w3.org/2000/svg">
@@ -232,6 +259,7 @@ export const iconsData: IconData[] = [
   {
     name: "Gitlab",
     category: "Tools",
+    sourceUrl: "https://about.gitlab.com/",
     keywords: ["gitlab", "code", "Tools", "development"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -10 256 256" preserveAspectRatio="xMidYMid">
@@ -276,6 +304,7 @@ export const iconsData: IconData[] = [
   {
     name: "Peer5",
     category: "Tools",
+    sourceUrl: "https://peer5.com/",
     keywords: ["peer5", "cdn", "Tools", "development"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-17.5 0 291 291"
@@ -304,6 +333,7 @@ export const iconsData: IconData[] = [
   {
     name: "RabbitMQ",
     category: "Tools",
+    sourceUrl: "https://www.rabbitmq.com/",
     keywords: ["rabbitmq", "message broker", "Tools", "development"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-0.5 0 257 257">
@@ -318,6 +348,7 @@ export const iconsData: IconData[] = [
   {
     name: "AWS",
     category: "Tools",
+    sourceUrl: "https://aws.amazon.com/",
     keywords: ["aws", "cloud", "Tools", "development"],
     svgContent: `
 <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -333,6 +364,7 @@ export const iconsData: IconData[] = [
   {
     name: "PNPM",
     category: "Tools",
+    sourceUrl: "https://pnpm.io/",
     keywords: ["pnpm", "package manager", "Tools", "development"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -350,6 +382,7 @@ export const iconsData: IconData[] = [
   {
     name: "Firebase",
     category: "Tools",
+    sourceUrl: "https://firebase.google.com/",
     keywords: ["backend", "Tools", "database", "hosting", "storage"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -365,6 +398,7 @@ export const iconsData: IconData[] = [
   {
     name: "Homebrew",
     category: "Tools",
+    sourceUrl: "https://brew.sh/",
     keywords: ["homebrew", "package manager", "Tools", "development"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-46 0 256 256">
@@ -408,6 +442,7 @@ export const iconsData: IconData[] = [
   {
     name: "n8n",
     category: "Tools",
+    sourceUrl: "https://n8n.io/",
     keywords: ["n8n", "automation", "workflow", "Tools"],
     svgContent: `
 <svg viewBox="0 0 512 512" fill-rule="evenodd">
@@ -420,6 +455,7 @@ export const iconsData: IconData[] = [
   {
     name: "Netlify",
     category: "Tools",
+    sourceUrl: "https://www.netlify.com/",
     keywords: ["netlify", "hosting", "Tools", "infrastructure", "server"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -433,6 +469,7 @@ export const iconsData: IconData[] = [
   {
     name: "AndroidStudio",
     category: "Tools",
+    sourceUrl: "https://developer.android.com/studio",
     keywords: ["android", "studio", "Tools", "development", "ide"],
     svgContent: `
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -462,6 +499,7 @@ export const iconsData: IconData[] = [
   {
     name: "Akamai",
     category: "Tools",
+    sourceUrl: "https://www.akamai.com/",
     keywords: ["akamai", "cdn", "cloud", "security"],
     svgContent: `
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -482,6 +520,7 @@ export const iconsData: IconData[] = [
   {
     name: "GoogleCloud",
     category: "Tools",
+    sourceUrl: "https://cloud.google.com/",
     keywords: ["google", "cloud", "google cloud", "web", "internet", "search"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -501,6 +540,7 @@ export const iconsData: IconData[] = [
   {
     name: "NetBeans",
     category: "Tools",
+    sourceUrl: "https://netbeans.apache.org/",
     keywords: ["java", "development", "Tools", "ide", "programming"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 444 512">
@@ -522,6 +562,7 @@ export const iconsData: IconData[] = [
   {
     name: "DigitalOcean",
     category: "Tools",
+    sourceUrl: "https://www.digitalocean.com/",
     keywords: ["cloud", "infrastructure", "Tools", "server", "hosting"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -537,6 +578,7 @@ export const iconsData: IconData[] = [
   {
     name: "Atlassian",
     category: "Tools",
+    sourceUrl: "https://www.atlassian.com/",
     keywords: ["collaboration", "Tools", "development", "software"],
     svgContent: `
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -549,6 +591,7 @@ export const iconsData: IconData[] = [
   {
     name: "Jira",
     category: "Tools",
+    sourceUrl: "https://jira.atlassian.com/",
     keywords: ["project management", "Tools", "development", "software"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -576,6 +619,7 @@ export const iconsData: IconData[] = [
   {
     name: "Docker",
     category: "Tools",
+    sourceUrl: "https://www.docker.com/",
     keywords: ["docker", "container", "Tools", "development", "software"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -589,6 +633,7 @@ export const iconsData: IconData[] = [
   {
     name: "VSCode",
     category: "Tools",
+    sourceUrl: "https://code.visualstudio.com/",
     keywords: ["vscode", "editor", "code"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -606,6 +651,7 @@ export const iconsData: IconData[] = [
   {
     name: "AtlassianLoom",
     category: "Tools",
+    sourceUrl: "https://www.loom.com/",
     keywords: ["loom", "collaboration", "Tools", "development", "software"],
     svgContent: `
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -621,6 +667,7 @@ export const iconsData: IconData[] = [
   {
     name: "Dovetail",
     category: "Tools",
+    sourceUrl: "https://dovetailapp.com/",
     keywords: ["dovetail", "research", "Tools", "collaboration", "feedback"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -633,6 +680,7 @@ export const iconsData: IconData[] = [
   {
     name: "StripeLogo",
     category: "Tools",
+    sourceUrl: "https://stripe.com/",
     keywords: ["stripe", "payment", "Tools", "ecommerce", "money"],
     svgContent: `
 <svg width="488" height="262" viewBox="0 0 488 262" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -660,6 +708,7 @@ export const iconsData: IconData[] = [
   {
     name: "CampaignMonitor",
     category: "Tools",
+    sourceUrl: "https://www.campaignmonitor.com/",
     keywords: ["stripe", "payment", "Tools", "ecommerce", "money"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -41 256 256">
@@ -674,6 +723,7 @@ export const iconsData: IconData[] = [
   {
     name: "VercelDark",
     category: "Tools",
+    sourceUrl: "https://vercel.com/",
     keywords: ["vercel", "dark", "triangle"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -684,6 +734,7 @@ export const iconsData: IconData[] = [
   {
     name: "VercelLight",
     category: "Tools",
+    sourceUrl: "https://vercel.com/",
     keywords: ["vercel", "dark", "triangle"],
     svgContent: `
 <svg fill="#fff" viewBox="0 0 512 512">
@@ -694,6 +745,7 @@ export const iconsData: IconData[] = [
   {
     name: "GitHubDark",
     category: "Tools",
+    sourceUrl: "https://github.com/",
     keywords: ["github", "code", "repo"],
     svgContent: `
 <svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -706,6 +758,7 @@ export const iconsData: IconData[] = [
   {
     name: "GitHubLight",
     category: "Tools",
+    sourceUrl: "https://github.com/",
     keywords: ["github", "code", "repo"],
     svgContent: `
 <svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -718,6 +771,7 @@ export const iconsData: IconData[] = [
   {
     name: "RailwayDark",
     category: "Tools",
+    sourceUrl: "https://railway.com/",
     keywords: ["railway", "infrastructure", "server", "hosting", "storage"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -731,6 +785,7 @@ export const iconsData: IconData[] = [
   {
     name: "RailwayLight",
     category: "Tools",
+    sourceUrl: "https://railway.com/",
     keywords: ["railway", "infrastructure", "server", "hosting", "storage"],
     svgContent: `
 <svg viewBox="0 0 512 512" fill="#fff">
@@ -744,6 +799,7 @@ export const iconsData: IconData[] = [
   {
     name: "500pxDark",
     category: "Tools",
+    sourceUrl: "https://500px.com/",
     keywords: ["500px", "photography", "photos", "images"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -192 512 512">
@@ -758,6 +814,7 @@ export const iconsData: IconData[] = [
   {
     name: "500pxLight",
     category: "Tools",
+    sourceUrl: "https://500px.com/",
     keywords: ["500px", "photography", "photos", "images"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -192 512 512">
@@ -772,6 +829,7 @@ export const iconsData: IconData[] = [
   {
     name: "HoundCI",
     category: "Tools",
+    sourceUrl: "https://houndci.com/",
     keywords: ["houndui", "code review tool", "linting tool"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -2.5 256 256">

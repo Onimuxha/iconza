@@ -4,6 +4,7 @@ export const iconsData: IconData[] = [
   {
     name: "ChatGPTFill",
     category: "AI",
+    sourceUrl: "https://chatgpt.com",
     keywords: ["chatgpt", "ai", "openai"],
     svgContent: `
 <svg
@@ -18,6 +19,7 @@ export const iconsData: IconData[] = [
   {
     name: "ChatGPTDark",
     category: "AI",
+    sourceUrl: "https://chatgpt.com",
     keywords: ["chatgpt", "ai", "openai"],
     svgContent: `
 <svg viewBox="0 0 512 512" stroke-linejoin="round" stroke-miterlimit="2">
@@ -30,6 +32,7 @@ export const iconsData: IconData[] = [
   {
     name: "ChatGPTLight",
     category: "AI",
+    sourceUrl: "https://chatgpt.com",
     keywords: ["chatgpt", "ai", "openai"],
     svgContent: `
 <svg viewBox="0 0 512 512" stroke-linejoin="round" stroke-miterlimit="2">
@@ -42,6 +45,7 @@ export const iconsData: IconData[] = [
   {
     name: "Perplexity",
     category: "AI",
+    sourceUrl: "https://perplexity.ai",
     keywords: ["ai", "perplexity", "chatgpt"],
     svgContent: `
 <svg shape-rendering="geometricPrecision"
@@ -57,6 +61,7 @@ export const iconsData: IconData[] = [
   {
     name: "GoogleAIStudioDark",
     category: "AI",
+    sourceUrl: "https://aistudio.google.com/prompts/new_chat",
     keywords: ["ai", "google", "aistudio"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -72,6 +77,7 @@ export const iconsData: IconData[] = [
   {
     name: "GoogleAIStudioLight",
     category: "AI",
+    sourceUrl: "https://aistudio.google.com/prompts/new_chat",
     keywords: ["ai", "google", "aistudio"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -87,6 +93,7 @@ export const iconsData: IconData[] = [
   {
     name: "ClaudeAI",
     category: "AI",
+    sourceUrl: "https://claude.ai",
     keywords: ["ai", "claude", "anthropic"],
     svgContent: `
 <svg shape-rendering="geometricPrecision"
@@ -102,6 +109,7 @@ export const iconsData: IconData[] = [
   {
     name: "VercelV0Dark",
     category: "AI",
+    sourceUrl: "https://v0.app/",
     keywords: ["ai", "vercel", "V0"],
     svgContent: `
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
@@ -114,6 +122,7 @@ export const iconsData: IconData[] = [
   {
     name: "VercelV0Light",
     category: "AI",
+    sourceUrl: "https://v0.app/",
     keywords: ["ai", "vercel", "V0"],
     svgContent: `
 <svg fill="#fff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
@@ -126,6 +135,7 @@ export const iconsData: IconData[] = [
   {
     name: "DeepSeek",
     category: "AI",
+    sourceUrl: "https://chat.deepseek.com",
     keywords: ["ai", "deepseek"],
     svgContent: `
 <svg viewBox="0 0 512 509.64">
@@ -137,29 +147,9 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "GoogleGemmaAI",
-    category: "AI",
-    keywords: ["ai", "google", "gemma"],
-    svgContent: `
-<svg viewBox="0 0 512 512" fill-rule="evenodd" stroke-miterlimit="2">
-    <path
-        d="M12.34 5.953a8.33 8.33 0 01-.247-1.125V3.72a8.251 8.251 0 015.562 2.232H12.34v.001zm-.69 0a8.01 8.01 0 00.257-1.145V3.72a8.251 8.251 0 00-5.562 2.232h5.304l.001.001zm-5.434.187h5.374a7.918 7.918 0 01-.267.696 8.412 8.412 0 01-1.76 2.65L6.216 6.14zm-.263-.187H2.977v.187h2.915a8.44 8.44 0 00-2.357 5.767H0v.186h3.535a8.44 8.44 0 002.357 5.767H2.977v.186h2.976v2.977h.187v-2.915a8.44 8.44 0 005.767 2.357V24h.186v-3.535a8.44 8.44 0 005.767-2.357v2.915h.186v-2.977h2.977v-.186h-2.915a8.44 8.44 0 002.357-5.767H24v-.186h-3.535a8.44 8.44 0 00-2.357-5.767h2.915v-.187h-2.977V2.977h-.186v2.915a8.44 8.44 0 00-5.767-2.357V0h-.186v3.535A8.44 8.44 0 006.14 5.892V2.977h-.187v2.976zm6.14 14.326a8.252 8.252 0 005.562-2.233H12.34a8.33 8.33 0 00-.247 1.126v1.107zm-.186-1.087a8.012 8.012 0 00-.258-1.146H6.345a8.252 8.252 0 005.562 2.233v-1.087zm-8.186-7.285h1.107a8.18 8.18 0 001.125-.247V6.345a8.251 8.251 0 00-2.232 5.562zm1.087.186H3.72a8.251 8.251 0 002.232 5.562v-5.304a8.03 8.03 0 00-1.145-.258h.001zm15.47-.186a8.251 8.251 0 00-2.232-5.562v5.315c.367.108.743.19 1.126.247h1.107-.001zm-1.086.186c-.39.058-.772.144-1.146.258v5.304a8.252 8.252 0 002.233-5.562h-1.087zm-1.332 5.69V12.41a7.918 7.918 0 00-.696.267 8.412 8.412 0 00-2.65 1.76l3.346 3.346zm0-6.18v-5.45l-.012-.013h-5.451c.076.235.162.468.26.696a8.689 8.689 0 001.819 2.688 8.71 8.71 0 002.688 1.82c.228.097.46.183.696.259zM6.14 17.848V12.41c.235.078.468.167.696.267a8.405 8.405 0 012.688 1.799 8.405 8.405 0 011.799 2.688c.1.228.19.46.267.696H6.152l-.012-.012zm0-6.245V6.326l3.29 3.29a8.719 8.719 0 01-2.594 1.728c-.228.097-.46.183-.696.259zm6.257 6.257h5.277l-3.29-3.29a8.719 8.719 0 00-1.728 2.594c-.097.228-.183.46-.259.696zm-2.347-7.81a9.448 9.448 0 01-2.88 1.96 9.14 9.14 0 012.88 1.94 9.14 9.14 0 011.94 2.88 9.448 9.448 0 011.96-2.88 9.14 9.14 0 012.88-1.94 9.448 9.448 0 01-2.88-1.96 9.448 9.448 0 01-1.96-2.88 9.14 9.14 0 01-1.94 2.88z"
-        fill="url(#gemma)" transform="scale(21.33334)" />
-    <defs>
-        <linearGradient id="gemma" x1="0" y1="0" x2="1" y2="0"
-            gradientTransform="rotate(-44.78 24.946 1.957) scale(17.1679)">
-            <stop offset="0" stop-color="#446eff" />
-            <stop offset=".37" stop-color="#2e96ff" />
-            <stop offset=".83" stop-color="#b1c5ff" />
-            <stop offset="1" stop-color="#b1c5ff" />
-        </linearGradient>
-    </defs>
-</svg>
-`.trim(),
-  },
-  {
     name: "CursorAIFill",
     category: "AI",
+    sourceUrl: "https://cursor.com/",
     keywords: ["ai", "cursor"],
     svgContent: `
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -193,6 +183,7 @@ export const iconsData: IconData[] = [
   {
     name: "CursorAI",
     category: "AI",
+    sourceUrl: "https://cursor.com/",
     keywords: ["ai", "cursor"],
     svgContent: `
 <svg viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg">
@@ -225,6 +216,7 @@ export const iconsData: IconData[] = [
   {
     name: "ElevenLabsAIDark",
     category: "AI",
+    sourceUrl: "https://elevenlabs.io/",
     keywords: ["ai", "elevenlabs"],
     svgContent: `
 <svg viewBox="0 0 512 512" stroke-linejoin="round" stroke-miterlimit="2">
@@ -235,6 +227,7 @@ export const iconsData: IconData[] = [
   {
     name: "ElevenLabsAILight",
     category: "AI",
+    sourceUrl: "https://elevenlabs.io/",
     keywords: ["ai", "elevenlabs"],
     svgContent: `
 <svg fill="#fff" viewBox="0 0 512 512" stroke-linejoin="round" stroke-miterlimit="2">
@@ -245,6 +238,7 @@ export const iconsData: IconData[] = [
   {
     name: "FluxAIDark",
     category: "AI",
+    sourceUrl: "",
     keywords: ["ai", "flux"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -260,6 +254,7 @@ export const iconsData: IconData[] = [
   {
     name: "FluxAILight",
     category: "AI",
+    sourceUrl: "",
     keywords: ["ai", "flux"],
     svgContent: `
 <svg viewBox="0 0 512 512" >
@@ -275,6 +270,7 @@ export const iconsData: IconData[] = [
   {
     name: "KlingAI",
     category: "AI",
+    sourceUrl: "https://klingai.com/global/",
     keywords: ["ai", "kling"],
     svgContent: `
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -336,6 +332,7 @@ export const iconsData: IconData[] = [
   {
     name: "KlingLogoDark",
     category: "AI",
+    sourceUrl: "https://klingai.com/global/",
     keywords: ["ai", "kling", "logo"],
     svgContent: `
 <svg viewBox="0 0 3541 952" xmlns="http://www.w3.org/2000/svg" width="3541" height="952">
@@ -350,6 +347,7 @@ export const iconsData: IconData[] = [
   {
     name: "KlingLogoLight",
     category: "AI",
+    sourceUrl: "https://klingai.com/global/",
     keywords: ["ai", "kling", "logo"],
     svgContent: `
 <svg viewBox="0 0 3541 952" xmlns="http://www.w3.org/2000/svg" width="3541" height="952">
@@ -364,6 +362,7 @@ export const iconsData: IconData[] = [
   {
     name: "WritesonicAI",
     category: "AI",
+    sourceUrl: "https://writesonic.com/",
     keywords: ["ai", "writesonic", "sonic"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -395,6 +394,7 @@ export const iconsData: IconData[] = [
   {
     name: "ManusAIDark",
     category: "AI",
+    sourceUrl: "https://manus.im/app",
     keywords: ["ai", "manus"],
     svgContent: `
 <svg viewBox="0 0 512 512" fill-rule="evenodd">
@@ -413,6 +413,7 @@ export const iconsData: IconData[] = [
   {
     name: "ManusAILight",
     category: "AI",
+    sourceUrl: "https://manus.im/app",
     keywords: ["ai", "manus"],
     svgContent: `
 <svg fill="#fff" viewBox="0 0 512 512" fill-rule="evenodd">
@@ -431,6 +432,7 @@ export const iconsData: IconData[] = [
   {
     name: "MetaAI",
     category: "AI",
+    sourceUrl: "https://meta.ai/",
     keywords: ["ai", "meta"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -455,6 +457,7 @@ export const iconsData: IconData[] = [
   },
   {
     name: "QwenAI",
+    sourceUrl: "https://chat.qwen.ai/",
     category: "AI",
     keywords: ["ai", "qwen"],
     svgContent: `
@@ -475,6 +478,7 @@ export const iconsData: IconData[] = [
   {
     name: "FireworksAI",
     category: "AI",
+    sourceUrl: "https://fireworks.ai/",
     keywords: ["ai", "fireworks", "chat", "assistant", "bot"],
     svgContent: `
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -487,6 +491,7 @@ export const iconsData: IconData[] = [
   {
     name: "ClineAIDark",
     category: "AI",
+    sourceUrl: "https://cline.bot/",
     keywords: ["ai", "cline"],
     svgContent: `
 <svg viewBox="0 0 512 512"
@@ -503,6 +508,7 @@ export const iconsData: IconData[] = [
   {
     name: "ClineAILight",
     category: "AI",
+    sourceUrl: "https://cline.bot/",
     keywords: ["ai", "cline"],
     svgContent: `
 <svg viewBox="0 0 512 512"
@@ -519,6 +525,7 @@ export const iconsData: IconData[] = [
   {
     name: "DeepAIDark",
     category: "AI",
+    sourceUrl: "https://deepai.org/",
     keywords: ["ai", "deepai"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -533,6 +540,7 @@ export const iconsData: IconData[] = [
   {
     name: "DeepAILight",
     category: "AI",
+    sourceUrl: "https://deepai.org/",
     keywords: ["ai", "deepai"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -547,6 +555,7 @@ export const iconsData: IconData[] = [
   {
     name: "GrokFill",
     category: "AI",
+    sourceUrl: "https://grok.com/",
     keywords: ["ai", "grok", "x"],
     svgContent: `
 <svg viewBox="0 0 512 509.641">
@@ -560,6 +569,7 @@ export const iconsData: IconData[] = [
   {
     name: "GrokAIDark",
     category: "AI",
+    sourceUrl: "https://grok.com/",
     keywords: ["ai", "grok", "x"],
     svgContent: `
 <svg viewBox="0 0 512 492">
@@ -572,6 +582,7 @@ export const iconsData: IconData[] = [
   {
     name: "GrokAILight",
     category: "AI",
+    sourceUrl: "https://grok.com/",
     keywords: ["ai", "grok", "x"],
     svgContent: `
 <svg viewBox="0 0 512 492">
@@ -584,6 +595,7 @@ export const iconsData: IconData[] = [
   {
     name: "SunoAIDark",
     category: "AI",
+    sourceUrl: "",
     keywords: ["ai", "suno", "audio", "music"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -598,6 +610,7 @@ export const iconsData: IconData[] = [
   {
     name: "SunoAILight",
     category: "AI",
+    sourceUrl: "",
     keywords: ["ai", "suno", "audio", "music"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -612,6 +625,7 @@ export const iconsData: IconData[] = [
   {
     name: "OllamaDark",
     category: "AI",
+    sourceUrl: "https://ollama.com/",
     keywords: ["ai", "ollama", "llama", "model"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -624,6 +638,7 @@ export const iconsData: IconData[] = [
   {
     name: "OllamaLight",
     category: "AI",
+    sourceUrl: "https://ollama.com/",
     keywords: ["ai", "ollama", "llama", "model"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -636,6 +651,7 @@ export const iconsData: IconData[] = [
   {
     name: "KreaAIDark",
     category: "AI",
+    sourceUrl: "https://www.krea.ai/",
     keywords: ["ai", "krea", "image", "generation"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -653,6 +669,7 @@ export const iconsData: IconData[] = [
   {
     name: "KreaAILight",
     category: "AI",
+    sourceUrl: "https://www.krea.ai/",
     keywords: ["ai", "krea", "image", "generation"],
     svgContent: `
 <svg fill="#fff" viewBox="0 0 512 512">
@@ -670,6 +687,7 @@ export const iconsData: IconData[] = [
   {
     name: "LovableAI",
     category: "AI",
+    sourceUrl: "https://lovable.dev/",
     keywords: ["ai", "lovable", "chat", "assistant", "bot"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -693,6 +711,7 @@ export const iconsData: IconData[] = [
   {
     name: "PikaAIDark",
     category: "AI",
+    sourceUrl: "https://pika.art/",
     keywords: ["ai", "pika", "image", "generation"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -708,6 +727,7 @@ export const iconsData: IconData[] = [
   {
     name: "PikaAILight",
     category: "AI",
+    sourceUrl: "https://pika.art/",
     keywords: ["ai", "pika", "image", "generation"],
     svgContent: `
 <svg fill="#fff" viewBox="0 0 512 512">
@@ -723,6 +743,7 @@ export const iconsData: IconData[] = [
   {
     name: "WindsurfAIDark",
     category: "AI",
+    sourceUrl: "https://windsurf.com/",
     keywords: ["ai", "windsurf", "chat", "assistant", "bot"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -739,6 +760,7 @@ export const iconsData: IconData[] = [
   {
     name: "WindsurfAILight",
     category: "AI",
+    sourceUrl: "https://windsurf.com/",
     keywords: ["ai", "windsurf", "chat", "assistant", "bot"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -755,6 +777,7 @@ export const iconsData: IconData[] = [
   {
     name: "AtlassianRovo",
     category: "AI",
+    sourceUrl: "https://www.atlassian.com/rovo",
     keywords: ["ai", "atlassian", "rovo", "chat", "assistant", "bot"],
     svgContent: `
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">

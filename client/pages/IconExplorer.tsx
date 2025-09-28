@@ -144,15 +144,24 @@ import { Icon } from 'iconza'
           </div>
 
           <div className="flex flex-col lg:flex-row gap-4 lg:items-center lg:justify-between mb-4">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1 p-1 rounded-2xl bg-gray-900/80 backdrop-blur-xl border border-gray-700/50 shadow-2xl">
               {[{ mode: "grid", icon: IconLayoutGrid }, { mode: "list", icon: IconListDetails }].map(({ mode, icon: Icon }) => (
                 <button
                   key={mode}
                   onClick={() => setViewMode(mode as "grid" | "list")}
-                  className={cn("p-2 rounded-lg hover:bg-gray-700", viewMode === mode ? "bg-gray-700" : "bg-transparent")}
+                  className={cn(
+                    "p-2 rounded-xl transition-all duration-500 relative overflow-hidden group border",
+                    viewMode === mode
+                      ? "border-lime-400/50 bg-lime-400/10 text-lime-400 shadow-lg shadow-lime-400/20"
+                      : "border-transparent text-gray-400 hover:text-gray-200 hover:border-gray-600/50"
+                  )}
                   title={`Switch to ${mode} view`}
                 >
-                  <Icon className="w-5 h-5" />
+                  {viewMode === mode && (
+                    <div className="absolute inset-0 bg-lime-400/10 rounded-xl animate-pulse" />
+                  )}
+                  <Icon className="w-5 h-5 relative z-10" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -skew-x-12 transform" />
                 </button>
               ))}
             </div>
@@ -161,7 +170,7 @@ import { Icon } from 'iconza'
                 <button
                   className={cn(
                     "group inline-flex items-center rounded-full px-4 py-3 text-sm font-medium transition-all duration-300",
-                    "bg-zinc-800/40 backdrop-blur borderborder-zinc-700",
+                    "bg-zinc-800/40 backdrop-blur border border-zinc-700",
                   )}
                 >
                   {iconsMap[tab]}

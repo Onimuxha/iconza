@@ -4,6 +4,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobePhotoshop",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/photoshop.html",
     keywords: ["adobe", "ps", "photoshop", "design"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -17,6 +18,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeFresco",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/fresco.html",
     keywords: ["adobe", "design", "sampler", "fresco", "draw", "paint"],
     svgContent: `
 <svg viewBox="0 0 511.45 498.66">
@@ -34,6 +36,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeLightroom",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/photoshop-lightroom.html",
     keywords: ["adobe", "design", "lightroom", "lr", "photo", "edit"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -47,6 +50,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeAfterEffects",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/aftereffects.html",
     keywords: ["adobe", "design", "after effects", "ae", "video", "motion"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.47 499.66">
@@ -64,6 +68,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeAnimate",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/animate.html",
     keywords: ["adobe", "design", "animate", "animation", "flash", "2d"],
     svgContent: `
 <svg  viewBox="0 0 463.65 452.06">
@@ -81,13 +86,12 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeAudition",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/audition.html",
     keywords: [
       "adobe",
-      "design",
       "audition",
       "audio",
       "sound",
-      "wave",
       "music",
     ],
     svgContent: `
@@ -106,6 +110,7 @@ export const iconsData: IconData[] = [
   {
     name: "CharacterAnimator",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/character-animator.html",
     keywords: ["adobe", "design", "animator", "character", "animation"],
     svgContent: `
 <svg viewBox="0 0 511.45 498.66">
@@ -123,6 +128,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobePremierePro",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/premiere.html",
     keywords: ["adobe", "design", "premiere", "pro", "video", "edit", "film"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.84 500.01">
@@ -141,6 +147,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeRush",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/premiere-rush.html",
     keywords: ["adobe", "design", "rush", "video", "edit", "film"],
     svgContent: `
 <svg viewBox="0 0 122.88 119.81">
@@ -159,6 +166,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeAero",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/aero.html",
     keywords: ["adobe", "aero", "design", "3d", "ar", "augmented reality"],
     svgContent: `
 <svg viewBox="0 0 484.78 472.66">
@@ -176,6 +184,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeDimension",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/dimension.html",
     keywords: ["adobe", "demension", "design", "3d", "3d design"],
     svgContent: `
 <svg viewBox="0 0 511.45 498.66">
@@ -193,13 +202,12 @@ export const iconsData: IconData[] = [
   {
     name: "SubstanceDesigner",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/substance3d-designer.html",
     keywords: [
       "adobe",
       "designer",
       "design",
       "3d",
-      "texture",
-      "material",
       "substance",
     ],
     svgContent: `
@@ -218,6 +226,7 @@ export const iconsData: IconData[] = [
   {
     name: "SubstanceSampler",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/substance3d-sampler.html",
     keywords: [
       "adobe",
       "substance",
@@ -244,6 +253,7 @@ export const iconsData: IconData[] = [
   {
     name: "SubstanceStager",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/substance3d-stager.html",
     keywords: [
       "adobe",
       "stager",
@@ -270,6 +280,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeDreamweaver",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/dreamweaver.html",
     keywords: ["adobe", "dreamweaver", "design", "web", "development", "code"],
     svgContent: `
 <svg viewBox="0 0 511.45 498.66">
@@ -288,6 +299,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeXd",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/xd.html",
     keywords: ["adobe", "xd", "design", "ui", "ux", "prototype"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.45 499.64">
@@ -305,6 +317,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeInDesign",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/indesign.html",
     keywords: ["adobe", "dreamweaver", "design", "indesign", "layout", "print"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -321,6 +334,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeStock",
     category: "DesignTools",
+    sourceUrl: "https://stock.adobe.com/",
     keywords: ["adobe", "design", "stock"],
     svgContent: `
 <svg viewBox="0 0 464.49 452.88">
@@ -339,6 +353,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeIllustrator",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/products/illustrator.html",
     keywords: ["adobe", "design", "illustrator", "vector", "graphics", "art"],
     svgContent: `
 <svg viewBox="0 0 511.45 498.66">
@@ -356,6 +371,7 @@ export const iconsData: IconData[] = [
   {
     name: "Adobe",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/",
     keywords: ["adobe", "design", "creative", "tools"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -368,6 +384,7 @@ export const iconsData: IconData[] = [
   {
     name: "AdobeFireflyAI",
     category: "DesignTools",
+    sourceUrl: "https://www.adobe.com/sensei/generative-ai/firefly.html",
     keywords: [
       "adobe",
       "firefly",
@@ -387,6 +404,7 @@ export const iconsData: IconData[] = [
   {
     name: "Figma",
     category: "DesignTools",
+    sourceUrl: "https://www.figma.com/",
     keywords: ["figma", "design", "graphic", "tools", "creator", "ux", "ui"],
     svgContent: `
 <svg viewBox="0 0 200 300" width="100" height="100">
@@ -403,6 +421,7 @@ export const iconsData: IconData[] = [
   {
     name: "Axure",
     category: "DesignTools",
+    sourceUrl: "https://www.axure.com/",
     keywords: ["axure", "design", "graphic", "tools", "creator", "ux", "ui"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -427,6 +446,7 @@ export const iconsData: IconData[] = [
   {
     name: "Canva",
     category: "DesignTools",
+    sourceUrl: "https://www.canva.com/",
     keywords: ["canva", "design", "graphic", "tools", "creator"],
     svgContent: `
 <svg viewBox="0 0 508 508">
@@ -469,6 +489,7 @@ export const iconsData: IconData[] = [
   {
     name: "Lunacy",
     category: "DesignTools",
+    sourceUrl: "https://icons8.com/lunacy",
     keywords: ["lunacy", "design", "graphic", "tools", "creator", "ux", "ui"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -483,6 +504,7 @@ export const iconsData: IconData[] = [
   {
     name: "Sketch",
     category: "DesignTools",
+    sourceUrl: "https://www.sketch.com/",
     keywords: ["sketch", "design", "vector", "tools", "app"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -502,6 +524,7 @@ export const iconsData: IconData[] = [
   {
     name: "Blender",
     category: "DesignTools",
+    sourceUrl: "https://www.blender.org/",
     keywords: ["blender", "3d", "modeling", "animation", "tools", "creator"],
     svgContent: `
 <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -520,6 +543,7 @@ export const iconsData: IconData[] = [
   {
     name: "Miro",
     category: "DesignTools",
+    sourceUrl: "https://miro.com/",
     keywords: ["miro", "design", "whiteboard", "tools", "collaboration"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -533,6 +557,7 @@ export const iconsData: IconData[] = [
   {
     name: "InVision",
     category: "DesignTools",
+    sourceUrl: "https://www.invisionapp.com/",
     keywords: ["invision", "design", "prototype", "tools", "collaboration"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -546,6 +571,7 @@ export const iconsData: IconData[] = [
   {
     name: "FramerDark",
     category: "DesignTools",
+    sourceUrl: "https://www.framer.com/",
     keywords: ["framer", "design", "prototype", "tools", "collaboration"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 384" width="100" height="100">
@@ -556,6 +582,7 @@ export const iconsData: IconData[] = [
   {
     name: "FramerLight",
     category: "DesignTools",
+    sourceUrl: "https://www.framer.com/",
     keywords: ["framer", "design", "prototype", "tools", "collaboration"],
     svgContent: `
 <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 384" width="100" height="100">
@@ -566,6 +593,7 @@ export const iconsData: IconData[] = [
   {
     name: "Dribbble",
     category: "DesignTools",
+    sourceUrl: "https://dribbble.com/",
     keywords: ["dribbble", "design", "prototype", "tools", "collaboration"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 256 256">

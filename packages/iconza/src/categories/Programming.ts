@@ -4,6 +4,7 @@ export const iconsData: IconData[] = [
   {
     name: "TypeScript",
     category: "Programming",
+    sourceUrl: "https://www.typescriptlang.org/",
     keywords: ["ts", "javascript", "frontend", "backend", "language"],
     svgContent: `
 <svg viewBox="0 0 100 100" >
@@ -24,6 +25,7 @@ export const iconsData: IconData[] = [
   {
     name: "HTML5",
     category: "Programming",
+    sourceUrl: "https://es.wikipedia.org/wiki/HTML5",
     keywords: ["html5", "html", "language", "frontend", "web"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -39,6 +41,7 @@ export const iconsData: IconData[] = [
   {
     name: "Git",
     category: "Programming",
+    sourceUrl: "https://git-scm.com/",
     keywords: ["git", "version control", "github", "frontend"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 256 256">
@@ -53,6 +56,7 @@ export const iconsData: IconData[] = [
   {
     name: "CSS3",
     category: "Programming",
+    sourceUrl: "https://es.wikipedia.org/wiki/CSS",
     keywords: ["css3", "css", "language", "frontend", "web", "style"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -68,6 +72,7 @@ export const iconsData: IconData[] = [
   {
     name: "SASS",
     category: "Programming",
+    sourceUrl: "https://sass-lang.com/",
     keywords: ["scss", "style", "css", "preprocessor", "frontend", "web"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -79,6 +84,7 @@ export const iconsData: IconData[] = [
   {
     name: "Vitest",
     category: "Programming",
+    sourceUrl: "https://vitest.dev/",
     keywords: ["testing", "test", "unit test", "javascript", "typescript"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -94,6 +100,7 @@ export const iconsData: IconData[] = [
   {
     name: "JavaScript",
     category: "Programming",
+    sourceUrl: "https://www.javascript.com/",
     keywords: ["javascript", "js", "language", "frontend", "backend", "web"],
     svgContent: `
 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -114,6 +121,7 @@ export const iconsData: IconData[] = [
   {
     name: "ApacheKafkaDark",
     category: "Programming",
+    sourceUrl: "https://kafka.apache.org/",
     keywords: ["apache kafka", "kafka", "streaming", "data", "backend"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -126,6 +134,7 @@ export const iconsData: IconData[] = [
   {
     name: "ApacheKafkaLight",
     category: "Programming",
+    sourceUrl: "https://kafka.apache.org/",
     keywords: ["apache kafka", "kafka", "streaming", "data", "backend"],
     svgContent: `
 <svg viewBox="0 0 512 512">
@@ -138,6 +147,7 @@ export const iconsData: IconData[] = [
   {
     name: "Python",
     category: "Programming",
+    sourceUrl: "https://www.python.org/",
     keywords: ["backend", "data", "science", "ai", "machine learning"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -163,6 +173,7 @@ export const iconsData: IconData[] = [
   {
     name: "PHP",
     category: "Programming",
+    sourceUrl: "https://www.php.net/",
     keywords: ["php", "language", "backend", "web", "server"],
     svgContent: `
 <svg viewBox="0 0 125 62.27" width="125" height="62.27">
@@ -180,6 +191,7 @@ export const iconsData: IconData[] = [
   {
     name: "SolidityDark",
     category: "Programming",
+    sourceUrl: "https://soliditylang.org/",
     keywords: ["language", "smart contracts", "blockchain", "ethereum"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -195,6 +207,7 @@ export const iconsData: IconData[] = [
   {
     name: "SolidityLight",
     category: "Programming",
+    sourceUrl: "https://soliditylang.org/",
     keywords: ["language", "smart contracts", "blockchain", "ethereum"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -210,6 +223,7 @@ export const iconsData: IconData[] = [
   {
     name: "Haskell",
     category: "Programming",
+    sourceUrl: "https://www.haskell.org/",
     keywords: ["haskell", "language", "functional programming", "backend"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -224,6 +238,7 @@ export const iconsData: IconData[] = [
   {
     name: "Scala",
     category: "Programming",
+    sourceUrl: "https://www.scala-lang.org/",
     keywords: ["scala", "language", "functional programming", "backend"],
     svgContent: `
 <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -275,6 +290,7 @@ export const iconsData: IconData[] = [
   {
     name: "Dlang",
     category: "Programming",
+    sourceUrl: "https://dlang.org/",
     keywords: ["dlang", "d programming language", "language", "backend"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -288,6 +304,7 @@ export const iconsData: IconData[] = [
   {
     name: "Crystal",
     category: "Programming",
+    sourceUrl: "https://crystal-lang.org/",
     keywords: ["crystal", "language", "backend", "web", "server"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 102 102" width="100" height="100">
@@ -301,6 +318,7 @@ export const iconsData: IconData[] = [
   {
     name: "Clojure",
     category: "Programming",
+    sourceUrl: "https://clojure.org/",
     keywords: ["clojure", "language", "functional programming", "lisp"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -320,6 +338,7 @@ export const iconsData: IconData[] = [
   {
     name: "Erlang",
     category: "Programming",
+    sourceUrl: "https://www.erlang.org/",
     keywords: ["erlang", "language", "functional programming", "backend"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -333,6 +352,7 @@ export const iconsData: IconData[] = [
   {
     name: "VisualBasic",
     category: "Programming",
+    sourceUrl: "https://learn.microsoft.com/en-us/dotnet/visual-basic/",
     keywords: ["erlang", "language", "functional programming", "backend"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 102 102">
@@ -347,6 +367,7 @@ export const iconsData: IconData[] = [
   {
     name: "Swift",
     category: "Programming",
+    sourceUrl: "https://swift.org/",
     keywords: ["swift", "language", "ios", "macos", "mobile"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -374,6 +395,7 @@ export const iconsData: IconData[] = [
   {
     name: "RustDark",
     category: "Programming",
+    sourceUrl: "https://www.rust-lang.org/",
     keywords: ["rust", "language", "systems programming", "backend"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 100 100.03" width="100" height="100.03">
@@ -385,6 +407,7 @@ export const iconsData: IconData[] = [
   {
     name: "RustLight",
     category: "Programming",
+    sourceUrl: "https://www.rust-lang.org/",
     keywords: ["rust", "language", "systems programming", "backend"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 100 100.03" width="100" height="100">
@@ -396,6 +419,7 @@ export const iconsData: IconData[] = [
   {
     name: "MarkdownDark",
     category: "Programming",
+    sourceUrl: "https://www.markdownguide.org/",
     keywords: ["markdown", "language", "markup", "text"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -49 256 256">
@@ -410,6 +434,7 @@ export const iconsData: IconData[] = [
   {
     name: "MarkdownLight",
     category: "Programming",
+    sourceUrl: "https://www.markdownguide.org/",
     keywords: ["markdown", "language", "markup", "text"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -49 256 256">
@@ -424,6 +449,7 @@ export const iconsData: IconData[] = [
   {
     name: "R",
     category: "Programming",
+    sourceUrl: "https://www.r-project.org/",
     keywords: ["r", "language", "data science", "statistics"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg"
@@ -452,6 +478,7 @@ export const iconsData: IconData[] = [
   {
     name: "Nim",
     category: "Programming",
+    sourceUrl: "https://nim-lang.org/",
     keywords: ["nim", "language", "systems programming", "backend"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -465,6 +492,7 @@ export const iconsData: IconData[] = [
   {
     name: "Lua",
     category: "Programming",
+    sourceUrl: "https://www.lua.org/",
     keywords: ["lua", "language", "scripting", "game development"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -484,6 +512,7 @@ export const iconsData: IconData[] = [
   {
     name: "Kotlin",
     category: "Programming",
+    sourceUrl: "https://kotlinlang.org/",
     keywords: ["kotlin", "language", "android", "backend"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" width="100" height="100">
@@ -502,6 +531,7 @@ export const iconsData: IconData[] = [
   {
     name: "GraphQL",
     category: "Programming",
+    sourceUrl: "https://graphql.org/",
     keywords: ["graphql", "language", "backend", "api"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-16 0 288 288">
@@ -518,6 +548,7 @@ export const iconsData: IconData[] = [
   {
     name: "VisualStudio",
     category: "Programming",
+    sourceUrl: "https://visualstudio.microsoft.com/",
     keywords: ["visual studio", "ide", "development", "microsoft"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 256 256">
@@ -556,6 +587,7 @@ export const iconsData: IconData[] = [
   {
     name: "Java",
     category: "Programming",
+    sourceUrl: "https://www.java.com/",
     keywords: ["java", "language", "backend", "enterprise"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -575,6 +607,7 @@ export const iconsData: IconData[] = [
   {
     name: "Go",
     category: "Programming",
+    sourceUrl: "https://go.dev/",
     keywords: ["go", "language", "backend", "systems programming"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -588,6 +621,7 @@ export const iconsData: IconData[] = [
   {
     name: "Dart",
     category: "Programming",
+    sourceUrl: "https://dart.dev/",
     keywords: ["dart", "language", "flutter", "mobile"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -609,6 +643,7 @@ export const iconsData: IconData[] = [
   {
     name: "C",
     category: "Programming",
+    sourceUrl: "https://en.wikipedia.org/wiki/C_(programming_language)",
     keywords: ["c", "language", "systems programming", "backend"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="381 479 4562 5044">
@@ -628,6 +663,7 @@ export const iconsData: IconData[] = [
   {
     name: "C++",
     category: "Programming",
+    sourceUrl: "https://isocpp.org/",
     keywords: ["c++", "language", "systems programming", "backend"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -649,6 +685,7 @@ export const iconsData: IconData[] = [
   {
     name: "C#",
     category: "Programming",
+    sourceUrl: "https://learn.microsoft.com/en-us/dotnet/csharp/",
     keywords: ["c#", "language", "backend", "enterprise", "dotnet"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
@@ -666,23 +703,9 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "AtlassianBitbucket",
-    category: "Programming",
-    keywords: ["atlassian", "git", "repository", "version control"],
-    svgContent: `
-<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-    <path
-        d="M0 128C0 57.312 57.312 0 128 0h255.999c70.688 0 128 57.312 128 128v255.999c0 70.688-57.312 128-128 128h-256C57.313 511.999 0 454.687 0 383.999v-256z"
-        fill="#94c748" fill-rule="nonzero" />
-    <path
-        d="M380.639 250.954l-21.035 128.512c-1.376 7.776-6.858 12.341-14.634 12.341H166.613c-7.776 0-13.27-4.565-14.635-12.341l-37.045-229.13c-1.376-7.776 2.741-12.8 10.059-12.8H386.59c7.317 0 11.435 5.024 10.059 12.8l-10.059 60.373c-1.376 8.682-6.41 12.341-14.635 12.341H214.634c-2.293 0-3.659 1.376-3.21 4.117l12.351 75.926c.46 1.824 1.835 3.2 3.66 3.2h56.714c1.824 0 3.2-1.376 3.658-3.2l8.683-54.891c.917-6.859 5.493-9.6 11.893-9.6h61.739c9.152 0 11.893 4.576 10.517 12.352z"
-        fill="#101214" fill-rule="nonzero" />
-</svg>
-  `.trim(),
-  },
-  {
     name: "EtaLang",
     category: "Programming",
+    sourceUrl: "https://eta-lang.org/",
     keywords: ["eta", "language", "systems programming", "backend"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-13 0 282 282">
@@ -702,6 +725,7 @@ export const iconsData: IconData[] = [
   {
     name: "Arduino",
     category: "Programming",
+    sourceUrl: "https://www.arduino.cc/",
     keywords: ["arduino", "language", "microcontroller", "programming"],
     svgContent: `
 <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -724,6 +748,7 @@ export const iconsData: IconData[] = [
   {
     name: "NumPy",
     category: "Programming",
+    sourceUrl: "https://numpy.org/",
     keywords: ["python", "library", "data", "science", "numpy"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-9 0 274 274">

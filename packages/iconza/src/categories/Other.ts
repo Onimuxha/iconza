@@ -2,52 +2,9 @@ import type { IconData } from "../types";
 
 export const iconsData: IconData[] = [
   {
-    name: "AntGroup",
-    category: "Other",
-    keywords: ["ant", "financial", "alipay", "antgroup"],
-    svgContent: `
-<svg viewBox="0 0 512 512">
-    <path
-        d="M9.797 6.282a.453.453 0 01-.336-.315 1.028 1.028 0 010-.505c.156-.86.3-1.725.501-2.577.14-.7.42-1.367.823-1.96.305-.431.75-.746 1.262-.89.877-.217 1.24.629.937 1.348-.259.593-.877.914-1.334 1.348-.835.795-1.096 2.14-1.336 3.212a.426.426 0 01-.186.277.44.44 0 01-.331.062z"
-        fill="url(#antGroup-linear1)" fill-rule="nonzero"
-        transform="matrix(21.33334 0 0 21.33334 64 2)" />
-    <path
-        d="M6.334 4.672c.33-.121.682.146.946.297.278.145.587.219.901.214.231.01.466 0 .688.018 4.098.176 7.484 3.22 8.05 7.237.565 4.016-1.852 7.859-5.745 9.134-3.894 1.276-8.153-.38-10.126-3.935C-.915 14.095-.03 9.61 3.133 7.081c.348-.278.716-.53 1.102-.755a8.408 8.408 0 001.318-.79c.28-.243.45-.742.781-.864zm4.406 2.15c-2.841.003-4.898 2.533-4.628 5.642.27 3.109 2.781 5.641 5.613 5.665 2.832.024 4.932-2.512 4.658-5.644-.273-3.133-2.802-5.666-5.643-5.663zm.357.57a4.708 4.708 0 013.304 1.446 5.706 5.706 0 011.643 3.49 4.847 4.847 0 01-1.141 3.705v.015a3.923 3.923 0 01-2.808 1.303 4.667 4.667 0 01-3.367-1.387 5.68 5.68 0 01-1.71-3.518 4.833 4.833 0 011.14-3.753 3.923 3.923 0 012.813-1.3h.126v-.001z"
-        fill="url(#antGroup-linear2)" fill-rule="nonzero"
-        transform="matrix(21.33334 0 0 21.33334 64 2)" />
-    <path
-        d="M2.346 2.054a1.26 1.26 0 01.384-.594.845.845 0 011.165.11c.694.82.169 2.078.142 3.02.013.805.208 1.597.57 2.318.084.134.147.279.186.43a.54.54 0 01-.3.577c-.345.17-.568-.19-.709-.446-.324-.6-.617-1.216-.877-1.846a8.691 8.691 0 01-.618-1.987 7.649 7.649 0 01-.051-.37 3.857 3.857 0 01-.024-.34 2.51 2.51 0 01.132-.872z"
-        fill="url(#antGroup-linear3)" fill-rule="nonzero"
-        transform="matrix(21.33334 0 0 21.33334 64 2)" />
-    <defs>
-        <linearGradient id="antGroup-linear1" x1="0" y1="0" x2="1" y2="0"
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="rotate(-79.688 8.89 -3.332) scale(6.13229)">
-            <stop offset="0" stop-color="#06f" />
-            <stop offset=".2" stop-color="#1677ff" />
-            <stop offset="1" stop-color="#04a6ff" />
-        </linearGradient>
-        <linearGradient id="antGroup-linear2" x1="0" y1="0" x2="1" y2="0"
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="scale(16.3333) rotate(-20.572 2.738 .366)">
-            <stop offset="0" stop-color="#06f" />
-            <stop offset=".2" stop-color="#1677ff" />
-            <stop offset="1" stop-color="#04a6ff" />
-        </linearGradient>
-        <linearGradient id="antGroup-linear3" x1="0" y1="0" x2="1" y2="0"
-            gradientUnits="userSpaceOnUse"
-            gradientTransform="matrix(-.2657 -6.53966 6.53966 -.2657 3.669 7.91)">
-            <stop offset="0" stop-color="#06f" />
-            <stop offset=".2" stop-color="#1677ff" />
-            <stop offset="1" stop-color="#04a6ff" />
-        </linearGradient>
-    </defs>
-</svg>
-  `.trim(),
-  },
-  {
     name: "Meta",
     category: "Other",
+    sourceUrl: "https://business.facebook.com/",
     keywords: ["meta", "facebook", "social", "network", "metaverse"],
     svgContent: `
 <svg viewBox="0 0 287.56 191" width="100" height="100">
@@ -79,6 +36,7 @@ export const iconsData: IconData[] = [
   {
     name: "iconza",
     category: "Other",
+    sourceUrl: "https://iconza.vercel.app/",
     keywords: ["iconza", "icon", "icons", "design", "tool", "library"],
     svgContent: `
 <svg width="1154" height="1154" viewBox="0 0 1154 1154" fill="none"
@@ -93,12 +51,12 @@ export const iconsData: IconData[] = [
   {
     name: "Windows10",
     category: "Other",
+    sourceUrl: "https://www.microsoft.com/en-us/windows/",
     keywords: [
       "windows",
       "microsoft",
       "microsoft windows",
       "os",
-      "operating system",
     ],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.46 122.88">
@@ -115,12 +73,12 @@ export const iconsData: IconData[] = [
   {
     name: "Windows11",
     category: "Other",
+     sourceUrl: "https://www.microsoft.com/en-us/windows/",
     keywords: [
       "windows",
       "microsoft",
       "microsoft windows",
       "os",
-      "operating system",
     ],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512.02">
@@ -132,6 +90,7 @@ export const iconsData: IconData[] = [
   {
     name: "Windows11Logo",
     category: "Other",
+     sourceUrl: "https://www.microsoft.com/en-us/windows/",
     keywords: ["windows", "microsoft", "microsoft windows", "windows 11", "os"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="512px" height="94px"
@@ -147,6 +106,7 @@ export const iconsData: IconData[] = [
   {
     name: "InternetExplorer",
     category: "Other",
+    sourceUrl: "",
     keywords: ["internet explorer", "browser", "web browser", "web engine"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -2 256 256">
@@ -161,6 +121,7 @@ export const iconsData: IconData[] = [
   {
     name: "ArchLinux",
     category: "Other",
+    sourceUrl: "https://archlinux.org/",
     keywords: ["linux", "OS", "AUR", "config"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 256 256">
@@ -175,6 +136,7 @@ export const iconsData: IconData[] = [
   {
     name: "Google",
     category: "Other",
+    sourceUrl: "https://www.google.com/",
     keywords: ["google", "search", "web", "internet"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 262">
@@ -192,6 +154,7 @@ export const iconsData: IconData[] = [
   {
     name: "GoogleLogo",
     category: "Other",
+    ourceUrl: "https://www.google.com/",
     keywords: ["google", "search", "web", "internet", "logo"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 92" width="272" height="92">
@@ -212,6 +175,7 @@ export const iconsData: IconData[] = [
   {
     name: "Ubuntu",
     category: "Other",
+    sourceUrl: "https://ubuntu.com/",
     keywords: ["ubuntu", "linux", "os", "operating system", "brand"],
     svgContent: `
 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
@@ -225,6 +189,7 @@ export const iconsData: IconData[] = [
   {
     name: "Brave",
     category: "Other",
+    sourceUrl: "https://brave.com/",
     keywords: ["brave", "browser", "web", "internet", "search"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 2770 2770" xmlns="http://www.w3.org/2000/svg">
@@ -242,6 +207,7 @@ export const iconsData: IconData[] = [
   {
     name: "StackOverflow",
     category: "Other",
+    sourceUrl: "https://stackoverflow.com/",
     keywords: ["stackoverflow", "qa", "community", "programming", "help"],
     svgContent: `
 <svg width="105" height="124" viewBox="0 0 105 124" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -263,6 +229,7 @@ export const iconsData: IconData[] = [
   {
     name: "Xing",
     category: "Other",
+    sourceUrl: "https://www.xing.com/en",
     keywords: ["xing", "social", "network", "communication"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="411.99600000000004 102.499 200 200"
@@ -279,6 +246,7 @@ export const iconsData: IconData[] = [
   {
     name: "Android",
     category: "Other",
+    sourceUrl: "https://www.android.com/",
     keywords: ["android", "mobile", "OS", "smartphone"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-22.5 0 301 301">
@@ -313,6 +281,7 @@ export const iconsData: IconData[] = [
   {
     name: "Yahoo",
     category: "Other",
+    sourceUrl: "https://www.yahoo.com/",
     keywords: ["yahoo", "search", "web", "internet"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#ffffff">
@@ -330,6 +299,7 @@ export const iconsData: IconData[] = [
   {
     name: "YahooLogo",
     category: "Other",
+    sourceUrl: "https://www.yahoo.com/",
     keywords: ["yahoo", "search", "web", "internet"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -184.5 512 512">
@@ -344,6 +314,7 @@ export const iconsData: IconData[] = [
   {
     name: "Tor",
     category: "Other",
+    sourceUrl: "https://www.torproject.org/",
     keywords: ["tor", "browser", "privacy", "security", "Tools"],
     svgContent: `
 <svg width="512px" height="512px" viewBox="0 0 512 512">
@@ -390,6 +361,7 @@ export const iconsData: IconData[] = [
   {
     name: "IBMDark",
     category: "Other",
+    sourceUrl: "https://www.ibm.com/us-en",
     keywords: ["ibm", "clouds", "computing", "technology"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -153.5 512 512">
@@ -404,6 +376,7 @@ export const iconsData: IconData[] = [
   {
     name: "IBMLight",
     category: "Other",
+    sourceUrl: "https://www.ibm.com/us-en",
     keywords: ["ibm", "clouds", "computing", "technology"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -153.5 512 512">
@@ -418,6 +391,7 @@ export const iconsData: IconData[] = [
   {
     name: "Ethereum",
     category: "Other",
+    sourceUrl: "https://ethereum.org/",
     keywords: ["ethereum", "ETH", "blockchain", "crypto", "wallet"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-80.5 0 417 417">
@@ -441,6 +415,7 @@ export const iconsData: IconData[] = [
   {
     name: "Debian",
     category: "Other",
+    sourceUrl: "https://www.debian.org/",
     keywords: ["debian", "ubuntu", "linux"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-30.5 0 317 317">
@@ -500,6 +475,7 @@ export const iconsData: IconData[] = [
   {
     name: "RedHat",
     category: "Other",
+    sourceUrl: "https://www.redhat.com/en",
     keywords: ["redhat", "linux", "enterprise", "opensource"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -31 256 256">
@@ -517,6 +493,7 @@ export const iconsData: IconData[] = [
   {
     name: "AppleDark",
     category: "Other",
+    sourceUrl: "https://www.apple.com/",
     keywords: ["apple", "brand", "iphone", "smartphone"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-29.5 0 315 315">
@@ -531,6 +508,7 @@ export const iconsData: IconData[] = [
   {
     name: "AppleLight",
     category: "Other",
+    sourceUrl: "https://www.apple.com/",
     keywords: ["apple", "brand", "iphone", "smartphone"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="-29.5 0 315 315">
@@ -545,6 +523,7 @@ export const iconsData: IconData[] = [
   {
     name: "Visa",
     category: "Other",
+    sourceUrl: "",
     keywords: ["visa", "brand", "payment", "financial"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 -86.5 256 256">
@@ -569,6 +548,7 @@ export const iconsData: IconData[] = [
   {
     name: "Teamwork",
     category: "Other",
+    sourceUrl: "https://www.teamwork.com/",
     keywords: ["teamwork", "collaboration", "group", "project"],
     svgContent: `
 <svg width="800px" height="800px" viewBox="0 0 256 256">

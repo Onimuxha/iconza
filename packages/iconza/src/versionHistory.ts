@@ -396,6 +396,7 @@ export const versionHistory: VersionEntry[] = [
           "YouTubeStudio",
           "YouTubeShorts",
           "TikTok",
+          "TikTokFill",
           "WhatsApp",
         ],
       },

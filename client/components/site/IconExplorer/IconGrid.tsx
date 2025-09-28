@@ -41,6 +41,7 @@ export function IconGrid({ category, size, query, data, viewMode }) {
                 viewMode={viewMode}
                 category={i.category}
                 keywords={i.keywords}
+                sourceUrl={i.sourceUrl}
               />
             </motion.div>
           ) : null;
