@@ -116,6 +116,8 @@
     "vaul": "^1.1.2",
     "vite": "^7.1.2",
     "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-pages": "^0.33.1",
+    "vite-plugin-pages-sitemap": "^1.7.1",
     "vitest": "^3.2.4"
   },
   "packageManager": "pnpm@10.16.1"

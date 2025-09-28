@@ -3,6 +3,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { createServer } from "./server";
 
+import Pages from 'vite-plugin-pages';
+import generateSitemap from 'vite-plugin-pages-sitemap';
+
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
@@ -23,7 +26,14 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    expressPlugin()
+    expressPlugin(),
+    Pages({
+      onRoutesGenerated: (routes) =>
+        generateSitemap({
+          routes,
+          hostname: 'https://iconza.vercel.app',
+        }),
+    }),
   ],
   resolve: {
     alias: {
@@ -41,11 +51,10 @@ export default defineConfig(({ mode }) => ({
 function expressPlugin(): Plugin {
   return {
     name: "express-plugin",
-    apply: "serve", // Only apply during development (serve mode)
+    apply: "serve",
     configureServer(server) {
       const app = createServer();
 
-      // Add Express app as middleware to Vite dev server
       server.middlewares.use(app);
     },
   };
