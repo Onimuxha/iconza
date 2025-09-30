@@ -16,7 +16,7 @@ export function createIcon(name: string, svgContent: string) {
       <span
         role="img"
         aria-label={label}
-        title={title || undefined }
+        title={title || label }
         tabIndex={0}
         onClick={onClick}
         onKeyDown={(e) => {

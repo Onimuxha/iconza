@@ -143,7 +143,7 @@ export function HomeHero() {
 
   const stats: Stat[] = [
     { value: Object.keys(icons).length, label: "Total Icons" },
-    { value: categories.length, label: "Categories" },
+    { value: categories.length-1, label: "Categories" },
     { value: 100, suffix: "%", label: "Open Source" },
     { value: totalDownloads, label: "Total Downloads" },
   ];
