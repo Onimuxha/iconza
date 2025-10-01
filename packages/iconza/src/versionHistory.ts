@@ -40,6 +40,17 @@ const checkForDuplicateIcons = (history: VersionEntry[]) => {
 
 export const versionHistory: VersionEntry[] = [
   {
+    date: "2025-10-01",
+    version: "1.0.35",
+    changes: [
+      {
+        type: "updated",
+        category: "SVG Icons code",
+        description: "Shortens and optimizes SVG code for better performance",
+      },
+    ],
+  },
+  {
     date: "2025-09-30",
     version: "1.0.34",
     changes: [

@@ -58,7 +58,6 @@ export function IconExplorer() {
       return inCat && (q.length === 0 || text.includes(q));
     });
   }, [allData, query, tab]);
-  // Add keyboard shortcut handler
   useEffect(() => {
     function handleKeyPress(e: KeyboardEvent) {
       if (
@@ -157,7 +156,7 @@ import { Icon } from 'iconza'
                   {viewMode === mode && (
                     <div className="absolute inset-0 bg-lime-400/10 rounded-xl animate-pulse" />
                   )}
-                  <Icon className="w-5 h-5 relative z-10" />
+                  <Icon size={20} className="relative z-10" />
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -skew-x-12 transform" />
                 </button>
               ))}
