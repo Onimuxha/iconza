@@ -109,14 +109,15 @@ const ContactPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="mb-16 text-center"
           >
-            <div className="max-w-7xl mx-auto px-4 text-center py-8">
-              <h2 className="text-3xl sm:text-6xl font-medium text-white">
-                Contact
-              </h2>
+            <div className="max-w-4xl mx-auto px-4 text-center py-8">
+              <h1 className="text-3xl sm:text-6xl font-medium text-white uppercase">
+                Reach Out to Iconza for Support
+              </h1>
               <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
                 Can't find the icon you're looking for?
               </p>
             </div>
+
           </motion.section>
 
           <div className="grid lg:grid-cols-2 gap-12">

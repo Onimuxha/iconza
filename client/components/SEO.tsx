@@ -7,7 +7,6 @@ interface SEOProps {
   url?: string;
   type?: string;
   canonical?: string;
-  keywords?: string;
   author?: string;
   children?: React.ReactNode;
 }
@@ -19,7 +18,6 @@ export function SEO({
   url = 'https://iconza.vercel.app',
   type = 'website',
   canonical,
-  keywords = 'icon library, react icons, developer icons, brand icons, iconza, svg icons, website icons, animated icons, accessible icons',
   author = 'Iconza',
   children,
 }: SEOProps) {
@@ -45,22 +43,21 @@ export function SEO({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={`https://iconza.vercel.app${image}`} />
+
 
       {/* Browser-specific metadata */}
       <meta name="theme-color" content="#94c748" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
       {/* Search Engine Optimization */}
-      <meta name="keywords" content={keywords} />
       <meta name="author" content={author} />
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
       <meta name="bingbot" content="index, follow" />
 
       {/* Chrome, Firefox, Edge */}
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/avif" href="/iconza.avif" media="(prefers-color-scheme: dark)" />
 
       {/* Microsoft Edge */}

@@ -91,7 +91,13 @@ export function SiteFooter() {
           {/* Brand Section */}
           <div className="lg:col-span-2 space-y-6">
             <Link to="/" className="inline-flex items-center space-x-3 group">
-              <img src="/iconza.avif" alt="iconza" className="h-8 w-8" />
+              <img
+                src="/iconza.avif"
+                alt="IconZa footer"
+                width={1154}
+                height={1154}
+                className="sm:h-10 sm:w-10 transition-transform duration-300 transform group-hover:scale-110"
+              />
               <span className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 IconZa
               </span>

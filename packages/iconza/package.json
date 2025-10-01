@@ -11,6 +11,17 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "icons",
+    "react",
+    "typescript",
+    "svg",
+    "icon-library",
+    "icon-set",
+    "accessible-icons",
+    "animated-icons",
+    "brand-icons"
+  ],
   "scripts": {
     "start": "tsup src/index.ts --watch",
     "build": "tsup src/index.ts",

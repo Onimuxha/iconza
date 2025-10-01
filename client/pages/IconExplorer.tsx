@@ -82,7 +82,7 @@ export function IconExplorer() {
       <main className="pt-24">
         <div className="mx-auto max-w-7xl px-4 py-12">
           <div className="mt-12 bg-gray-900/50 rounded-2xl p-8 border border-gray-700 backdrop-blur-sm shadow-lg">
-            <h2 className="text-3xl sm:text-6xl font-medium text-center text-white mb-10 uppercase">Quick Start</h2>
+            <h1 className="text-3xl sm:text-6xl font-medium text-center text-lime-500 mb-10 uppercase">Quick Start: <span className="text-white">Browse and Customize Icons</span></h1>
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <ul className="space-y-4 text-smtext-gray-400">
                 {featureList.map((feature) => (
