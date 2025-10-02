@@ -26,6 +26,7 @@ import {
 import { NumberTicker } from "../components/ui/number-ticker.tsx";
 import { useState, useEffect } from "react";
 import Button from "@/components/ui/go-btn.tsx";
+import LogoLoop from "@/components/ui/logoloop.tsx";
 
 const heroList = [
   "BehanceFill",
@@ -41,6 +42,27 @@ const heroList = [
   "AdobeInDesign",
   "Discord",
 ] as const;
+
+const loopIcon = [
+  "Razer",
+  "Debian",
+  "RedHat",
+  "Snapdragon",
+  "TypeScript",
+  "CSS",
+  "ReactQuery",
+  "Kotlin",
+  "GraphQL",
+  "VisualStudio",
+  "Bitwarden",
+  "HoundCI",
+  "NordVPN",
+  "Windows11",
+  "Filmora",
+  "Xing",
+  "Tor"
+] as const;
+
 export async function getStaticProps() {
   const res = await fetch(
     "https://api.npmjs.org/downloads/point/last-week/iconza",
@@ -55,7 +77,7 @@ export async function getStaticProps() {
   };
 }
 
-const words = ["Beautiful.", "Better.", "Modern.", "Scalable.", "Accessible."];
+const words = ["Beautiful.", "Better.", "Modern.", "Scalable."];
 
 const features = [
   {
@@ -144,7 +166,7 @@ export function HomeHero() {
   const stats: Stat[] = [
     { value: Object.keys(icons).length, label: "Total Icons" },
     { value: 100, suffix: "%", label: "Open Source" },
-    { value: categories.length-1, label: "Categories" },
+    { value: categories.length - 1, label: "Categories" },
     { value: totalDownloads, label: "Total Downloads" },
   ];
 
@@ -155,7 +177,7 @@ export function HomeHero() {
       <main>
         <section className="min-h-screen relative pt-24 overflow-hidden">
           <HeroBackground className="absolute inset-0 w-full h-full z-0 pointer-events-none" />
-          <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 md:py-20 grid items-center gap-10 md:grid-cols-2">
+          <div className="relative z-10 mx-auto max-w-7xl px-4 py-12 mb-20 md:py-20 grid items-center gap-10 md:grid-cols-2">
             <div>
               <p className="mt-2 inline-block rounded-full bg-lime-500/10 px-3 py-1 text-sm font-medium border border-lime-500/50 text-lime-400">
                 v{pkg.version}
@@ -221,7 +243,22 @@ export function HomeHero() {
               })}
             </div>
           </div>
+
+          <LogoLoop
+            logos={loopIcon.map(name => ({
+              component: icons[name],
+              name: name
+            }))}
+            speed={70}
+            direction="left"
+            logoHeight={40}
+            gap={40}
+            fadeOut
+            fadeOutColor="#000000"
+            ariaLabel="Technology partners"
+          />
         </section>
+
 
         {/* Features Section */}
         <section className="py-24 bg-gray-950/50">
