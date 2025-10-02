@@ -586,7 +586,7 @@ export const iconsData: IconData[] = [
     name: "NetBeans",
     category: "Tools",
     sourceUrl: "https://netbeans.apache.org/",
-    keywords: ["java", "development", "Tools", "ide", "programming"],
+    keywords: ["netbeans", "ide", "development", "Tools", "java"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444 512" width="444" height="512">
     <path d="M222,0 L222,99 L86,178 L0,128 L222,0 Z" fill="#A1C535"/>

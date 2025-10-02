@@ -310,6 +310,32 @@ export const iconsData: IconData[] = [
     `.trim(),
     },
     {
+        name: "FigmaFill",
+        category: "DesignTools",
+        sourceUrl: "https://www.figma.com/",
+        keywords: ["figma", "design", "graphic", "tools", "creator", "ux", "ui"],
+        svgContent: `
+<svg width="644" height="644" viewBox="0 0 644 644" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="644" height="644" rx="55" fill="#1E1E1E" />
+    <path
+        d="M322 312.768C322 270.922 355.408 237.01 396.597 237.01H407.387C407.681 237.02 408.005 237 408.308 237C454.525 237 492 275.073 492 322.005C492 368.937 454.525 407 408.308 407C408.005 407 407.681 406.99 407.377 406.99L396.597 407C355.408 407 322 373.068 322 331.232V312.768Z"
+        fill="#00B6FF" />
+    <path
+        d="M152 492.015C152 445.073 189.679 407 236.148 407L322 407.01V491.139C322 538.569 283.513 577 236.562 577C190.103 577 152 538.947 152 492.015Z"
+        fill="#0ACF83" />
+    <path
+        d="M322 67.01V236.99H407.387C407.681 236.98 408.005 237 408.308 237C454.525 237 492 198.929 492 152C492 105.061 454.525 67 408.308 67C408.005 67 407.681 67.01 407.377 67.01H322Z"
+        fill="#FF7237" />
+    <path
+        d="M152 151.99C152 198.935 189.679 237 236.148 237H322V67H236.138C189.679 67 152 105.055 152 151.99Z"
+        fill="#FF3737" />
+    <path
+        d="M152 321.99C152 368.935 189.679 407 236.148 407H322V237H236.138C189.679 237 152 275.055 152 321.99Z"
+        fill="#874FFF" />
+</svg>
+    `.trim(),
+    },
+    {
         name: "Figma",
         category: "DesignTools",
         sourceUrl: "https://www.figma.com/",
@@ -318,16 +344,37 @@ export const iconsData: IconData[] = [
 <svg viewBox="0 0 200 300" width="100" height="100">
     <path fill="#0ACF83"
         d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z" />
-    <path fill="#A259FF" d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z" />
-    <path fill="#F24E1E" d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z" />
-    <path fill="#FF7262" d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z" />
-    <path fill="#1ABCFE"
+    <path fill="#874FFF" d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z" />
+    <path fill="#FF3737" d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z" />
+    <path fill="#FF7237" d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z" />
+    <path fill="#00B6FF"
         d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z" />
 </svg>
     `.trim(),
     },
     {
         name: "Axure",
+        category: "DesignTools",
+        sourceUrl: "https://www.axure.com/",
+        keywords: ["axure", "design", "graphic", "tools", "creator", "ux", "ui"],
+        svgContent: `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.6 75.4" width="100" height="100">
+  <path fill="#74BB11"
+    d="M62.2,2c-0.6-1.2-1.8-2-3.4-2h-5.9c-1.7,0-3,0.7-3.6,1.9l-8.7,12.7l7.6,10.4L61.5,6C63,4.2,62.4,2.6,62.2,2">
+  </path>
+  <path fill="#009CD9"
+    d="M16.3,1.8L16.3,1.8C14.9,0,13.2,0,12.6,0H6.9C5.4,0,4.2,0.7,3.5,1.9C2.9,3.1,3,4.5,3.9,5.9l21.3,29.6L0.7,69.6
+		c-0.9,1.3-1,2.7-0.3,3.9c0.6,1.2,1.8,1.9,3.3,1.9h5.9c1.5,0,2.8-0.8,3.5-2l27.4-37.8L16.3,1.8z">
+  </path>
+  <path fill="#EB2084"
+    d="M65.1,70.6L50.3,50.3l-6.5,9l11.7,15.7l0.3,0.1c0.5,0.2,1,0.3,1.5,0.3h5c1.2,0,2.2-0.5,2.8-1.5
+		C65.7,73,65.7,71.8,65.1,70.6">
+  </path>
+</svg>
+    `.trim(),
+    },
+    {
+        name: "AxureLogo",
         category: "DesignTools",
         sourceUrl: "https://www.axure.com/",
         keywords: ["axure", "design", "graphic", "tools", "creator", "ux", "ui"],

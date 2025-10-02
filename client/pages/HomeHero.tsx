@@ -150,7 +150,7 @@ export function HomeHero() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/40">
-      <SEO />
+      <SEO title="Iconza - Free React Icon Library" description="Animated, accessible, and developer-first icon set built for React, Tailwind, and Vite." />
       <SiteHeader />
       <main>
         <section className="min-h-screen relative pt-24 overflow-hidden">

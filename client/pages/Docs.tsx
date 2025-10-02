@@ -252,32 +252,6 @@ export default function App() {
                       </li>
                     </ul>
                   </div>
-
-                  <div>
-                    <h4 className="font-semibold text-white text-sm sm:text-base mb-2 sm:mb-3">
-                      Keyboard Support
-                    </h4>
-                    <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-400">
-                      <li className="flex items-center gap-2">
-                        <kbd className="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-gray-800 rounded text-xs border border-gray-700">
-                          Enter
-                        </kbd>
-                        <span>Triggers onClick</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <kbd className="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-gray-800 rounded text-xs border border-gray-700">
-                          Space
-                        </kbd>
-                        <span>Triggers onClick</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <kbd className="px-1.5 py-0.5 sm:px-2 sm:py-1 bg-gray-800 rounded text-xs border border-gray-700">
-                          Tab
-                        </kbd>
-                        <span>Focus navigation</span>
-                      </li>
-                    </ul>
-                  </div>
                 </div>
 
                 <div className="p-3 sm:p-4 bg-black/30 rounded-lg border border-gray-800">

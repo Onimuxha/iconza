@@ -179,7 +179,7 @@ import { Icon } from 'iconza'
                   />
                 </button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-48 p-1 mt-2 rounded-2xl border border-zinc-800 bg-zinc-900/50 backdrop-blur shadow-xl">
+              <DropdownMenuContent className="w-52 p-1 mt-2 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur shadow-xl">
                 {categories.map((category) => (
                   <DropdownMenuItem
                     key={category}
@@ -201,6 +201,11 @@ import { Icon } from 'iconza'
                       {iconsMap[category]}
                     </div>
                     <span>{category === "DesignTools" ? "Design" : category}</span>
+                    <span className="ml-auto text-lime-500">
+                      {category === "All"
+                        ? Object.values(Categories).flat().length
+                        : (Categories[category] || []).length}
+                    </span>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
