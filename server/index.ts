@@ -2,7 +2,7 @@ import "dotenv/config";
 import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
-import { handleSitemap } from "../script/generate-sitemap";
+import { handleSitemap } from "../scripts/generate-sitemap";
 
 export function createServer() {
   const app = express();
