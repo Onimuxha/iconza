@@ -494,7 +494,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "NextJSLogoDark",
+    name: "NextJSLogo Dark",
     category: "Frameworks",
     sourceUrl: "https://nextjs.org/",
     keywords: ["NextJS", "backend", "Frameworks", "typescript"],
@@ -508,7 +508,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "NextJSLogoLight",
+    name: "NextJSLogo Light",
     category: "Frameworks",
     sourceUrl: "https://nextjs.org/",
     keywords: ["NextJS", "backend", "Frameworks", "typescript"],
@@ -761,6 +761,21 @@ export const iconsData: IconData[] = [
     <path
         d="m35.178 38.02c0.6261 0.1088 1.0031 0.5342 1.0023 1.1753-0.0027 2.5549 0.0271 5.111-0.0459 7.664-0.0498 1.7414-0.8349 3.1359-2.3782 4.0327-0.6535 0.3798-1.3708 0.5846-2.1212 0.6729-0.9712 0.1143-1.9406 0.0977-2.8816-0.1753-1.4951-0.4338-2.6095-1.3251-3.2066-2.8016-0.3148-0.7784-0.4036-1.5938-0.4062-2.4207-0.0071-2.3127-0.0041-4.6255-0.0016-6.9382 8e-4 -0.7577 0.5132-1.2527 1.24-1.2101 0.5867 0.0343 1.0352 0.5646 1.0367 1.2397 0.0032 1.371-2e-4 2.7421 0.0014 4.1131 0.0012 1.0594-0.0052 2.119 0.0135 3.1781 0.0092 0.523 0.1332 1.0288 0.388 1.4925 0.3553 0.647 0.8995 1.0542 1.6092 1.2469 0.9356 0.2539 1.866 0.2416 2.7697-0.1149 0.9275-0.3657 1.4444-1.0879 1.6177-2.0518 0.0657-0.3653 0.0851-0.743 0.0864-1.1152 0.0076-2.2504 3e-3 -4.5008 0.0043-6.7512 4e-4 -0.6275 0.2999-1.0596 0.8434-1.2041 0.1304-0.0347 0.2731-0.0232 0.4287-0.0321z"
         fill="#111827" />
+</svg>
+    `.trim(),
+  },
+  {
+    name: "Motion",
+    category: "Frameworks",
+    sourceUrl: "https://motion.dev/",
+    keywords: ["motion", "animation", "react", "declarative", "gestures"],
+    svgContent: `
+<svg width="100" height="100" viewBox="0 0 1170 1170"
+    xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" rx="139" fill="#FFF52C" />
+    <path
+        d="M450.529 392.17L232.596 777.83H34.0557L204.226 476.692C230.605 430.012 296.433 392.17 351.259 392.17H450.529ZM937.404 488.585C937.404 435.336 981.848 392.17 1036.67 392.17C1091.5 392.17 1135.94 435.336 1135.94 488.585C1135.94 541.833 1091.5 585 1036.67 585C981.848 585 937.404 541.833 937.404 488.585ZM487.755 392.17H686.295L468.362 777.83H269.822L487.755 392.17ZM722.247 392.17H920.789L750.616 693.308C724.238 739.988 658.409 777.83 603.584 777.83H504.314L722.247 392.17Z"
+        fill="#0F1115" />
 </svg>
     `.trim(),
   },
@@ -1103,7 +1118,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "RadixUIDark",
+    name: "RadixUI Dark",
     category: "Frameworks",
     sourceUrl: "https://www.radix-ui.com/",
     keywords: ["radixui", "dark", "Frameworks", "react", "components"],
@@ -1115,7 +1130,7 @@ export const iconsData: IconData[] = [
     `.trim(),
   },
   {
-    name: "RadixUILight",
+    name: "RadixUI Light",
     category: "Frameworks",
     sourceUrl: "https://www.radix-ui.com/",
     keywords: ["radixui", "dark", "Frameworks", "react", "components"],
@@ -1127,29 +1142,29 @@ export const iconsData: IconData[] = [
     `.trim(),
   },
   {
-    name: "ThreeJSDark",
+    name: "ThreeJS Dark",
     category: "Frameworks",
     sourceUrl: "https://threejs.org/",
     keywords: ["ThreeJS", "3D", "js", "javascript", "webgl", "library"],
     svgContent: `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110" width="100" height="100">
-    <path stroke="#000" stroke-linejoin="round" stroke-miterlimit="10"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110" fill="none" width="100" height="100">
+    <path stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10"
         d="M26.702 102 2 2l99.023 28.51z" clip-rule="evenodd" key="loi41hz" />
-    <path stroke="#000" stroke-linejoin="round" stroke-miterlimit="10"
+    <path stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10"
         d="m51.493 16.258 12.342 50.015-49.484-14.26z" clip-rule="evenodd" key="0t3zpvg" />
-    <path stroke="#000" stroke-linejoin="round" stroke-miterlimit="10"
+    <path stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10"
         d="m39.215 58.797-6.13-24.846 24.584 7.058zM26.952 9.136l6.13 24.846-24.584-7.058zM76.119 23.3l6.13 24.845-24.585-7.057zM39.217 58.814l6.13 24.846-24.584-7.057z"
         clip-rule="evenodd" key="a30ym5n" />
 </svg>
 `.trim(),
   },
   {
-    name: "ThreeJSLight",
+    name: "ThreeJS Light",
     category: "Frameworks",
     sourceUrl: "https://threejs.org/",
     keywords: ["ThreeJS", "3D", "js", "javascript", "webgl", "library"],
     svgContent: `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110" width="100" height="100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110" width="100" fill="none" height="100">
     <path stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10"
         d="M26.702 102 2 2l99.023 28.51z" clip-rule="evenodd" key="loi41hz" />
     <path stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10"
@@ -1161,7 +1176,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ExpressJSDark",
+    name: "ExpressJS Dark",
     category: "Frameworks",
     sourceUrl: "https://expressjs.com/",
     keywords: ["ExpressJS", "backend", "Frameworks", "nodejs", "javascript"],
@@ -1174,7 +1189,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ExpressJSLight",
+    name: "ExpressJS Light",
     category: "Frameworks",
     sourceUrl: "https://expressjs.com/",
     keywords: ["ExpressJS", "backend", "Frameworks", "nodejs", "javascript"],
@@ -1187,7 +1202,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ReactBitsDark",
+    name: "ReactBits Dark",
     category: "Frameworks",
     sourceUrl: "https://reactbits.dev/",
     keywords: ["reactbits", "dark", "Frameworks", "react", "ui"],
@@ -1200,7 +1215,7 @@ export const iconsData: IconData[] = [
     `.trim(),
   },
   {
-    name: "ReactBitsLight",
+    name: "ReactBits Light",
     category: "Frameworks",
     sourceUrl: "https://reactbits.dev/",
     keywords: ["reactbits", "light", "Frameworks", "react", "ui"],
@@ -1227,7 +1242,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "AstroJSDark",
+    name: "AstroJS Dark",
     category: "Frameworks",
     sourceUrl: "https://astro.build/",
     keywords: ["AstroJS", "static", "Frameworks", "javascript", "typescript"],
@@ -1239,7 +1254,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "AstroJSLight",
+    name: "AstroJS Light",
     category: "Frameworks",
     sourceUrl: "https://astro.build/",
     keywords: ["AstroJS", "static", "Frameworks", "javascript", "typescript"],
@@ -1251,7 +1266,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "UnityDark",
+    name: "Unity Dark",
     category: "Frameworks",
     sourceUrl: "https://unity.com/",
     keywords: ["Unity", "game engine", "3D", "development"],
@@ -1264,7 +1279,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "UnityLight",
+    name: "Unity Light",
     category: "Frameworks",
     sourceUrl: "https://unity.com/",
     keywords: ["Unity", "game engine", "3D", "development"],
@@ -1277,7 +1292,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "RemixDark",
+    name: "Remix Dark",
     category: "Frameworks",
     sourceUrl: "https://remix.run/",
     keywords: ["remix", "framework", "web", "development"],
@@ -1290,7 +1305,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "RemixLight",
+    name: "Remix Light",
     category: "Frameworks",
     sourceUrl: "https://remix.run/",
     keywords: ["remix", "framework", "web", "development"],
@@ -1303,7 +1318,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "SymfonyDark",
+    name: "Symfony Dark",
     category: "Frameworks",
     sourceUrl: "https://remix.run/",
     keywords: ["remix", "framework", "web", "development"],
@@ -1315,7 +1330,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "SymfonyLight",
+    name: "Symfony Light",
     category: "Frameworks",
     sourceUrl: "https://remix.run/",
     keywords: ["remix", "framework", "web", "development"],
@@ -1327,7 +1342,21 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "ShadcnDark",
+    name: "HeroUI",
+    category: "Frameworks",
+    sourceUrl: "https://heroui.com/",
+    keywords: ["remix", "framework", "web", "development"],
+    svgContent: `
+<svg viewBox="0 0 74 74" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+    <path fill="#111111"
+        d="M54.35.083H19.566C8.76.083 0 8.843 0 19.649v34.783C0 65.239 8.76 74 19.566 74H54.35c10.806 0 19.566-8.76 19.566-19.566V19.648C73.916 8.843 65.156.083 54.35.083Z" />
+    <path fill="#ffffff"
+        d="M50.638 52.566V21.201h3.877v31.365h-3.877ZM31.731 53.22c-2.425 0-4.567-.501-6.425-1.503a11.087 11.087 0 0 1-4.378-4.204c-1.046-1.815-1.569-3.942-1.569-6.382V21.223l3.921-.022v19.604c0 1.48.247 2.773.74 3.877.509 1.089 1.177 1.996 2.005 2.722a8.61 8.61 0 0 0 2.722 1.634 9.039 9.039 0 0 0 2.984.523 8.773 8.773 0 0 0 3.006-.545 8.5 8.5 0 0 0 2.723-1.612c.827-.726 1.488-1.64 1.982-2.744.493-1.104.74-2.389.74-3.855V21.2h3.921v19.93c0 2.425-.53 4.545-1.59 6.36a10.893 10.893 0 0 1-4.356 4.226c-1.859 1.002-4 1.503-6.426 1.503Z" />
+</svg>
+  `.trim(),
+  },
+  {
+    name: "Shadcn Dark",
     category: "Frameworks",
     sourceUrl: "https://ui.shadcn.com/",
     keywords: ["shadcn","ui", "ux", "framework", "web", "development"],
@@ -1343,7 +1372,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "ShadcnLight",
+    name: "Shadcn Light",
     category: "Frameworks",
     sourceUrl: "https://ui.shadcn.com/",
     keywords: ["shadcn", "ui", "ux", "framework", "web", "development"],

@@ -40,6 +40,47 @@ const checkForDuplicateIcons = (history: VersionEntry[]) => {
 
 export const versionHistory: VersionEntry[] = [
   {
+    date: "2025-10-07",
+    version: "1.0.37",
+    changes: [
+      {
+        type: "updated",
+        category: "SVG icon usage",
+        description: `Before usage is icons like GitHubDark changed to GitHub Dark space space with Dark or Light.`,
+      },
+      {
+        type: "added",
+        category: "AI",
+        description: "Add new AI icons",
+        icons: ["GoogleAssistant", "YandexAlice", "Bixby"]
+      },
+      {
+        type: "added",
+        category: "Other",
+        description: "Add new Other icons",
+        icons: ["Ryzen Light", "Nvidia Light", "Vivaldi", "SamsungInternet", "ASUSLogo Light", "ROG", "Taobao"]
+      },
+      {
+        type: "added",
+        category: "Tools",
+        description: "Add new Tools icons",
+        icons: ["GoDaddy", "FirebaseStudio", "CodePen Light", "Warp"]
+      },
+      {
+        type: "added",
+        category: "DesignTools",
+        description: "Add new DesignTools icons",
+        icons: ["AlightMotion"]
+      },
+      {
+        type: "added",
+        category: "Frameworks",
+        description: "Add new Frameworks icons",
+        icons: ["HeroUI", "Motion"]
+      },
+    ],
+  },
+  {
     date: "2025-10-03",
     version: "1.0.36",
     changes: [
@@ -65,7 +106,7 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Framework",
         description: "Add new Framework icons",
-        icons: ["ShadcnLight", "BlitzJS", "Lit", "Vuetify", "Vuex"]
+        icons: ["Shadcn Light", "BlitzJS", "Lit", "Vuetify", "Vuex"]
       },
       {
         type: "added",
@@ -111,7 +152,7 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Other",
         description: "Added new other icons",
-        icons: ["PDF", "AMDLight", "NVIDIA", "Snapdragon", "Razer", "Alibaba"],
+        icons: ["PDF", "AMD Light", "NVIDIA", "Snapdragon", "Razer", "Alibaba"],
       },
       {
         type: "added",
@@ -123,7 +164,7 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Frameworks",
         description: "Added new framework icons",
-        icons: ["MedusaJS", "KrakenJS", "SymfonyLight", "UnJS", "Nginx", "Framework7", ".NET"],
+        icons: ["MedusaJS", "KrakenJS", "Symfony Light", "UnJS", "Nginx", "Framework7", ".NET"],
       },
       {
         type: "added",
@@ -147,7 +188,7 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "AI",
         description: "Added new AI icons",
-        icons: ["KimiLight", "PaLM2", "Cody", "RunwayLight", "xAILight", "GitHubCopilotLight"],
+        icons: ["Kimi Light", "PaLM2", "Cody", "Runway Light", "xAI Light", "GitHubCopilot Light"],
       },
     ],
   },
@@ -159,7 +200,7 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "AI",
         description: "Added new AI tool icons",
-        icons: ["AnthropicLight"],
+        icons: ["Anthropic Light"],
       },
       {
         type: "added",
@@ -171,19 +212,19 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Tools",
         description: "Added new tool icons",
-        icons: ["Ngrok", "CodeSandboxLight", "BoltLight", "Builder"],
+        icons: ["Ngrok", "CodeSandbox Light", "Bolt Light", "Builder"],
       },
       {
         type: "added",
         category: "DesignTools",
         description: "Added new design tool icons",
-        icons: ["AffinityDesigner", "LayersLight", "Designali"],
+        icons: ["AffinityDesigner", "Layers Light", "Designali"],
       },
       {
         type: "added",
         category: "Frameworks",
         description: "Added new framework icons",
-        icons: ["Remotion", "Hono", "RemixLight", "Ark"],
+        icons: ["Remotion", "Hono", "Remix Light", "Ark"],
       },
       {
         type: "added",
@@ -218,14 +259,14 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Programming",
         description: "Added new programming language icons",
-        icons: ["VisualStudio", "MarkdownLight", "NumPy"],
+        icons: ["VisualStudio", "Markdown Light", "NumPy"],
       },
       {
         type: "added",
         category: "Tools",
         description: "Added new tool icons",
         icons: [
-          "500pxLight",
+          "500px Light",
           "Xampp",
           "Swagger",
           "Peer5",
@@ -238,7 +279,7 @@ export const versionHistory: VersionEntry[] = [
         category: "Frameworks",
         description: "Added new framework icons",
         icons: [
-          "UnityLight",
+          "Unity Light",
           "SpringBoot",
           "Rails",
           "ReactRouter",
@@ -310,7 +351,7 @@ export const versionHistory: VersionEntry[] = [
           "Blender",
           "Sketch",
           "Lunacy",
-          "FramerLight",
+          "Framer Light",
           "Axure",
         ],
       },
@@ -323,7 +364,7 @@ export const versionHistory: VersionEntry[] = [
           "NPMLogo",
           "PNPM",
           "Gitlab",
-          "AWS",
+          "AWS Light",
           "Homebrew",
           "Akamai",
           "CampaignMonitor",
@@ -344,10 +385,10 @@ export const versionHistory: VersionEntry[] = [
           "Brave",
           "StackOverflow",
           "Xing",
-          "AndroidLight",
+          "Android Light",
           "Yahoo",
           "YahooLogo",
-          "IBMLight",
+          "IBM Light",
           "Ethereum",
           "Debian",
           "Microsoft"
@@ -366,28 +407,28 @@ export const versionHistory: VersionEntry[] = [
         icons: [
           "ChatGPTFill",
           "Perplexity",
-          "GoogleAIStudioLight",
-          "VercelV0Light",
+          "GoogleAIStudio Light",
+          "VercelV0 Light",
           "ClaudeAI",
           "DeepSeek",
           "CursorAI",
-          "ElevenLabsAILight",
-          "FluxAILight",
+          "ElevenLabsAI Light",
+          "FluxAI Light",
           "KlingAI",
           "WriteSonicAI",
-          "ManusAILight",
+          "ManusAI Light",
           "MetaAI",
           "QwenAI",
           "FireworksAI",
-          "ClineAILight",
-          "DeepAILight",
-          "GrokAILight",
-          "SunoAILight",
-          "OllamaLight",
-          "KreaAILight",
+          "ClineAI Light",
+          "DeepAI Light",
+          "GrokAI Light",
+          "SunoAI Light",
+          "Ollama Light",
+          "KreaAI Light",
           "LovableAI",
-          "PikaAILight",
-          "WindsurferAILight",
+          "PikaAI Light",
+          "WindsurferAI Light",
           "AtlassianRovor"
         ],
       },
@@ -397,12 +438,12 @@ export const versionHistory: VersionEntry[] = [
         description: "New framework icons",
         icons: [
           "Django",
-          "AstroJSLight",
-          "ReactBitsLight",
-          "ExpressJSLight",
+          "AstroJS Light",
+          "ReactBits Light",
+          "ExpressJS Light",
           "BulmaUI",
           "SemanticUI",
-          "ThreeJSLight"
+          "ThreeJS Light"
         ],
       },
     ],
@@ -422,7 +463,7 @@ export const versionHistory: VersionEntry[] = [
         category: "Apps",
         description: "Social media platform updates",
         icons: [
-          "ThreadLight",
+          "Thread Light",
           "Reddit",
           "SoundCloud",
           "VK",
@@ -443,7 +484,7 @@ export const versionHistory: VersionEntry[] = [
           "R",
           "Erlang",
           "Dart",
-          "SolidityLight",
+          "Solidity Light",
         ],
       },
       {
@@ -461,7 +502,7 @@ export const versionHistory: VersionEntry[] = [
         type: "added",
         category: "Programming",
         description: "New programming language icons",
-        icons: ["SASS", "Go", "Kotlin", "ApacheKafkaLight", "Clojure", "Nim"],
+        icons: ["SASS", "Go", "Kotlin", "ApacheKafka Light", "Clojure", "Nim"],
       },
       {
         type: "added",
@@ -558,9 +599,9 @@ export const versionHistory: VersionEntry[] = [
           "C",
           "C++",
           "C#",
-          "GitHubLight",
+          "GitHub Light",
           "Twitter",
-          "XLight",
+          "X Light",
           "Instagram",
           "LinkedIn",
           "YouTube",

@@ -8,7 +8,7 @@ export const FloatingSocialButtons = () => {
   const links = [
     {
       href: "https://github.com/Onimuxha",
-      iconName: "GitHubLight" as const,
+      iconName: "GitHub Light" as const,
       label: "GitHub",
     },
     {
@@ -23,7 +23,7 @@ export const FloatingSocialButtons = () => {
     },
     {
       href: "https://x.com/onimuxha",
-      iconName: "XLight" as const,
+      iconName: "X Light" as const,
       label: "X",
     },
   ];

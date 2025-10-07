@@ -119,7 +119,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "ApacheKafkaDark",
+    name: "ApacheKafka Dark",
     category: "Programming",
     sourceUrl: "https://kafka.apache.org/",
     keywords: ["apache kafka", "kafka", "streaming", "data", "backend"],
@@ -132,7 +132,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "ApacheKafkaLight",
+    name: "ApacheKafka Light",
     category: "Programming",
     sourceUrl: "https://kafka.apache.org/",
     keywords: ["apache kafka", "kafka", "streaming", "data", "backend"],
@@ -187,7 +187,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "SolidityDark",
+    name: "Solidity Dark",
     category: "Programming",
     sourceUrl: "https://soliditylang.org/",
     keywords: ["language", "smart contracts", "blockchain", "ethereum"],
@@ -203,7 +203,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "SolidityLight",
+    name: "Solidity Light",
     category: "Programming",
     sourceUrl: "https://soliditylang.org/",
     keywords: ["language", "smart contracts", "blockchain", "ethereum"],
@@ -403,7 +403,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "RustDark",
+    name: "Rust Dark",
     category: "Programming",
     sourceUrl: "https://www.rust-lang.org/",
     keywords: ["rust", "language", "systems programming", "backend"],
@@ -415,7 +415,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "RustLight",
+    name: "Rust Light",
     category: "Programming",
     sourceUrl: "https://www.rust-lang.org/",
     keywords: ["rust", "language", "systems programming", "backend"],
@@ -427,7 +427,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "MarkdownDark",
+    name: "Markdown Dark",
     category: "Programming",
     sourceUrl: "https://www.markdownguide.org/",
     keywords: ["markdown", "language", "markup", "text"],
@@ -441,7 +441,7 @@ export const iconsData: IconData[] = [
   `.trim(),
   },
   {
-    name: "MarkdownLight",
+    name: "Markdown Light",
     category: "Programming",
     sourceUrl: "https://www.markdownguide.org/",
     keywords: ["markdown", "language", "markup", "text"],

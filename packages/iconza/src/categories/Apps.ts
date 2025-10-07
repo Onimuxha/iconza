@@ -281,7 +281,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ThreadDark",
+    name: "Thread Dark",
     category: "Apps",
     sourceUrl: "https://threads.com",
     keywords: ["threads", "social", "media", "network", "connect"],
@@ -293,7 +293,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ThreadLight",
+    name: "Thread Light",
     category: "Apps",
     sourceUrl: "https://threads.com",
     keywords: ["threads", "social", "media", "network", "connect"],
@@ -305,7 +305,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "XDark",
+    name: "X Dark",
     category: "Apps",
     sourceUrl: "https://x.com",
     keywords: ["twitter", "meta", "social", "media", "network", "connect"],
@@ -317,7 +317,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "XLight",
+    name: "X Light",
     category: "Apps",
     sourceUrl: "https://x.com",
     keywords: ["twitter", "meta", "social", "media", "network", "connect"],
@@ -364,7 +364,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "BehanceLogoDark",
+    name: "BehanceLogo Dark",
     category: "Apps",
     sourceUrl: "https://behance.net/",
     keywords: ["behance", "adobe", "portfolio", "design", "creative"],
@@ -376,7 +376,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "BehanceLogoLight",
+    name: "BehanceLogo Light",
     category: "Apps",
     sourceUrl: "https://behance.net/",
     keywords: ["behance", "adobe", "portfolio", "design", "creative"],
@@ -865,7 +865,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "YouTubeLogoDark",
+    name: "YouTubeLogo Dark",
     category: "Apps",
     sourceUrl: "https://www.youtube.com/",
     keywords: ["youtube", "video", "streaming", "media", "entertainment"],
@@ -880,7 +880,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "YouTubeLogoLight",
+    name: "YouTubeLogo Light",
     category: "Apps",
     sourceUrl: "https://www.youtube.com/",
     keywords: ["youtube", "video", "streaming", "media", "entertainment"],
@@ -1159,7 +1159,7 @@ export const iconsData: IconData[] = [
     `.trim(),
   },
   {
-    name: "VKDark",
+    name: "VK Dark",
     category: "Apps",
     sourceUrl: "https://vk.com/",
     keywords: ["vk", "vkontakte", "social", "media", "network"],
@@ -1177,7 +1177,7 @@ export const iconsData: IconData[] = [
     `.trim(),
   },
   {
-    name: "VKLight",
+    name: "VK Light",
     category: "Apps",
     sourceUrl: "https://vk.com/",
     keywords: ["vk", "vkontakte", "social", "media", "network"],
@@ -1195,7 +1195,7 @@ export const iconsData: IconData[] = [
     `.trim(),
   },
   {
-    name: "ApplePayDark",
+    name: "ApplePay Dark",
     category: "Apps",
     sourceUrl: "https://www.apple.com/apple-pay/",
     keywords: ["apple", "pay", "wallet", "money", "credit", "debit"],
@@ -1209,7 +1209,7 @@ export const iconsData: IconData[] = [
     `.trim(),
   },
   {
-    name: "ApplePayLight",
+    name: "ApplePay Light",
     category: "Apps",
     sourceUrl: "https://www.apple.com/apple-pay/",
     keywords: ["apple", "pay", "wallet", "payment", "card"],

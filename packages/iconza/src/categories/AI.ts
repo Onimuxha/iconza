@@ -16,7 +16,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ChatGPTDark",
+    name: "ChatGPT Dark",
     category: "AI",
     sourceUrl: "https://chatgpt.com",
     keywords: ["chatgpt", "ai", "openai"],
@@ -29,7 +29,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ChatGPTLight",
+    name: "ChatGPT Light",
     category: "AI",
     sourceUrl: "https://chatgpt.com",
     keywords: ["chatgpt", "ai", "openai"],
@@ -56,7 +56,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "GoogleAIStudioDark",
+    name: "GoogleAIStudio Dark",
     category: "AI",
     sourceUrl: "https://aistudio.google.com/prompts/new_chat",
     keywords: ["ai", "google", "aistudio"],
@@ -70,7 +70,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "GoogleAIStudioLight",
+    name: "GoogleAIStudio Light",
     category: "AI",
     sourceUrl: "https://aistudio.google.com/prompts/new_chat",
     keywords: ["ai", "google", "aistudio"],
@@ -98,7 +98,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "VercelV0Dark",
+    name: "V0 Dark",
     category: "AI",
     sourceUrl: "https://v0.app/",
     keywords: ["ai", "vercel", "V0"],
@@ -110,7 +110,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "VercelV0Light",
+    name: "V0 Light",
     category: "AI",
     sourceUrl: "https://v0.app/",
     keywords: ["ai", "vercel", "V0"],
@@ -217,7 +217,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ElevenLabsAIDark",
+    name: "ElevenLabsAI Dark",
     category: "AI",
     sourceUrl: "https://elevenlabs.io/",
     keywords: ["ai", "elevenlabs"],
@@ -228,7 +228,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ElevenLabsAILight",
+    name: "ElevenLabsAI Light",
     category: "AI",
     sourceUrl: "https://elevenlabs.io/",
     keywords: ["ai", "elevenlabs"],
@@ -239,7 +239,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "FluxAIDark",
+    name: "FluxAI Dark",
     category: "AI",
     sourceUrl: "",
     keywords: ["ai", "flux"],
@@ -255,7 +255,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "FluxAILight",
+    name: "FluxAI Light",
     category: "AI",
     sourceUrl: "",
     keywords: ["ai", "flux"],
@@ -317,7 +317,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "KlingLogoDark",
+    name: "KlingLogo Dark",
     category: "AI",
     sourceUrl: "https://klingai.com/global/",
     keywords: ["ai", "kling", "logo"],
@@ -330,7 +330,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "KlingLogoLight",
+    name: "KlingLogo Light",
     category: "AI",
     sourceUrl: "https://klingai.com/global/",
     keywords: ["ai", "kling", "logo"],
@@ -370,7 +370,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ManusAIDark",
+    name: "ManusAI Dark",
     category: "AI",
     sourceUrl: "https://manus.im/app",
     keywords: ["ai", "manus"],
@@ -384,7 +384,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ManusAILight",
+    name: "ManusAI Light",
     category: "AI",
     sourceUrl: "https://manus.im/app",
     keywords: ["ai", "manus"],
@@ -450,7 +450,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ClineAIDark",
+    name: "ClineAI Dark",
     category: "AI",
     sourceUrl: "https://cline.bot/",
     keywords: ["ai", "cline"],
@@ -466,7 +466,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "ClineAILight",
+    name: "ClineAI Light",
     category: "AI",
     sourceUrl: "https://cline.bot/",
     keywords: ["ai", "cline"],
@@ -482,7 +482,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "DeepAIDark",
+    name: "DeepAI Dark",
     category: "AI",
     sourceUrl: "https://deepai.org/",
     keywords: ["ai", "deepai"],
@@ -495,7 +495,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "DeepAILight",
+    name: "DeepAI Light",
     category: "AI",
     sourceUrl: "https://deepai.org/",
     keywords: ["ai", "deepai"],
@@ -522,7 +522,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "GrokAIDark",
+    name: "GrokAI Dark",
     category: "AI",
     sourceUrl: "https://grok.com/",
     keywords: ["ai", "grok", "x"],
@@ -535,7 +535,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "GrokAILight",
+    name: "GrokAI Light",
     category: "AI",
     sourceUrl: "https://grok.com/",
     keywords: ["ai", "grok", "x"],
@@ -548,7 +548,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "SunoAIDark",
+    name: "SunoAI Dark",
     category: "AI",
     sourceUrl: "https://suno.com/",
     keywords: ["ai", "suno", "audio", "music"],
@@ -561,7 +561,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "SunoAILight",
+    name: "SunoAI Light",
     category: "AI",
     sourceUrl: "https://suno.com/",
     keywords: ["ai", "suno", "audio", "music"],
@@ -574,7 +574,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "OllamaDark",
+    name: "Ollama Dark",
     category: "AI",
     sourceUrl: "https://ollama.com/",
     keywords: ["ai", "ollama", "llama", "model"],
@@ -587,7 +587,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "OllamaLight",
+    name: "Ollama Light",
     category: "AI",
     sourceUrl: "https://ollama.com/",
     keywords: ["ai", "ollama", "llama", "model"],
@@ -600,7 +600,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "KreaAIDark",
+    name: "KreaAI Dark",
     category: "AI",
     sourceUrl: "https://www.krea.ai/",
     keywords: ["ai", "krea", "image", "generation"],
@@ -616,7 +616,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "KreaAILight",
+    name: "KreaAI Light",
     category: "AI",
     sourceUrl: "https://www.krea.ai/",
     keywords: ["ai", "krea", "image", "generation"],
@@ -656,7 +656,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "PikaAIDark",
+    name: "PikaAI Dark",
     category: "AI",
     sourceUrl: "https://pika.art/",
     keywords: ["ai", "pika", "image", "generation"],
@@ -670,7 +670,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "PikaAILight",
+    name: "PikaAI Light",
     category: "AI",
     sourceUrl: "https://pika.art/",
     keywords: ["ai", "pika", "image", "generation"],
@@ -684,7 +684,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "WindsurfAIDark",
+    name: "WindsurfAI Dark",
     category: "AI",
     sourceUrl: "https://windsurf.com/",
     keywords: ["ai", "windsurf", "chat", "assistant", "bot"],
@@ -697,7 +697,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "WindsurfAILight",
+    name: "WindsurfAI Light",
     category: "AI",
     sourceUrl: "https://windsurf.com/",
     keywords: ["ai", "windsurf", "chat", "assistant", "bot"],
@@ -710,7 +710,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "AnthropicDark",
+    name: "Anthropic Dark",
     category: "AI",
     sourceUrl: "https://www.anthropic.com/",
     keywords: ["ai", "anthropic", "chat", "assistant", "bot"],
@@ -722,7 +722,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "AnthropicLight",
+    name: "Anthropic Light",
     category: "AI",
     sourceUrl: "https://www.anthropic.com/",
     keywords: ["ai", "anthropic", "chat", "assistant", "bot"],
@@ -734,7 +734,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "xAIDark",
+    name: "xAI Dark",
     category: "AI",
     sourceUrl: "https://x.ai/",
     keywords: ["ai", "xai", "chat", "assistant", "bot"],
@@ -746,7 +746,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "xAILight",
+    name: "xAI Light",
     category: "AI",
     sourceUrl: "https://x.ai/",
     keywords: ["ai", "xai", "chat", "assistant", "bot"],
@@ -758,7 +758,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "KimiDark",
+    name: "Kimi Dark",
     category: "AI",
     sourceUrl: "https://kimi.ai/",
     keywords: ["ai", "kimi", "chat", "assistant", "bot"],
@@ -770,7 +770,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "KimiLight",
+    name: "Kimi Light",
     category: "AI",
     sourceUrl: "https://kimi.ai/",
     keywords: ["ai", "kimi", "chat", "assistant", "bot"],
@@ -782,7 +782,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "RunwayDark",
+    name: "Runway Dark",
     category: "AI",
     sourceUrl: "https://runwayml.com/",
     keywords: ["ai", "runway", "chat", "assistant", "bot"],
@@ -807,7 +807,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "RunwayLight",
+    name: "Runway Light",
     category: "AI",
     sourceUrl: "https://runwayml.com/",
     keywords: ["ai", "runway", "chat", "assistant", "bot"],
@@ -832,7 +832,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "GitHubCopilotDark",
+    name: "GitHubCopilot Dark",
     category: "AI",
     sourceUrl: "https://github.com/features/copilot",
     keywords: ["ai", "github", "copilot", "chat", "assistant", "bot"],
@@ -844,7 +844,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "GitHubCopilotLight",
+    name: "GitHubCopilot Light",
     category: "AI",
     sourceUrl: "https://github.com/features/copilot",
     keywords: ["ai", "github", "copilot", "chat", "assistant", "bot"],
@@ -993,7 +993,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "BixbyLogoDark",
+    name: "BixbyLogo Dark",
     category: "AI",
     sourceUrl: "https://www.samsung.com/us/support/owners/app/Bixby",
     keywords: ["ai", "bixby", "assistant", "chat", "bot"],
@@ -1019,7 +1019,7 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
-    name: "BixbyLogoLight",
+    name: "BixbyLogo Light",
     category: "AI",
     sourceUrl: "https://www.samsung.com/us/support/owners/app/Bixby",
     keywords: ["ai", "bixby", "assistant", "chat", "bot"],

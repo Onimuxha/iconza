@@ -70,7 +70,7 @@ export function SiteFooter() {
       },
       {
         name: "Email",
-        href: "mailto:cheathekm@gmail.com",
+        href: "mailto:akumayami288@gmail.com",
         icon: IconMail,
         color: "hover:text-lime-400",
       },
