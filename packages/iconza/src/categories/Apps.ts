@@ -59,6 +59,27 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
+    name: "Trello",
+    category: "Apps",
+    sourceUrl: "https://trello.com/",
+    keywords: ["trello", "project", "management", "collaboration"],
+    svgContent: `
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path
+        d="M90.2344 0H9.76562C4.37222 0 0 4.37222 0 9.76562V90.2344C0 95.6278 4.37222 100 9.76562 100H90.2344C95.6278 100 100 95.6278 100 90.2344V9.76562C100 4.37222 95.6278 0 90.2344 0Z"
+        fill="url(#trello__a)" />
+    <path
+        d="M38.5 13C41.2614 13 43.5 15.2386 43.5 18V76.75C43.5 79.5114 41.2614 81.75 38.5 81.75H18C15.2386 81.75 13 79.5114 13 76.75V18C13 15.2386 15.2386 13 18 13H38.5ZM82 13C84.7614 13 87 15.2386 87 18V51.75C87 54.5114 84.7614 56.75 82 56.75H61.5C58.7386 56.75 56.5 54.5114 56.5 51.75V18C56.5 15.2386 58.7386 13 61.5 13H82Z"
+        fill="#ffffff" />
+    <linearGradient id="trello__a" x1="5000" y1="0" x2="5000" y2="10000"
+        gradientUnits="userSpaceOnUse">
+        <stop stop-color="#0091E6" />
+        <stop offset="1" stop-color="#0079BF" />
+    </linearGradient>
+</svg>
+`.trim(),
+  },
+  {
     name: "AppStore",
     category: "Apps",
     sourceUrl: "https://www.apple.com/app-store/",

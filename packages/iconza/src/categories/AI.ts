@@ -98,6 +98,25 @@ export const iconsData: IconData[] = [
 `.trim(),
   },
   {
+    name: "TensorFlow",
+    category: "AI",
+    sourceUrl: "https://www.tensorflow.org/",
+    keywords: [
+      "ai",
+      "tensorflow",
+      "machine learning",
+      "deep learning",
+      "neural networks",
+    ],
+    svgContent: `
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 128 128">
+  <path
+    d="m61.55 128-21.84-12.68V40.55L6.81 59.56l.08-28.32L61.55 0zM66.46 0v128l21.84-12.68V79.31l16.49 9.53-.1-24.63-16.39-9.36v-14.3l32.89 19.01-.08-28.32z"
+    fill="#ff6f00" />
+</svg>
+`.trim(),
+  },
+  {
     name: "V0 Dark",
     category: "AI",
     sourceUrl: "https://v0.app/",
@@ -886,7 +905,8 @@ export const iconsData: IconData[] = [
   {
     name: "PaLM2",
     category: "AI",
-    sourceUrl: "https://blog.google/technology/ai/google-palm-2-ai-large-language-model/",
+    sourceUrl:
+      "https://blog.google/technology/ai/google-palm-2-ai-large-language-model/",
     keywords: ["ai", "google", "palm2", "chat", "assistant", "bot"],
     svgContent: `
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 256 229">
