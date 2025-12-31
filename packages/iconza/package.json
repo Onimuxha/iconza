@@ -1,13 +1,20 @@
 {
   "name": "iconza",
-  "version": "1.0.39",
+  "version": "1.0.40",
   "private": false,
   "description": "A modern, accessible icon set with original brand colors, full TypeScript support, and delightful animations.",
   "homepage": "https://iconza.vercel.app",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -28,21 +35,23 @@
     "prepublishOnly": "pnpm build"
   },
   "sideEffects": false,
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
+  },
   "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tsup": "^8.5.0",
     "typescript": "^5.0.0"
   },
-  "resolutions": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "license": "MIT",
-  "vite": {
-    "resolve": {
-      "dedupe": [
-        "react",
-        "react-dom"
-      ]
-    }
-  }
+  "license": "MIT"
 }
